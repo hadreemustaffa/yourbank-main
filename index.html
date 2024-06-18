@@ -5,11 +5,213 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A static banking company website based on a free figma template by Produce UI">
-  <link rel="site icon" href="favicon.ico" type="image/x-icon">
+  <!-- <link rel="site icon" href="favicon.ico" type="image/x-icon"> -->
+  <link rel="stylesheet" href="sass/main.scss">
   <title>YourBanK</title>
 </head>
 
 <body>
+  <header class="container">
+    <img src="/public/images/dark/logo/logo-mobile.png" alt="">
+
+    <nav>
+      <button type="button" id="toggleBtn" class="btn btn-primary" aria-controls="navDrawer" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <div id="navDrawer" class="drawer">
+        <ul class="drawer__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Careers</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Security</a></li>
+        </ul>
+
+        <ul class="drawer__list">
+          <li><a href="#" class="btn">Sign Up</a></li>
+          <li><a href="#" class="btn btn-primary">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    No LLC Required, No Credit Check.
+
+    Welcome to YourBank
+    Empowering Your Financial Journey
+
+    At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to
+    achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize
+    our
+    customers' needs.
+
+    Open Account
+
+    Our Products
+    Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique
+    financial
+    needs and aspirations
+
+    For Individuals
+    For Businesses
+
+    Checking Accounts
+    Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features
+    such as
+    online and mobile banking, debit cards, and free ATM access.
+
+    Savings Accounts
+    Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving
+    for a
+    specific goal or want to grow your wealth over time, we have the right account for you.
+
+    Loans and Mortgages
+    Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our
+    experienced
+    loan officers are here to guide you through the application process and help you secure the funds you need.
+
+    Use Cases
+    At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial
+    solutions
+
+    Managing Personal Finances
+    Saving for the Future
+    Homeownership
+    Education Funding
+
+    For Individuals
+    For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital
+    support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future
+    for
+    our customers
+
+    78%
+    Secure Retirement Planning
+
+    63%
+    Manageable Debt Consolidation
+
+    91%
+    Reducing financial burdens
+
+    Learn More
+
+    Startups and Entrepreneurs
+    Cash Flow Management
+    Business Expansion
+    Payment Solutions
+
+    For Business
+    For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing
+    options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right
+    tools
+    and support to achieve them
+
+    65%
+    Cash Flow Management
+
+    70%
+    Drive Business Expansion
+
+    45%
+    Streamline payroll processing
+
+    Learn More
+
+    Our Features
+    Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and
+    personalized financial insights, all designed to enhance your banking experience
+
+    Online Banking
+    Financial Tools
+    Customer Support
+
+    24/7 Account Access
+    Mobile Banking App
+    Secure Transactions
+    Bill Pay and Transfers
+
+    Frequently Asked Questions
+    Still you have any questions? Contact our Team via support@yourbank.com
+
+    How do I open an account with YourBank?
+    Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow
+    the
+    prompts, provide the required information, and complete the application process. If you have any questions or need
+    assistance, our customer support team is available to help.
+
+    What documents do I need to provide to apply for a loan?
+    The documents required for a loan application may vary depending on the type of loan you are applying for.
+    Generally,
+    you will need to provide identification documents (such as a passport or driver's license), proof of income (such as
+    pay
+    stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you
+    through
+    the specific requirements during the application process.
+
+    How can I access my accounts online?
+    Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your
+    username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll
+    Now"
+    button and follow the registration process. If you need assistance, our customer support team is available to guide
+    you.
+
+    Are my transactions and personal information secure?
+    At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading
+    encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update
+    our
+    security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust
+    security
+    systems in place.
+
+    Load All FAQ’s
+
+    Our Testimonials
+    Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See
+    why
+    our clients trust us for a secure and prosperous financial journey
+
+    For Individuals
+    For Businesses
+
+    YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking
+    solutions have made managing my finances a breeze.
+    Sara T
+
+    I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and
+    secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.
+    John D
+
+    I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and make
+    transactions on the go. The app is user-friendly and secure, giving me peace of mind.
+    Emily G
+
+    Start your financial journey with YourBank today!
+    Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut imperdiet
+    nulla penatibus. Nascetur viverra arcu sed amet cursus purus.
+    Open Account
+  </main>
+
+  <footer>
+    <img src="./public/images/dark/logo/logo-mobile.png" alt="">
+
+    Home
+    Careers
+    About
+    Security
+
+    hello@skillbirdge.com
+    +91 91813 23 2309
+    Somewhere in the World
+
+    YourBank All Rights Reserved
+    Privacy Policy | Terms of Service
+  </footer>
 </body>
 
 </html>
