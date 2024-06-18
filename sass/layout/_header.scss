@@ -1,0 +1,39 @@
+@use "../abstracts/" as *;
+
+header {
+  margin-top: 1rem;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1.5rem;
+  background-color: $grey-11;
+  border-radius: 100px;
+  border: 1px solid $grey-15;
+  position: relative;
+
+  img {
+    grid-area: 1 / 1 / 1 / 4;
+  }
+
+  nav {
+    grid-area: 1 / 4 / 1 / 7;
+    place-self: end;
+  }
+}
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: $grey-11;
+  width: 60vw;
+  height: 100vh;
+  padding: min(20rem, 15vh) 2rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  .drawer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

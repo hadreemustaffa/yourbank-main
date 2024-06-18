@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+
+.btn {
+  background-color: transparent;
+  border: transparent;
+  padding: 0.25rem 1rem;
+  border-radius: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-primary {
+  background-color: $green-60;
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.btn-secondary {
+  background-color: $grey-10;
+}
+
+.btn-tertiary {
+  padding: 0.25rem 0;
+}
+
+button#toggleBtn {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: 99;
+}

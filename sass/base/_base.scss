@@ -1,0 +1,12 @@
+@use "../abstracts/" as *;
+body {
+  background-color: $grey-10;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+ul {
+  list-style: none;
+}

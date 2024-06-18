@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-100);
+  color: $white-90;
+}
+
+nav {
+  font-size: var(--fs-200);
+}
+
+a {
+  text-decoration: none;
+}
