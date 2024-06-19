@@ -1,0 +1,195 @@
+@use "../abstracts/" as *;
+.container--home {
+  row-gap: 4rem;
+}
+
+.hero {
+  grid-area: 1 / 1 / 1 / -1;
+  @include subgrid;
+  row-gap: 3.125rem;
+}
+
+.hero__subcontainer {
+  @include flex(column);
+  align-items: center;
+  gap: 0.75rem;
+}
+.hero__introduction {
+  grid-area: 1 / 1 / 1 / -1;
+  @include flex(column);
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__value-proposition {
+  @include flex();
+  gap: 0.25rem;
+  background-color: $grey-15;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border-radius: 2rem;
+}
+
+.hero__text {
+  @include flex(column);
+  gap: 0.5rem;
+}
+
+.hero__cta {
+  grid-area: 2 / 1 / 2 / -1;
+  justify-self: center;
+}
+
+.hero__illustration {
+  grid-area: 2 / 1 / 2 / -1;
+  position: relative;
+  justify-self: center;
+  z-index: 0;
+
+  &::after {
+    content: url("../../public/images/dark/abstracts/bg-arrow.png");
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    width: 220px;
+    z-index: -1;
+  }
+}
+
+.products {
+  grid-area: 2 / 1 / 2 / -1;
+  @include subgrid;
+  row-gap: 3.75rem;
+}
+
+.products__introduction {
+  grid-area: 1 / 1 / 1 / -1;
+  @include flex(column);
+  gap: 1.25rem;
+}
+
+.products__introduction-wrapper {
+  @include flex(column);
+  gap: 0.625rem;
+}
+
+.products__tab {
+  @include flex();
+  width: fit-content;
+  align-self: center;
+  padding: 0.75rem;
+  background-color: $grey-11;
+  border-radius: 100px;
+  border: 1px solid $grey-15;
+}
+
+.products__content {
+  grid-area: 2 / 1 / 2 / -1;
+  @include flex(column);
+  gap: 3.75rem;
+
+  & article {
+    @include flex(column);
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      bottom: -1.875rem;
+      width: 100%;
+      height: 1px;
+      background-color: $grey-15;
+    }
+  }
+}
+
+.products__icon-container {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0));
+
+  & .products__icon {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(hsl(76, 100%, 60%, 0.1), hsl(76, 100%, 60%, 0) 47%) padding-box,
+      linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0) 72%) border-box;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+}
+
+.cases {
+  grid-area: 3 / 1 / 3 / -1;
+  @include flex(column);
+  row-gap: 3.75rem;
+}
+
+.cases__introduction-wrapper {
+  @extend .products__introduction-wrapper;
+}
+
+.cases__type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.625rem;
+  background-color: $grey-11;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  background-image: url("/public/images/dark/abstracts/bg-left-dots.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.cases__row {
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: 0.625rem;
+}
+
+.cases__row-top {
+  grid-area: 1 / 1 / 1 / -1;
+}
+.cases__row-bottom {
+  grid-area: 2 / 1 / 2 / -1;
+}
+
+.cases__content {
+  @include flex(column);
+  align-items: center;
+  justify-content: start;
+  gap: 0.875rem;
+  padding: 1.25rem 0.875rem;
+  background-color: $grey-10;
+  border-radius: 0.75rem;
+  border: 1px solid $grey-15;
+}
+
+.cases__icon-container {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0));
+
+  & .cases__icon {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(hsl(76, 100%, 60%, 0.1), hsl(76, 100%, 60%, 0) 47%) padding-box,
+      linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0) 72%) border-box;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+}
+
+.features {
+  grid-area: 4 / 1 / 4 / -1;
+}
+.faqs {
+  grid-area: 5 / 1 / 5 / -1;
+}
+.testimonials {
+  grid-area: 6 / 1 / 6 / -1;
+}
+.cta {
+  grid-area: 7 / 1 / 7 / -1;
+}

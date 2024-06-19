@@ -1,4 +1,4 @@
-@use "breakpoints" as *;
+@use "mixins" as *;
 
 :root {
   --ff-primary: "Lexend", sans-serif;
@@ -17,6 +17,7 @@
   --fw-semibold: 600;
   --fw-medium: 500;
   --fw-regular: 400;
+  --fw-light: 300;
 }
 
 @include md {

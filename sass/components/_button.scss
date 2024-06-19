@@ -5,6 +5,7 @@
   border: transparent;
   padding: 0.25rem 1rem;
   border-radius: 1.5rem;
+  color: $white;
 
   &:hover {
     cursor: pointer;
@@ -13,10 +14,16 @@
 
 .btn-primary {
   background-color: $green-60;
+  color: $black !important;
+  padding: 0.875rem 1.5rem;
 
   svg {
     width: 28px;
     height: 28px;
+  }
+
+  &:hover {
+    background-color: $green-70;
   }
 }
 
@@ -33,5 +40,11 @@ button#toggleBtn {
   right: 1rem;
   top: 50%;
   translate: 0 -50%;
-  z-index: 99;
+  z-index: 100;
+  padding: 0.25rem 0.875rem;
+}
+
+.drawer__cta .btn {
+  width: 100%;
+  text-align: center;
 }
