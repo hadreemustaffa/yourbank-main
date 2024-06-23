@@ -1,0 +1,53 @@
+@use "../abstracts/" as *;
+
+.hero {
+  grid-area: 1 / 1 / 1 / -1;
+  @include subgrid;
+  row-gap: 3.125rem;
+}
+
+.hero__subcontainer {
+  @include flex(column);
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero__introduction {
+  @include flex(column);
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__value-proposition {
+  @include flex();
+  gap: 0.25rem;
+  background-color: $grey-15;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border-radius: 2rem;
+}
+
+.hero__text {
+  @include flex(column);
+  gap: 0.75rem;
+}
+
+.hero__cta {
+  grid-area: 2 / 1 / 2 / -1;
+  justify-self: center;
+}
+
+.hero__illustration {
+  grid-area: 2 / 1 / 2 / -1;
+  position: relative;
+  justify-self: center;
+  z-index: 0;
+
+  &::after {
+    content: url("../../public/images/dark/abstracts/bg-arrow.png");
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    width: 220px;
+    z-index: -1;
+  }
+}

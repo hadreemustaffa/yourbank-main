@@ -1,14 +1,14 @@
 @use "../abstracts/" as *;
 
 body {
-  font-family: var(--ff-primary);
-  font-size: var(--fs-100);
-  font-weight: var(--fw-regular);
+  font-family: $font-family-primary;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-regular;
   color: $white-90;
 }
 
 nav {
-  font-size: var(--fs-200);
+  font-size: $font-size-sm;
 }
 
 a {
@@ -21,8 +21,8 @@ a {
 }
 
 h1 {
-  font-size: var(--fs-900);
-  font-weight: var(--fw-medium);
+  font-size: $font-size-4xl;
+  font-weight: $font-weight-medium;
   line-height: 1.5;
 
   span {
@@ -32,19 +32,55 @@ h1 {
 
 h2 {
   @extend h1;
-  font-size: var(--fs-700);
+}
+
+h3 {
+  font-size: $font-size-xl;
 }
 
 p {
   color: $grey-70;
-  font-weight: var(--fw-light);
+  font-weight: $font-weight-light;
 }
 
 .hero__value-proposition {
-  font-weight: var(--fw-light);
-  font-size: 0.75rem;
+  font-weight: $font-weight-light;
+  font-size: $font-size-xs;
+}
+
+.container__stats {
+  span {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-7xl;
+    color: $green-60;
+    display: block;
+  }
 }
 
 .cases__type-text {
   color: $white;
+}
+
+@include md {
+  body {
+    font-size: $base-font-size;
+  }
+  h1,
+  h2 {
+    font-size: $font-size-6xl;
+  }
+  .hero__value-proposition {
+    font-size: $font-size-sm;
+  }
+}
+
+@include lg {
+  body,
+  nav {
+    font-size: $font-size-lg;
+  }
+
+  button {
+    font-size: $font-size-sm;
+  }
 }

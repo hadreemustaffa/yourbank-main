@@ -1,0 +1,83 @@
+@use "../abstracts/" as *;
+
+.container {
+  @include flex(column);
+  gap: $space-5xl;
+  align-items: center;
+}
+
+.container__content {
+  @include flex(column);
+  gap: $space-2xl;
+}
+
+.container__content-wrapper {
+  @extend .container__content;
+
+  .container__content-item {
+    gap: $space-4xl;
+
+    &:first-child {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-rows: 1fr 1fr;
+      gap: $space-3xs;
+      background-color: $grey-11;
+      border-radius: 1.25rem;
+      padding: 1.25rem;
+      background-repeat: no-repeat;
+      background-size: 40%;
+    }
+  }
+
+  .container__card {
+    background-color: $grey-10;
+    height: 100%;
+  }
+}
+
+.container__text {
+  @include flex(column);
+  gap: $space-3xs;
+}
+
+.container__content-item {
+  @include flex(column);
+  gap: $space-lg;
+  align-items: center;
+}
+
+.container__content-icon {
+  padding: $space-4xs;
+  border-radius: 50%;
+  background: linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0));
+
+  & .icon {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(hsl(76, 100%, 60%, 0.1), hsl(76, 100%, 60%, 0) 47%) padding-box,
+      linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0) 72%) border-box;
+    border-radius: 50%;
+    padding: $base-space;
+  }
+}
+
+.container__card {
+  @include flex(column);
+  gap: $space-xs;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25rem;
+  padding: $space-lg;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.container__tabs {
+  @include flex;
+  padding: $space-2xs;
+  border-radius: 5rem;
+  align-self: center;
+  background-color: $grey-11;
+  border: 1px solid $grey-15;
+}

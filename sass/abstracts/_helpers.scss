@@ -1,1 +1,18 @@
+@use "colors" as *;
+
 // utility classes
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: $grey-15;
+}
+
+.bg-curve--left {
+  background-image: url("/public/images/dark/abstracts/bg-left-curve.png");
+}
+.bg-curve--right {
+  background-image: url("/public/images/dark/abstracts/bg-right-curve.png");
+}
+.bg-dots--left {
+  background-image: url("/public/images/dark/abstracts/bg-corner-dots.png");
+}

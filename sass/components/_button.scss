@@ -3,7 +3,7 @@
 .btn {
   background-color: transparent;
   border: transparent;
-  padding: 0.25rem 1rem;
+  padding: 0.875rem 1.5rem;
   border-radius: 1.5rem;
   color: $white;
 
@@ -15,7 +15,6 @@
 .btn-primary {
   background-color: $green-60;
   color: $black !important;
-  padding: 0.875rem 1.5rem;
 
   svg {
     width: 28px;
@@ -28,7 +27,8 @@
 }
 
 .btn-secondary {
-  background-color: $grey-10;
+  background-color: $grey-11;
+  border: 1px solid $grey-15;
 }
 
 .btn-tertiary {

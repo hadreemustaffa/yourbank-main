@@ -1,3 +1,4 @@
+// breakpoints mixin
 $breakpoints: (
   "sm": 576px,
   "md": 768px,
@@ -26,6 +27,9 @@ $breakpoints: (
   }
 }
 
+// spacing mixin
+
+// layout mixin
 @mixin flex($direction: row) {
   display: flex;
   @if $direction == column {

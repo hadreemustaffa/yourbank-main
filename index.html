@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="container">
+  <header class="grid-container">
     <a href="/" class="logo">
       <img src="/public/images/dark/logo/logo-mobile.png" alt="">
     </a>
@@ -52,7 +52,7 @@
     </nav>
   </header>
 
-  <main class="container container--home">
+  <main class="grid-container" id="home">
     <div class="hero">
       <div class="hero__introduction">
         <div class="hero__subcontainer">
@@ -77,24 +77,24 @@
       </div>
     </div>
 
-    <div class="products">
-      <div class="products__introduction">
-        <div class="products__introduction-wrapper">
-          <h2 class="products__title">Our <span>Products</span></h2>
+    <div class="container container--products">
+      <div class="container__content">
+        <div class="container__text">
+          <h2>Our <span>Products</span></h2>
           <p>Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your
             unique financial needs and aspirations</p>
         </div>
 
-        <div class="products__tab" role="tablist">
+        <div class="container__tabs" role="tablist">
           <button type="button" class="btn btn-primary" role="tab" aria-selected="true">For Individuals</button>
           <button type="button" class="btn" role="tab" aria-selected="false">For Businesses</button>
         </div>
       </div>
 
-      <div class="products__content">
-        <article>
-          <div class="products__icon-container">
-            <img src="/public/images/dark/icons/icon-briefcase.svg" alt="" class="products__icon">
+      <div class="container__content">
+        <article class="container__content-item">
+          <div class="container__content-icon">
+            <img src="/public/images/dark/icons/icon-briefcase.svg" alt="" class="icon">
           </div>
 
           <h3>Checking Accounts</h3>
@@ -103,9 +103,11 @@
             features such as online and mobile banking, debit cards, and free ATM access.</p>
         </article>
 
-        <article>
-          <div class="products__icon-container">
-            <img src="/public/images/dark/icons/icon-savings.svg" alt="" class="products__icon">
+        <div class="line"></div>
+
+        <article class="container__content-item">
+          <div class="container__content-icon">
+            <img src="/public/images/dark/icons/icon-savings.svg" alt="" class="icon">
           </div>
 
           <h3>Savings Accounts</h3>
@@ -114,9 +116,11 @@
             saving for a specific goal or want to grow your wealth over time, we have the right account for you.</p>
         </article>
 
-        <article>
-          <div class="products__icon-container">
-            <img src="/public/images/dark/icons/icon-loans.svg" alt="" class="products__icon">
+        <div class="line"></div>
+
+        <article class="container__content-item">
+          <div class="container__content-icon">
+            <img src="/public/images/dark/icons/icon-loans.svg" alt="" class="icon">
           </div>
 
           <h3>Loans and Mortgages</h3>
@@ -128,116 +132,173 @@
       </div>
     </div>
 
-    <div class="cases">
-      <div class="cases__introduction-wrapper">
-        <h2 class="cases__introduction"><span>Use Cases</span></h2>
+    <div class="container container--cases">
+      <div class="container__text">
+        <h2><span>Use Cases</span></h2>
         <p>At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of
           financial solutions</p>
       </div>
 
-      <div class="cases__type">
-        <div class="cases__row cases__row-top">
-          <div class="cases__content">
-            <div class="cases__icon-container">
-              <img class="cases__icon" src="/public/images/dark/icons/icon-finance.png" alt="">
+      <div class="container__content">
+        <div class="container__content-wrapper">
+          <div class="container__content-item bg-curve--left">
+            <div class="container__card">
+              <div class="container__content-icon">
+                <img class="icon" src="/public/images/dark/icons/icon-finance.png" alt="">
+              </div>
+              <p>Managing Personal Finances</p>
             </div>
-            <p class="cases__type-text">Managing Personal Finances</p>
+
+            <div class="container__card">
+              <div class="container__content-icon">
+                <img class="icon" src="/public/images/dark/icons/icon-future-savings.png" alt="">
+              </div>
+              <p>Saving for the Future</p>
+            </div>
+
+            <div class="container__card">
+              <div class="container__content-icon">
+                <img class="icon" src="/public/images/dark/icons/icon-homeownership.png" alt="">
+              </div>
+              <p>Homeownership</p>
+            </div>
+
+            <div class="container__card">
+              <div class="container__content-icon">
+                <img class="icon" src="/public/images/dark/icons/icon-education.png" alt="">
+              </div>
+              <p>Education Funding</p>
+            </div>
           </div>
-          <div class="cases__content">
-            <div class="cases__icon-container">
-              <img class="cases__icon" src="/public/images/dark/icons/icon-future-savings.png" alt="">
+
+          <div class="container__content-item">
+            <div class="container__text">
+              <h3>For Individuals</h3>
+              <p>For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans
+                provide vital support during various life milestones. We also prioritize retirement planning, ensuring a
+                financially secure future for our customers.</p>
             </div>
-            <p class="cases__type-text">Saving for the Future</p>
+
+            <div class="container__text container__stats">
+              <p><span>78%</span>Secure Retirement Planning</p>
+              <div class="line line--dotted"></div>
+              <p><span>63%</span>Manageable Debt Consolidation</p>
+              <div class="line line--dotted"></div>
+              <p><span>91%</span>Reducing financial burdens</p>
+            </div>
+
+            <a href="#" class="btn btn-secondary">Learn More</a>
           </div>
         </div>
 
-        <div class="cases__row cases__row-bottom">
-          <div class="cases__content">
-            <div class="cases__icon-container">
-              <img class="cases__icon" src="/public/images/dark/icons/icon-homeownership.png" alt="">
+        <div class="container__content-wrapper">
+          <div class="container__content-item bg-curve--left">
+            <div class="container__card">
+              <div class="container__content-icon">
+                <img class="icon" src="/public/images/dark/icons/icon-finance.png" alt="">
+              </div>
+              <p>Startups and Entrepreneurs</p>
             </div>
-            <p class="cases__type-text">Homeownership</p>
+
+            <div class="container__card">
+              <div class="container__content-icon">
+                <img class="icon" src="/public/images/dark/icons/icon-future-savings.png" alt="">
+              </div>
+              <p>Cash Flow Management</p>
+            </div>
+
+            <div class="container__card">
+              <div class="container__content-icon">
+                <img class="icon" src="/public/images/dark/icons/icon-homeownership.png" alt="">
+              </div>
+              <p>Business Expansion</p>
+            </div>
+
+            <div class="container__card">
+              <div class="container__content-icon">
+                <img class="icon" src="/public/images/dark/icons/icon-education.png" alt="">
+              </div>
+              <p>Payment Solutions</p>
+            </div>
           </div>
-          <div class="cases__content">
-            <div class="cases__icon-container">
-              <img class="cases__icon" src="/public/images/dark/icons/icon-education.png" alt="">
+
+          <div class="container__content-item">
+            <div class="container__text">
+              <h3>For Business</h3>
+              <p>For businesses, we empower growth with working capital solutions that optimize cash flow, and our
+                tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is
+                committed to providing the right tools and support to achieve them.</p>
             </div>
-            <p class="cases__type-text">Education Funding</p>
+
+            <div class="container__text container__stats">
+              <p><span>65%</span>Cash Flow Management</p>
+              <div class="line line--dotted"></div>
+              <p><span>70%</span>Drive Business Expansion</p>
+              <div class="line line--dotted"></div>
+              <p><span>45%</span>Streamline payroll processing</p>
+            </div>
+
+            <a href="#" class="btn btn-secondary">Learn More</a>
           </div>
         </div>
       </div>
     </div>
 
-    For Individuals
-    For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide
-    vital
-    support during various life milestones. We also prioritize retirement planning, ensuring a financially secure
-    future
-    for
-    our customers
+    <div class="container container--features">
+      <div class="container__text">
+        <h2>Our <span>Features</span></h2>
+        <p>
+          Experience a host of powerful features at YourBank, including seamless online banking, secure transactions,
+          and
+          personalized financial insights, all designed to enhance your banking experience
+        </p>
+      </div>
 
-    78%
-    Secure Retirement Planning
+      <div class="container__content">
+        <div class="container__content-wrapper">
+          <button type="button" class="btn btn-secondary">Online Banking</button>
+          <button type="button" class="btn btn-secondary">Financial Tools</button>
+          <button type="button" class="btn btn-secondary">Customer Support</button>
+        </div>
 
-    63%
-    Manageable Debt Consolidation
+        <div class="container__content-wrapper">
+          <h3>24/7 Account Access</h3>
+          <p>
+            Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking
+            platform.
+            Check
+            balances, transfer funds, and pay bills with ease.
+          </p>
 
-    91%
-    Reducing financial burdens
+          <h3>Mobile Banking App</h3>
+          <p>
+            Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your
+            accounts,
+            deposit checks, and make payments from your smartphone or tablet.
+          </p>
 
-    Learn More
+          <h3>Secure Transactions</h3>
+          <p>
+            Rest assured knowing that your transactions are protected by industry-leading security measures. We employ
+            encryption
+            and multi-factor authentication to safeguard your financial information.
+          </p>
 
-    Startups and Entrepreneurs
-    Cash Flow Management
-    Business Expansion
-    Payment Solutions
+          <h3>Bill Pay and Transfers</h3>
+          <p>
+            Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make
+            one-time
+            transfers
+            between your accounts with just a few clicks.
+          </p>
+        </div>
+      </div>
 
-    For Business
-    For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored
-    financing
-    options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right
-    tools
-    and support to achieve them
 
-    65%
-    Cash Flow Management
 
-    70%
-    Drive Business Expansion
 
-    45%
-    Streamline payroll processing
 
-    Learn More
-    </div>
 
-    <div class="features">
-      Our Features
-      Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and
-      personalized financial insights, all designed to enhance your banking experience
-
-      Online Banking
-      Financial Tools
-      Customer Support
-
-      24/7 Account Access
-      Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform.
-      Check
-      balances, transfer funds, and pay bills with ease.
-
-      Mobile Banking App
-      Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts,
-      deposit checks, and make payments from your smartphone or tablet.
-
-      Secure Transactions
-      Rest assured knowing that your transactions are protected by industry-leading security measures. We employ
-      encryption
-      and multi-factor authentication to safeguard your financial information.
-
-      Bill Pay and Transfers
-      Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time
-      transfers
-      between your accounts with just a few clicks.
     </div>
 
     <div class="faqs">
