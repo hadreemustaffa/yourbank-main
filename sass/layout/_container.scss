@@ -4,6 +4,7 @@
   @include flex(column);
   gap: $space-5xl;
   align-items: center;
+  padding-bottom: $space-6xl;
 }
 
 .container__content {
@@ -29,11 +30,6 @@
       background-size: 40%;
     }
   }
-
-  .container__card {
-    background-color: $grey-10;
-    height: 100%;
-  }
 }
 
 .container__text {
@@ -48,29 +44,63 @@
 }
 
 .container__content-icon {
-  padding: $space-4xs;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(hsl(76, 100%, 60%, 0.1), hsl(76, 100%, 60%, 0) 47%) padding-box,
+    linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0) 72%) border-box;
   border-radius: 50%;
-  background: linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0));
+  padding: $space-2xs;
+  position: relative;
 
-  & .icon {
-    border: 1px solid transparent;
-    background:
-      linear-gradient(hsl(76, 100%, 60%, 0.1), hsl(76, 100%, 60%, 0) 47%) padding-box,
-      linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0) 72%) border-box;
+  &::before {
+    content: "";
+    width: calc(100% + $base-space);
+    height: calc(100% + $base-space);
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    margin: auto;
+    z-index: 0;
+    translate: -50% 0;
     border-radius: 50%;
-    padding: $base-space;
+    background: linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0));
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+
+  &.icon--small {
+    width: 13px;
+    height: 13px;
   }
 }
 
 .container__card {
   @include flex(column);
   gap: $space-xs;
-  align-items: center;
   justify-content: center;
+  text-align: left;
   border-radius: 1.25rem;
+  border: 1px solid $grey-20;
+  height: 100%;
   padding: $space-lg;
   background-repeat: no-repeat;
   background-size: 40%;
+
+  &.container__card--darkest {
+    background-color: $grey-10;
+  }
+  &.container__card--dark {
+    background-color: $grey-11;
+  }
+
+  .container__card-text {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .container__tabs {

@@ -32,7 +32,16 @@
 }
 
 .btn-tertiary {
-  padding: 0.25rem 0;
+  &:hover {
+    color: $green-60;
+  }
+}
+
+.btn-with-icon {
+  @include flex;
+  align-items: center;
+  width: fit-content;
+  gap: 4px;
 }
 
 button#toggleBtn {

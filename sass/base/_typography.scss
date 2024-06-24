@@ -61,6 +61,12 @@ p {
   color: $white;
 }
 
+.container__card {
+  .container__card-name {
+    color: $green-60;
+  }
+}
+
 @include md {
   body {
     font-size: $base-font-size;

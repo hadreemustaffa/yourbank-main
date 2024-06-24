@@ -19,7 +19,7 @@
       <img src="/public/images/dark/logo/logo-mobile.png" alt="">
     </a>
 
-    <nav>
+    <nav id="primary-nav">
       <button type="button" id="toggleBtn" class="btn btn-primary" aria-controls="navDrawer" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
           <path fill-rule="evenodd"
@@ -87,7 +87,7 @@
 
         <div class="container__tabs" role="tablist">
           <button type="button" class="btn btn-primary" role="tab" aria-selected="true">For Individuals</button>
-          <button type="button" class="btn" role="tab" aria-selected="false">For Businesses</button>
+          <button type="button" class="btn btn-tertiary" role="tab" aria-selected="false">For Businesses</button>
         </div>
       </div>
 
@@ -142,28 +142,28 @@
       <div class="container__content">
         <div class="container__content-wrapper">
           <div class="container__content-item bg-curve--left">
-            <div class="container__card">
+            <div class="container__card container__card--darkest align-center">
               <div class="container__content-icon">
                 <img class="icon" src="/public/images/dark/icons/icon-finance.png" alt="">
               </div>
               <p>Managing Personal Finances</p>
             </div>
 
-            <div class="container__card">
+            <div class="container__card container__card--darkest align-center">
               <div class="container__content-icon">
                 <img class="icon" src="/public/images/dark/icons/icon-future-savings.png" alt="">
               </div>
               <p>Saving for the Future</p>
             </div>
 
-            <div class="container__card">
+            <div class="container__card container__card--darkest align-center">
               <div class="container__content-icon">
                 <img class="icon" src="/public/images/dark/icons/icon-homeownership.png" alt="">
               </div>
               <p>Homeownership</p>
             </div>
 
-            <div class="container__card">
+            <div class="container__card container__card--darkest align-center">
               <div class="container__content-icon">
                 <img class="icon" src="/public/images/dark/icons/icon-education.png" alt="">
               </div>
@@ -193,28 +193,28 @@
 
         <div class="container__content-wrapper">
           <div class="container__content-item bg-curve--left">
-            <div class="container__card">
+            <div class="container__card container__card--darkest align-center">
               <div class="container__content-icon">
                 <img class="icon" src="/public/images/dark/icons/icon-finance.png" alt="">
               </div>
               <p>Startups and Entrepreneurs</p>
             </div>
 
-            <div class="container__card">
+            <div class="container__card container__card--darkest align-center">
               <div class="container__content-icon">
                 <img class="icon" src="/public/images/dark/icons/icon-future-savings.png" alt="">
               </div>
               <p>Cash Flow Management</p>
             </div>
 
-            <div class="container__card">
+            <div class="container__card container__card--darkest align-center">
               <div class="container__content-icon">
                 <img class="icon" src="/public/images/dark/icons/icon-homeownership.png" alt="">
               </div>
               <p>Business Expansion</p>
             </div>
 
-            <div class="container__card">
+            <div class="container__card container__card--darkest align-center">
               <div class="container__content-icon">
                 <img class="icon" src="/public/images/dark/icons/icon-education.png" alt="">
               </div>
@@ -247,149 +247,221 @@
     <div class="container container--features">
       <div class="container__text">
         <h2>Our <span>Features</span></h2>
-        <p>
-          Experience a host of powerful features at YourBank, including seamless online banking, secure transactions,
-          and
-          personalized financial insights, all designed to enhance your banking experience
-        </p>
+        <p>Experience a host of powerful features at YourBank, including seamless online banking, secure transactions,
+          and personalized financial insights, all designed to enhance your banking experience</p>
       </div>
 
       <div class="container__content">
-        <div class="container__content-wrapper">
-          <button type="button" class="btn btn-secondary">Online Banking</button>
-          <button type="button" class="btn btn-secondary">Financial Tools</button>
-          <button type="button" class="btn btn-secondary">Customer Support</button>
+        <div class="container__content-wrapper" role="tablist">
+          <button type="button" role="tab" aria-selected="true" class="btn btn-secondary">Online Banking</button>
+          <button type="button" role="tab" aria-selected="false" class="btn btn-secondary">Financial Tools</button>
+          <button type="button" role="tab" aria-selected="false" class="btn btn-secondary">Customer Support</button>
         </div>
 
         <div class="container__content-wrapper">
-          <h3>24/7 Account Access</h3>
-          <p>
-            Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking
-            platform.
-            Check
-            balances, transfer funds, and pay bills with ease.
-          </p>
+          <div class="container__card container__card--dark">
+            <div class="container__card-text">
+              <h3>24/7 Account Access</h3>
+              <img class="icon icon--small" src="/public/images/dark/icons/icon-card-arrow.png" alt="">
+            </div>
+            <p>Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking
+              platform. Check balances, transfer funds, and pay bills with ease.</p>
+          </div>
 
-          <h3>Mobile Banking App</h3>
-          <p>
-            Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your
-            accounts,
-            deposit checks, and make payments from your smartphone or tablet.
-          </p>
+          <div class="container__card container__card--dark">
+            <div class="container__card-text">
+              <h3>Mobile Banking App</h3>
+              <img class="icon icon--small" src="/public/images/dark/icons/icon-card-arrow.png" alt="">
+            </div>
+            <p>Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your
+              accounts, deposit checks, and make payments from your smartphone or tablet.</p>
+          </div>
 
-          <h3>Secure Transactions</h3>
-          <p>
-            Rest assured knowing that your transactions are protected by industry-leading security measures. We employ
-            encryption
-            and multi-factor authentication to safeguard your financial information.
-          </p>
+          <div class="container__card container__card--dark">
+            <div class="container__card-text">
+              <h3>Secure Transactions</h3>
+              <img class="icon icon--small" src="/public/images/dark/icons/icon-card-arrow.png" alt="">
+            </div>
+            <p>Rest assured knowing that your transactions are protected by industry-leading security measures. We
+              employ encryption and multi-factor authentication to safeguard your financial information.</p>
+          </div>
 
-          <h3>Bill Pay and Transfers</h3>
-          <p>
-            Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make
-            one-time
-            transfers
-            between your accounts with just a few clicks.
-          </p>
+          <div class="container__card container__card--dark">
+            <div class="container__card-text">
+              <h3>Bill Pay and Transfers</h3>
+              <img class="icon icon--small" src="/public/images/dark/icons/icon-card-arrow.png" alt="">
+            </div>
+            <p>Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make
+              one-time transfers between your accounts with just a few clicks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--faqs">
+      <div class="container__text">
+        <h2><span>Frequently</span> Asked Questions</h2>
+        <p>Still you have any questions? Contact our Team via support@yourbank.com</p>
+      </div>
+
+      <div class="container__content">
+        <div id="faq-wrapper" class="container__content-wrapper collapse">
+          <div class="container__card container__card--darkest">
+            <h3>How do I open an account with YourBank?</h3>
+            <p>Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account"
+              button. Follow the prompts, provide the required information, and complete the application process. If you
+              have any questions or need assistance, our customer support team is available to help.</p>
+          </div>
+          <div class="container__card container__card--darkest">
+            <h3>What documents do I need to provide to apply for a loan?</h3>
+            <p>
+              The documents required for a loan application may vary depending on the type of loan you are applying for.
+              Generally, you will need to provide identification documents (such as a passport or driver's license),
+              proof
+              of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our
+              loan
+              officers will guide you through the specific requirements during the application process.
+            </p>
+          </div>
+          <div class="container__card container__card--darkest">
+            <h3>How can I access my accounts online?</h3>
+            <p>
+              Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button.
+              Enter your username and password to access your accounts. If you haven't registered for online banking,
+              click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer
+              support team is available to guide you.
+            </p>
+          </div>
+          <div class="container__card container__card--darkest">
+            <h3>Are my transactions and personal information secure?</h3>
+            <p>
+              At YourBank, we prioritize the security of your transactions and personal information. We employ
+              industry-leading encryption and multi-factor authentication to ensure that your data is protected.
+              Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank
+              with
+              confidence knowing that we have robust security systems in place.
+            </p>
+          </div>
+          <div class="container__card container__card--darkest">
+            <h3>What should I do if I forget my password?</h3>
+            <p>
+              If you forget your password, simply click on the "Forgot Password" link on the login page. You will be
+              prompted to enter your registered email address or phone number. Follow the instructions sent to your
+              contact method to reset your password securely. If you encounter any issues, our customer support team is
+              available 24/7 to assist you.
+            </p>
+          </div>
+
+          <div class="container__card container__card--darkest">
+            <h3>How can I dispute a transaction?</h3>
+            <p>
+              To dispute a transaction, log in to your online banking account and navigate to the "Disputes" section.
+              Select the transaction you wish to dispute and provide the required details. You can also contact our
+              customer support team directly for assistance. We will investigate the matter and keep you updated on the
+              status of your dispute.
+            </p>
+          </div>
+        </div>
+
+        <button id="faqButton" type="button" class="btn btn-secondary btn-with-icon mx-auto" aria-controls="faq-wrapper"
+          aria-expanded="false">
+          Load All FAQ’s
+          <img src="/public/images/dark/icons/icon-arrow-down.png" alt="">
+        </button>
+      </div>
+    </div>
+
+    <div class="container container--testimonials">
+      <div class="container__text">
+        <h2>Our <span>Testimonials</span></h2>
+        <p>
+          Discover how YourBank has transformed lives with innovative digital solutions and personalized customer
+          service.
+          See why our clients trust us for a secure and prosperous financial journey
+        </p>
+
+        <div class="container__tabs" role="tablist">
+          <button type="button" class="btn btn-primary" role="tab">For Individuals</button>
+          <button type="button" class="btn btn-tertiary" role="tab">For Businesses</button>
         </div>
       </div>
 
-
-
-
-
-
+      <div class="container__content">
+        <div class="container__card container__card--darkest">
+          <img class="icon icon--large" src="" alt="">
+          <p>YourBank has been my trusted financial partner for years. Their personalized service and innovative digital
+            banking solutions have made managing my finances a breeze.</p>
+          <p class="container__card-name">Sara T</p>
+        </div>
+        <div class="container__card container__card--darkest">
+          <img class="icon icon--large" src="" alt="">
+          <p>I recently started my own business, and YourBank has been instrumental in helping me set up my business
+            accounts and secure the financing I needed. Their expert guidance and tailored solutions have been
+            invaluable.</p>
+          <p class="container__card-name">John D</p>
+        </div>
+        <div class="container__card container__card--darkest">
+          <img class="icon icon--large" src="" alt="">
+          <p>I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and
+            make transactions on the go. The app is user-friendly and secure, giving me peace of mind.</p>
+          <p class="container__card-name">Emily G</p>
+        </div>
+      </div>
     </div>
 
-    <div class="faqs">
-      Frequently Asked Questions
-      Still you have any questions? Contact our Team via support@yourbank.com
-
-      How do I open an account with YourBank?
-      Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button.
-      Follow
-      the
-      prompts, provide the required information, and complete the application process. If you have any questions or need
-      assistance, our customer support team is available to help.
-
-      What documents do I need to provide to apply for a loan?
-      The documents required for a loan application may vary depending on the type of loan you are applying for.
-      Generally,
-      you will need to provide identification documents (such as a passport or driver's license), proof of income (such
-      as
-      pay
-      stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you
-      through
-      the specific requirements during the application process.
-
-      How can I access my accounts online?
-      Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your
-      username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll
-      Now"
-      button and follow the registration process. If you need assistance, our customer support team is available to
-      guide
-      you.
-
-      Are my transactions and personal information secure?
-      At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading
-      encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly
-      update
-      our
-      security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust
-      security
-      systems in place.
-
-      Load All FAQ’s
-    </div>
-
-    <div class="testimonials">
-      Our Testimonials
-      Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service.
-      See
-      why
-      our clients trust us for a secure and prosperous financial journey
-
-      For Individuals
-      For Businesses
-
-      YourBank has been my trusted financial partner for years. Their personalized service and innovative digital
-      banking
-      solutions have made managing my finances a breeze.
-      Sara T
-
-      I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts
-      and
-      secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.
-      John D
-
-      I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and make
-      transactions on the go. The app is user-friendly and secure, giving me peace of mind.
-      Emily G
-    </div>
-
-    <div class="cta">
-      Start your financial journey with YourBank today!
-      Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut
-      imperdiet
-      nulla penatibus. Nascetur viverra arcu sed amet cursus purus.
-      Open Account
+    <div class="container container--cta">
+      <div class="container__card container__card--dark bg-curve--left">
+        <h2>Start your financial journey with <span>YourBank today!</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut
+          imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus.
+        </p>
+        <button type="button" class="btn btn-primary">Open Account</button>
+      </div>
     </div>
   </main>
 
   <footer>
-    <img src="/public/images/dark/logo/logo-mobile.png" alt="">
+    <nav id="secondary-nav" class="footer__nav">
+      <img src="/public/images/dark/logo/logo-mobile.png" alt="">
 
-    Home
-    Careers
-    About
-    Security
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Security</a></li>
+      </ul>
+    </nav>
 
-    hello@skillbirdge.com
-    +91 91813 23 2309
-    Somewhere in the World
+    <div class="line"></div>
 
-    YourBank All Rights Reserved
-    Privacy Policy | Terms of Service
+    <div class="footer__contact-info">
+      <button type="button" class="btn btn-tertiary">
+        <img src="" alt="">
+        hello@skillbirdge.com
+      </button>
+      <button type="button" class="btn btn-tertiary">
+        <img src="" alt="">
+        +91 91813 23 2309
+      </button>
+      <button type="button" class="btn btn-tertiary">
+        <img src="" alt="">
+        Somewhere in the World
+      </button>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="footer__bottom-bar">
+      <div class="footer__socials">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#"><img src="" alt=""></a>
+        <a href="#"><img src="" alt=""></a>
+      </div>
+      <p>YourBank All Rights Reserved</p>
+      <p>Privacy Policy | Terms of Service</p>
+    </div>
+
   </footer>
 
   <script type="module" src="/index.js"></script>
