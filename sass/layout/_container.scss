@@ -67,21 +67,10 @@
   }
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-
-  &.icon--small {
-    width: 13px;
-    height: 13px;
-  }
-}
-
 .container__card {
   @include flex(column);
   gap: $space-xs;
   justify-content: center;
-  text-align: left;
   border-radius: 1.25rem;
   border: 1px solid $grey-20;
   height: 100%;
@@ -94,6 +83,7 @@
   }
   &.container__card--dark {
     background-color: $grey-11;
+    text-align: left;
   }
 
   .container__card-text {

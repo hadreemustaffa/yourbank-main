@@ -1,6 +1,83 @@
 @use "../abstracts/" as *;
 
 footer {
-  background-color: $grey-15;
+  background-color: $grey-11;
   padding: $space-4xl $base-space $space-2xl;
+  @include flex(column);
+  gap: $space-sm;
+  align-items: center;
+
+  .logo {
+    width: 100px;
+  }
+}
+
+.footer__nav {
+  @include flex(column);
+  gap: $space-xl;
+  align-items: center;
+
+  ul {
+    @include flex;
+    gap: $space-xs;
+  }
+}
+
+.footer__contact-info {
+  @include flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: $space-lg;
+}
+
+.footer__bottom-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20px auto auto auto;
+  width: 100%;
+  justify-items: center;
+
+  .footer__socials {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    @include flex;
+    gap: $space-4xs;
+    z-index: 1;
+
+    a {
+      width: fit-content;
+      height: fit-content;
+      padding: $space-2xs;
+      background-color: $green-60;
+      border-radius: 50%;
+    }
+  }
+
+  .container__card {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    width: 100%;
+    padding-top: $space-5xl;
+    align-items: center;
+
+    .footer__info {
+      @include flex;
+      gap: $base-space;
+
+      .footer__link {
+        &:first-child {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            right: -$space-4xs;
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
 }

@@ -29,6 +29,10 @@
 .btn-secondary {
   background-color: $grey-11;
   border: 1px solid $grey-15;
+
+  &:hover {
+    color: $green-60;
+  }
 }
 
 .btn-tertiary {
@@ -56,4 +60,10 @@ button#toggleBtn {
 .drawer__cta .btn {
   width: 100%;
   text-align: center;
+}
+
+footer {
+  .btn-tertiary {
+    padding: 0;
+  }
 }
