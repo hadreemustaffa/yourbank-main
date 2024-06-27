@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A static banking company website based on a free figma template by Produce UI">
+  <link rel="site icon" href="/public/images/dark/icons/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/sass/main.scss">
+  <title>YourBanK</title>
+</head>
+
+<body>
+  <header class="grid-container">
+    <a href="/" class="logo" aria-label="go to homepage">
+      <img src="/public/images/dark/logo/logo-mobile.png" alt="">
+    </a>
+
+    <nav id="primary-nav">
+      <button type="button" id="toggleBtn" class="btn btn-primary" aria-label="navigation toggle button"
+        aria-controls="navDrawer" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <div id="navDrawer" class="drawer">
+        <ul class="drawer__list">
+          <li class="drawer__item">
+            <a href="/yourbank/" class="drawer__link">Home</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/careers/" class="drawer__link">Careers</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/about/" class="drawer__link">About</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/security/" class="drawer__link active">Security</a>
+          </li>
+        </ul>
+
+        <div class="drawer__cta">
+          <a href="/signup" class="btn btn-tertiary">Sign Up</a>
+          <a href="/login" class="btn btn-primary">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="grid-container" id="about">
+
+  </main>
+
+  <footer>
+    <nav id="secondary-nav" class="footer__nav">
+      <a href="/" class="logo" aria-label="go to homepage">
+        <img src="/public/images/dark/logo/logo-mobile.png" alt="">
+      </a>
+
+      <ul>
+        <li><a href="/yourbank/">Home</a></li>
+        <li><a href="/yourbank/careers/">Careers</a></li>
+        <li><a href="/yourbank/about/">About</a></li>
+        <li><a href="/yourbank/security/">Security</a></li>
+      </ul>
+    </nav>
+
+    <div class="line"></div>
+
+    <div class="footer__contact-info">
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="/public/images/dark/icons/envelope-icon.png" alt="">
+        hello@skillbirdge.com
+      </button>
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="/public/images/dark/icons/phone-icon.png" alt="">
+        +91 91813 23 2309
+      </button>
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="/public/images/dark/icons/map-pin-icon.png" alt="">
+        Somewhere in the World
+      </button>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="footer__bottom-bar">
+      <div class="footer__socials">
+        <a href="#" aria-label="facebook"><img class="icon" src="/public/images/dark/icons/facebook-icon.png"
+            alt=""></a>
+        <a href="#" aria-label="twitter"><img class="icon" src="/public/images/dark/icons/twitter-icon.png" alt=""></a>
+        <a href="#" aria-label="linked in"><img class="icon" src="/public/images/dark/icons/linkedin-icon.png"
+            alt=""></a>
+      </div>
+
+      <div class="container__card container__card--darkest">
+        <p class="footer__copyright">YourBank All Rights Reserved</p>
+        <div class="footer__info">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script type="module" src="/index.js"></script>
+
+</body>
+
+</html>

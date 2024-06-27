@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A static banking company website based on a free figma template by Produce UI">
+  <link rel="site icon" href="/public/images/dark/icons/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/sass/main.scss">
+  <title>YourBanK</title>
+</head>
+
+<body>
+  <header class="grid-container">
+    <a href="/" class="logo" aria-label="go to homepage">
+      <img src="/public/images/dark/logo/logo-mobile.png" alt="">
+    </a>
+
+    <nav id="primary-nav">
+      <button type="button" id="toggleBtn" class="btn btn-primary" aria-label="navigation toggle button"
+        aria-controls="navDrawer" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <div id="navDrawer" class="drawer">
+        <ul class="drawer__list">
+          <li class="drawer__item">
+            <a href="/yourbank/" class="drawer__link">Home</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/careers/" class="drawer__link active">Careers</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/about/" class="drawer__link">About</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/security/" class="drawer__link">Security</a>
+          </li>
+        </ul>
+
+        <div class="drawer__cta">
+          <a href="/signup" class="btn btn-tertiary">Sign Up</a>
+          <a href="/login" class="btn btn-primary">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="grid-container" id="careers">
+    <div class="container container--introduction ">
+      <div class="grid-container grid-container--sm container-pattern bg-curve--right">
+        <div class="container__illustration">
+          <img src="/public/images/dark/illustrations/careers-illustration-mobile.png" alt="">
+        </div>
+        <div class="container__text">
+          <h1>Welcome to <span>YourBank</span> Careers!</h1>
+          <p>
+            Join our team and embark on a rewarding journey in the banking industry. At YourBank, we are committed to
+            fostering a culture of excellence and providing opportunities for professional growth. With a focus on
+            innovation, customer service, and integrity, we strive to make a positive impact in the lives of our
+            customers
+            and communities. Join us today and be a part of our mission to shape the future of banking.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--values">
+      <div class="container__text">
+        <h2>Our <span>Values</span></h2>
+        <p>
+          At YourBank, our values form the foundation of our organization and guide our actions. We believe in upholding
+          the highest standards of integrity, delivering exceptional service, and embracing innovation. These values
+          define our culture and shape the way we work together to achieve our goals.
+        </p>
+      </div>
+
+      <div class="container__content">
+        <div class="container__card container__card--transparent">
+          <h3>Integrity</h3>
+          <p>
+            We conduct ourselves with utmost honesty, transparency, and ethical behavior. We believe in doing what is
+            right for our customers, colleagues, and stakeholders, even when faced with difficult choices.
+          </p>
+        </div>
+
+        <div class="container__card container__card--transparent">
+          <h3>Customer Centricity</h3>
+          <p>
+            Our customers are at the heart of everything we do. We are dedicated to understanding their needs, providing
+            personalized solutions, and delivering exceptional service that exceeds expectations.
+          </p>
+        </div>
+
+        <div class="container__card container__card--transparent">
+          <h3>Collaboration</h3>
+          <p>
+            We foster a collaborative and inclusive work environment, where teamwork and diversity are celebrated. By
+            leveraging the unique strengths and perspectives of our employees, we drive innovation and achieve greater
+            success together.
+          </p>
+        </div>
+
+        <div class="container__card container__card--transparent">
+          <h3>Innovation</h3>
+          <p>
+            We embrace change and constantly seek innovative solutions to meet the evolving needs of our customers. We
+            encourage our employees to think creatively, challenge conventions, and explore new ideas to drive the
+            future
+            of banking.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="container container--benefits">
+      <div class="container__text">
+        <h2>Our <span>Benefits</span></h2>
+        <p>
+          At YourBank, we value our employees and are dedicated to their well-being and success. We offer a
+          comprehensive range of benefits designed to support their personal and professional growth.
+        </p>
+      </div>
+
+      <div class="container__content">
+        <div class="container__card container__card--gradient bg-dots--left">
+          <div class="container__card-title">
+            <div class="container__content-icon">
+              <img src="/public/images/dark/icons/presentation-chart-bar-icon.png" alt="">
+            </div>
+            <h3>Competitive Compensation</h3>
+          </div>
+          <p>
+            We provide a competitive salary package that recognizes the skills and expertise of our employees. YourBank
+            believes in rewarding exceptional performance and offering opportunities for financial growth.
+          </p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="container__card container__card--gradient">
+          <div class="container__card-title">
+            <div class="container__content-icon">
+              <img src="/public/images/dark/icons/light-bulb-icon.png" alt="">
+            </div>
+            <h3>Health and Wellness</h3>
+          </div>
+          <p>
+            We prioritize the health and well-being of our employees by providing comprehensive medical, dental, and
+            vision insurance plans. We also offer wellness programs, gym memberships, and resources to support a healthy
+            lifestyle.
+          </p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="container__card container__card--gradient">
+          <div class="container__card-title">
+            <div class="container__content-icon">
+              <img src="/public/images/dark/icons/briefcase-icon.png" alt="">
+            </div>
+            <h3>Retirement Planning</h3>
+          </div>
+          <p>
+            YourBank is committed to helping employees plan for their future. We offer a retirement savings plan with a
+            generous employer match to help them build a secure financial foundation for the long term.
+          </p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="container__card container__card--gradient">
+          <div class="container__card-title">
+            <div class="container__content-icon">
+              <img src="/public/images/dark/icons/inbox-stack-icon.png" alt="">
+            </div>
+            <h3>Work-Life Balance</h3>
+          </div>
+          <p>
+            We understand the importance of maintaining a healthy work-life balance. YourBank offers flexible work
+            arrangements, paid time off, parental leave, and other programs that support employees in managing their
+            personal and professional commitments.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container container--job">
+
+    </div>
+
+    <div class="container container--faqs">
+      <div class="container__text">
+        <h2><span>Frequently</span> Asked Questions</h2>
+        <p>Still you have any questions? Contact our Team via support@yourbank.com</p>
+      </div>
+
+      <div class="container__content">
+        <div id="faq-wrapper" class="container__content-wrapper collapse">
+          <div class="container__card container__card--darkest text-left">
+            <h3>How do I open an account with YourBank?</h3>
+            <div class="line"></div>
+            <p>Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account"
+              button. Follow the prompts, provide the required information, and complete the application process. If you
+              have any questions or need assistance, our customer support team is available to help.</p>
+          </div>
+          <div class="container__card container__card--darkest text-left">
+            <h3>What documents do I need to provide to apply for a loan?</h3>
+            <div class="line"></div>
+            <p>
+              The documents required for a loan application may vary depending on the type of loan you are applying for.
+              Generally, you will need to provide identification documents (such as a passport or driver's license),
+              proof
+              of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our
+              loan
+              officers will guide you through the specific requirements during the application process.
+            </p>
+          </div>
+          <div class="container__card container__card--darkest text-left">
+            <h3>How can I access my accounts online?</h3>
+            <div class="line"></div>
+            <p>
+              Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button.
+              Enter your username and password to access your accounts. If you haven't registered for online banking,
+              click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer
+              support team is available to guide you.
+            </p>
+          </div>
+          <div class="container__card container__card--darkest text-left">
+            <h3>Are my transactions and personal information secure?</h3>
+            <div class="line"></div>
+            <p>
+              At YourBank, we prioritize the security of your transactions and personal information. We employ
+              industry-leading encryption and multi-factor authentication to ensure that your data is protected.
+              Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank
+              with
+              confidence knowing that we have robust security systems in place.
+            </p>
+          </div>
+          <div class="container__card container__card--darkest text-left">
+            <h3>What should I do if I forget my password?</h3>
+            <div class="line"></div>
+            <p>
+              If you forget your password, simply click on the "Forgot Password" link on the login page. You will be
+              prompted to enter your registered email address or phone number. Follow the instructions sent to your
+              contact method to reset your password securely. If you encounter any issues, our customer support team is
+              available 24/7 to assist you.
+            </p>
+          </div>
+
+          <div class="container__card container__card--darkest text-left">
+            <h3>How can I dispute a transaction?</h3>
+            <div class="line"></div>
+            <p>
+              To dispute a transaction, log in to your online banking account and navigate to the "Disputes" section.
+              Select the transaction you wish to dispute and provide the required details. You can also contact our
+              customer support team directly for assistance. We will investigate the matter and keep you updated on the
+              status of your dispute.
+            </p>
+          </div>
+        </div>
+
+        <button id="faqButton" type="button" class="btn btn-secondary btn-with-icon mx-auto" aria-controls="faq-wrapper"
+          aria-expanded="false">
+          Load All FAQ’s
+          <img src="/public/images/dark/icons/chevron-down-icon.png" alt="">
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <nav id="secondary-nav" class="footer__nav">
+      <a href="/" class="logo" aria-label="go to homepage">
+        <img src="/public/images/dark/logo/logo-mobile.png" alt="">
+      </a>
+
+      <ul>
+        <li><a href="/yourbank/">Home</a></li>
+        <li><a href="/yourbank/careers/">Careers</a></li>
+        <li><a href="/yourbank/about/">About</a></li>
+        <li><a href="/yourbank/security/">Security</a></li>
+      </ul>
+    </nav>
+
+    <div class="line"></div>
+
+    <div class="footer__contact-info">
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="/public/images/dark/icons/envelope-icon.png" alt="">
+        hello@skillbirdge.com
+      </button>
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="/public/images/dark/icons/phone-icon.png" alt="">
+        +91 91813 23 2309
+      </button>
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="/public/images/dark/icons/map-pin-icon.png" alt="">
+        Somewhere in the World
+      </button>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="footer__bottom-bar">
+      <div class="footer__socials">
+        <a href="#" aria-label="facebook"><img class="icon" src="/public/images/dark/icons/facebook-icon.png"
+            alt=""></a>
+        <a href="#" aria-label="twitter"><img class="icon" src="/public/images/dark/icons/twitter-icon.png" alt=""></a>
+        <a href="#" aria-label="linked in"><img class="icon" src="/public/images/dark/icons/linkedin-icon.png"
+            alt=""></a>
+      </div>
+
+      <div class="container__card container__card--darkest">
+        <p class="footer__copyright">YourBank All Rights Reserved</p>
+        <div class="footer__info">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script type="module" src="/index.js"></script>
+  <script type="module" src="/faq.js"></script>
+
+</body>
+
+</html>
