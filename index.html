@@ -9,18 +9,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="sass/main.scss">
+  <link rel="stylesheet" href="/sass/main.scss">
   <title>YourBanK</title>
 </head>
 
 <body>
   <header class="grid-container">
-    <a href="/" class="logo">
+    <a href="/" class="logo" aria-label="go to homepage">
       <img src="/public/images/dark/logo/logo-mobile.png" alt="">
     </a>
 
     <nav id="primary-nav">
-      <button type="button" id="toggleBtn" class="btn btn-primary" aria-controls="navDrawer" aria-expanded="false">
+      <button type="button" id="toggleBtn" class="btn btn-primary" aria-label="navigation toggle button"
+        aria-controls="navDrawer" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
           <path fill-rule="evenodd"
             d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
@@ -31,16 +32,16 @@
       <div id="navDrawer" class="drawer">
         <ul class="drawer__list">
           <li class="drawer__item">
-            <a href="/" class="drawer__link active">Home</a>
+            <a href="/yourbank/" class="drawer__link active">Home</a>
           </li>
           <li class="drawer__item">
-            <a href="/careers" class="drawer__link">Careers</a>
+            <a href="/yourbank/careers/" class="drawer__link">Careers</a>
           </li>
           <li class="drawer__item">
-            <a href="/about" class="drawer__link">About</a>
+            <a href="/yourbank/about/" class="drawer__link">About</a>
           </li>
           <li class="drawer__item">
-            <a href="/security" class="drawer__link">Security</a>
+            <a href="/yourbank/security/" class="drawer__link">Security</a>
           </li>
         </ul>
 
@@ -53,11 +54,11 @@
   </header>
 
   <main class="grid-container" id="home">
-    <div class="hero">
+    <div class="hero container">
       <div class="hero__introduction">
         <div class="hero__subcontainer">
           <p class="hero__value-proposition">
-            <img src="/public/images/dark/icons/icon-check.svg" alt="">
+            <img src="/public/images/dark/icons/check-badge-icon.png" alt="">
             No LLC Required, No Credit Check.
           </p>
 
@@ -72,7 +73,7 @@
         <a href="/signup" class="hero__cta btn btn-primary">Open Account</a>
       </div>
 
-      <div class="hero__illustration">
+      <div class="hero__illustration bg-dots--arrow">
         <img src="/public/images/dark/illustrations/hero-illustration-mobile.png" alt="">
       </div>
     </div>
@@ -86,15 +87,17 @@
         </div>
 
         <div class="container__tabs" role="tablist">
-          <button type="button" class="btn btn-primary" role="tab" aria-selected="true">For Individuals</button>
-          <button type="button" class="btn btn-tertiary" role="tab" aria-selected="false">For Businesses</button>
+          <button type="button" class="btn btn-primary" role="tab" aria-selected="true" tabindex="0">For
+            Individuals</button>
+          <button type="button" class="btn btn-tertiary" role="tab" aria-selected="false" tabindex="-1">For
+            Businesses</button>
         </div>
       </div>
 
       <div class="container__content">
         <article class="container__content-item">
           <div class="container__content-icon">
-            <img src="/public/images/dark/icons/icon-briefcase.svg" alt="" class="icon">
+            <img src="/public/images/dark/icons/briefcase-icon.png" alt="" class="icon">
           </div>
 
           <h3>Checking Accounts</h3>
@@ -107,7 +110,7 @@
 
         <article class="container__content-item">
           <div class="container__content-icon">
-            <img src="/public/images/dark/icons/icon-savings.svg" alt="" class="icon">
+            <img src="/public/images/dark/icons/savings-icon.png" alt="" class="icon">
           </div>
 
           <h3>Savings Accounts</h3>
@@ -120,7 +123,7 @@
 
         <article class="container__content-item">
           <div class="container__content-icon">
-            <img src="/public/images/dark/icons/icon-loans.svg" alt="" class="icon">
+            <img src="/public/images/dark/icons/banknotes-icon.png" alt="" class="icon">
           </div>
 
           <h3>Loans and Mortgages</h3>
@@ -141,31 +144,31 @@
 
       <div class="container__content">
         <div class="container__content-wrapper">
-          <div class="container__content-item bg-curve--left">
-            <div class="container__card container__card--darkest align-center">
+          <div class="container__content-item container-pattern bg-curve--left">
+            <div class="container__card container__card--darkest align-center text-center">
               <div class="container__content-icon">
-                <img class="icon" src="/public/images/dark/icons/icon-finance.png" alt="">
+                <img class="icon" src="/public/images/dark/icons/money-icon.png" alt="">
               </div>
               <p>Managing Personal Finances</p>
             </div>
 
-            <div class="container__card container__card--darkest align-center">
+            <div class="container__card container__card--darkest align-center text-center">
               <div class="container__content-icon">
-                <img class="icon" src="/public/images/dark/icons/icon-future-savings.png" alt="">
+                <img class="icon" src="/public/images/dark/icons/savings-icon.png" alt="">
               </div>
               <p>Saving for the Future</p>
             </div>
 
-            <div class="container__card container__card--darkest align-center">
+            <div class="container__card container__card--darkest align-center text-center">
               <div class="container__content-icon">
-                <img class="icon" src="/public/images/dark/icons/icon-homeownership.png" alt="">
+                <img class="icon" src="/public/images/dark/icons/building-library-icon.png" alt="">
               </div>
               <p>Homeownership</p>
             </div>
 
-            <div class="container__card container__card--darkest align-center">
+            <div class="container__card container__card--darkest align-center text-center">
               <div class="container__content-icon">
-                <img class="icon" src="/public/images/dark/icons/icon-education.png" alt="">
+                <img class="icon" src="/public/images/dark/icons/book-open-icon.png" alt="">
               </div>
               <p>Education Funding</p>
             </div>
@@ -179,7 +182,7 @@
                 financially secure future for our customers.</p>
             </div>
 
-            <div class="container__text container__stats">
+            <div class="container__stats">
               <p><span>78%</span>Secure Retirement Planning</p>
               <div class="line line--dotted"></div>
               <p><span>63%</span>Manageable Debt Consolidation</p>
@@ -192,31 +195,31 @@
         </div>
 
         <div class="container__content-wrapper">
-          <div class="container__content-item bg-curve--left">
-            <div class="container__card container__card--darkest align-center">
+          <div class="container__content-item container-pattern bg-curve--left">
+            <div class="container__card container__card--darkest align-center text-center">
               <div class="container__content-icon">
-                <img class="icon" src="/public/images/dark/icons/icon-finance.png" alt="">
+                <img class="icon" src="/public/images/dark/icons/building-office-2-icon.png" alt="">
               </div>
               <p>Startups and Entrepreneurs</p>
             </div>
 
-            <div class="container__card container__card--darkest align-center">
+            <div class="container__card container__card--darkest align-center text-center">
               <div class="container__content-icon">
-                <img class="icon" src="/public/images/dark/icons/icon-future-savings.png" alt="">
+                <img class="icon" src="/public/images/dark/icons/banknotes-icon.png" alt="">
               </div>
               <p>Cash Flow Management</p>
             </div>
 
-            <div class="container__card container__card--darkest align-center">
+            <div class="container__card container__card--darkest align-center text-center">
               <div class="container__content-icon">
-                <img class="icon" src="/public/images/dark/icons/icon-homeownership.png" alt="">
+                <img class="icon" src="/public/images/dark/icons/presentation-chart-bar-icon.png" alt="">
               </div>
               <p>Business Expansion</p>
             </div>
 
-            <div class="container__card container__card--darkest align-center">
+            <div class="container__card container__card--darkest align-center text-center">
               <div class="container__content-icon">
-                <img class="icon" src="/public/images/dark/icons/icon-education.png" alt="">
+                <img class="icon" src="/public/images/dark/icons/currency-dollar-icon.png" alt="">
               </div>
               <p>Payment Solutions</p>
             </div>
@@ -230,7 +233,7 @@
                 committed to providing the right tools and support to achieve them.</p>
             </div>
 
-            <div class="container__text container__stats">
+            <div class="container__stats">
               <p><span>65%</span>Cash Flow Management</p>
               <div class="line line--dotted"></div>
               <p><span>70%</span>Drive Business Expansion</p>
@@ -252,44 +255,50 @@
       </div>
 
       <div class="container__content">
-        <div class="container__content-wrapper" role="tablist">
-          <button type="button" role="tab" aria-selected="true" class="btn btn-secondary">Online Banking</button>
-          <button type="button" role="tab" aria-selected="false" class="btn btn-secondary">Financial Tools</button>
-          <button type="button" role="tab" aria-selected="false" class="btn btn-secondary">Customer Support</button>
+        <div class="container__tabs" role="tablist">
+          <button type="button" role="tab" aria-selected="true" tabindex="0" class="btn btn-secondary">
+            Online Banking
+          </button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" class="btn btn-secondary">
+            Financial Tools
+          </button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" class="btn btn-secondary">
+            Customer Support
+          </button>
         </div>
 
         <div class="container__content-wrapper">
           <div class="container__card container__card--dark">
-            <div class="container__card-text">
+            <div class="container__card-title justify-between">
               <h3>24/7 Account Access</h3>
-              <img class="icon icon--small" src="/public/images/dark/icons/icon-card-arrow.png" alt="">
+              <img class="icon" src="/public/images/dark/icons/arrow-up-right-icon.png" alt="">
             </div>
             <p>Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking
               platform. Check balances, transfer funds, and pay bills with ease.</p>
           </div>
 
           <div class="container__card container__card--dark">
-            <div class="container__card-text">
+            <div class="container__card-title justify-between">
               <h3>Mobile Banking App</h3>
-              <img class="icon icon--small" src="/public/images/dark/icons/icon-card-arrow.png" alt="">
+              <img class="icon" src="/public/images/dark/icons/arrow-up-right-icon.png" alt="">
             </div>
             <p>Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your
               accounts, deposit checks, and make payments from your smartphone or tablet.</p>
           </div>
 
           <div class="container__card container__card--dark">
-            <div class="container__card-text">
+            <div class="container__card-title justify-between">
               <h3>Secure Transactions</h3>
-              <img class="icon icon--small" src="/public/images/dark/icons/icon-card-arrow.png" alt="">
+              <img class="icon" src="/public/images/dark/icons/arrow-up-right-icon.png" alt="">
             </div>
             <p>Rest assured knowing that your transactions are protected by industry-leading security measures. We
               employ encryption and multi-factor authentication to safeguard your financial information.</p>
           </div>
 
           <div class="container__card container__card--dark">
-            <div class="container__card-text">
+            <div class="container__card-title justify-between">
               <h3>Bill Pay and Transfers</h3>
-              <img class="icon icon--small" src="/public/images/dark/icons/icon-card-arrow.png" alt="">
+              <img class="icon" src="/public/images/dark/icons/arrow-up-right-icon.png" alt="">
             </div>
             <p>Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make
               one-time transfers between your accounts with just a few clicks.</p>
@@ -306,14 +315,14 @@
 
       <div class="container__content">
         <div id="faq-wrapper" class="container__content-wrapper collapse">
-          <div class="container__card container__card--darkest text-left">
+          <div class="container__card container__card--darkest">
             <h3>How do I open an account with YourBank?</h3>
             <div class="line"></div>
             <p>Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account"
               button. Follow the prompts, provide the required information, and complete the application process. If you
               have any questions or need assistance, our customer support team is available to help.</p>
           </div>
-          <div class="container__card container__card--darkest text-left">
+          <div class="container__card container__card--darkest">
             <h3>What documents do I need to provide to apply for a loan?</h3>
             <div class="line"></div>
             <p>
@@ -325,7 +334,7 @@
               officers will guide you through the specific requirements during the application process.
             </p>
           </div>
-          <div class="container__card container__card--darkest text-left">
+          <div class="container__card container__card--darkest">
             <h3>How can I access my accounts online?</h3>
             <div class="line"></div>
             <p>
@@ -335,7 +344,7 @@
               support team is available to guide you.
             </p>
           </div>
-          <div class="container__card container__card--darkest text-left">
+          <div class="container__card container__card--darkest">
             <h3>Are my transactions and personal information secure?</h3>
             <div class="line"></div>
             <p>
@@ -346,7 +355,7 @@
               confidence knowing that we have robust security systems in place.
             </p>
           </div>
-          <div class="container__card container__card--darkest text-left">
+          <div class="container__card container__card--darkest">
             <h3>What should I do if I forget my password?</h3>
             <div class="line"></div>
             <p>
@@ -357,7 +366,7 @@
             </p>
           </div>
 
-          <div class="container__card container__card--darkest text-left">
+          <div class="container__card container__card--darkest">
             <h3>How can I dispute a transaction?</h3>
             <div class="line"></div>
             <p>
@@ -372,7 +381,7 @@
         <button id="faqButton" type="button" class="btn btn-secondary btn-with-icon mx-auto" aria-controls="faq-wrapper"
           aria-expanded="false">
           Load All FAQ’s
-          <img src="/public/images/dark/icons/icon-arrow-down.png" alt="">
+          <img src="/public/images/dark/icons/chevron-down-icon.png" alt="">
         </button>
       </div>
     </div>
@@ -387,42 +396,54 @@
         </p>
 
         <div class="container__tabs" role="tablist">
-          <button type="button" class="btn btn-primary" role="tab">For Individuals</button>
-          <button type="button" class="btn btn-tertiary" role="tab">For Businesses</button>
+          <button type="button" class="btn btn-primary" role="tab" aria-selected="true" tabindex="0">For
+            Individuals</button>
+          <button type="button" class="btn btn-tertiary" role="tab" aria-selected="false" tabindex="-1">For
+            Businesses</button>
         </div>
       </div>
 
       <div class="container__content">
-        <div class="container__card container__card--darkest">
+        <div class="container__card container__card--darkest hidden">
           <div class="container__card-icon">
-            <img class="icon icon--large" src="/public/images/dark/icons/icon-quote.png" alt="">
+            <img class="icon icon--xl" src="/public/images/dark/icons/quote-icon.png" alt="">
           </div>
           <p>YourBank has been my trusted financial partner for years. Their personalized service and innovative digital
             banking solutions have made managing my finances a breeze.</p>
           <p class="container__card-name">Sara T</p>
         </div>
+
         <div class="container__card container__card--darkest">
           <div class="container__card-icon">
-            <img class="icon icon--large" src="/public/images/dark/icons/icon-quote.png" alt="">
+            <img class="icon icon--xl" src="/public/images/dark/icons/quote-icon.png" alt="">
           </div>
           <p>I recently started my own business, and YourBank has been instrumental in helping me set up my business
             accounts and secure the financing I needed. Their expert guidance and tailored solutions have been
             invaluable.</p>
           <p class="container__card-name">John D</p>
         </div>
-        <div class="container__card container__card--darkest">
+
+        <div class="container__card container__card--darkest hidden">
           <div class="container__card-icon">
-            <img class="icon icon--large" src="/public/images/dark/icons/icon-quote.png" alt="">
+            <img class="icon icon--xl" src="/public/images/dark/icons/quote-icon.png" alt="">
           </div>
           <p>I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and
             make transactions on the go. The app is user-friendly and secure, giving me peace of mind.</p>
           <p class="container__card-name">Emily G</p>
         </div>
+        <div class="container__card-btn">
+          <button type="button" id="btnPrevious" class="btn btn-secondary" aria-label="go to previous">
+            <img class="icon icon--lg" src="/public/images/dark/icons/arrow-small-icon.png" alt="">
+          </button>
+          <button type="button" id="btnNext" class="btn btn-secondary" aria-label="go to next">
+            <img class="icon icon--lg" src="/public/images/dark/icons/arrow-small-icon.png" alt="">
+          </button>
+        </div>
       </div>
     </div>
 
     <div class="container container--cta">
-      <div class="container__card container__card--dark bg-curve--left">
+      <div class="container__card container__card--dark container-pattern bg-curve--left">
         <h2>Start your financial journey with <span>YourBank today!</span></h2>
         <p>
           Enjoy seamless, secure, and convenient financial solutions tailored just for you. Unlock a world of
@@ -435,29 +456,31 @@
 
   <footer>
     <nav id="secondary-nav" class="footer__nav">
-      <img class="logo" src="/public/images/dark/logo/logo-mobile.png" alt="">
+      <a href="/" class="logo" aria-label="go to homepage">
+        <img src="/public/images/dark/logo/logo-mobile.png" alt="">
+      </a>
 
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Careers</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Security</a></li>
+        <li><a href="/yourbank/">Home</a></li>
+        <li><a href="/yourbank/careers/">Careers</a></li>
+        <li><a href="/yourbank/about/">About</a></li>
+        <li><a href="/yourbank/security/">Security</a></li>
       </ul>
     </nav>
 
     <div class="line"></div>
 
     <div class="footer__contact-info">
-      <button type="button" class="btn btn-tertiary flex align-center gap-4xs">
-        <img class="icon" src="/public/images/dark/icons/icon-mail.png" alt="">
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="/public/images/dark/icons/envelope-icon.png" alt="">
         hello@skillbirdge.com
       </button>
-      <button type="button" class="btn btn-tertiary flex align-center gap-4xs">
-        <img class="icon" src="/public/images/dark/icons/icon-phone.png" alt="">
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="/public/images/dark/icons/phone-icon.png" alt="">
         +91 91813 23 2309
       </button>
-      <button type="button" class="btn btn-tertiary flex align-center gap-4xs">
-        <img class="icon" src="/public/images/dark/icons/icon-location-pin.png" alt="">
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="/public/images/dark/icons/map-pin-icon.png" alt="">
         Somewhere in the World
       </button>
     </div>
@@ -466,9 +489,11 @@
 
     <div class="footer__bottom-bar">
       <div class="footer__socials">
-        <a href="#"><img class="icon" src="/public/images/dark/icons/icon-facebook.png" alt=""></a>
-        <a href="#"><img class="icon" src="/public/images/dark/icons/icon-x-twitter.png" alt=""></a>
-        <a href="#"><img class="icon" src="/public/images/dark/icons/icon-linkedin.png" alt=""></a>
+        <a href="#" aria-label="facebook"><img class="icon" src="/public/images/dark/icons/facebook-icon.png"
+            alt=""></a>
+        <a href="#" aria-label="twitter"><img class="icon" src="/public/images/dark/icons/twitter-icon.png" alt=""></a>
+        <a href="#" aria-label="linked in"><img class="icon" src="/public/images/dark/icons/linkedin-icon.png"
+            alt=""></a>
       </div>
 
       <div class="container__card container__card--darkest">
@@ -483,6 +508,8 @@
   </footer>
 
   <script type="module" src="/index.js"></script>
+  <script type="module" src="/testimonials.js"></script>
+  <script type="module" src="/faq.js"></script>
 </body>
 
 </html>
