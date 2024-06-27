@@ -1,7 +1,6 @@
 @use "../abstracts/" as *;
 
 .hero {
-  grid-area: 1 / 1 / 1 / -1;
   @include subgrid;
   row-gap: 3.125rem;
 }
@@ -13,6 +12,7 @@
 }
 
 .hero__introduction {
+  grid-area: 1 / 1 / 1 / -1;
   @include flex(column);
   align-items: center;
   gap: 2rem;
@@ -29,6 +29,11 @@
 .hero__text {
   @include flex(column);
   gap: 0.75rem;
+
+  &.hero__text-wrapper {
+    background-color: $grey-10;
+    padding: $space-xl;
+  }
 }
 
 .hero__cta {
@@ -41,13 +46,4 @@
   position: relative;
   justify-self: center;
   z-index: 0;
-
-  &::after {
-    content: url("../../public/images/dark/abstracts/bg-arrow.png");
-    position: absolute;
-    top: 0;
-    right: -1rem;
-    width: 220px;
-    z-index: -1;
-  }
 }

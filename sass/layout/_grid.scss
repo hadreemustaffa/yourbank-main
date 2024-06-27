@@ -4,16 +4,15 @@ $grid-columns-small: 6;
 $grid-columns-large: 12;
 
 .grid-container {
-  max-width: 600px;
-  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat($grid-columns-small, 1fr);
   column-gap: 1rem;
   text-align: center;
 }
 
-@include lg {
-  .grid-container {
-    max-width: 1200px;
-  }
+.grid-container--sm {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 40px auto;
+  padding-bottom: $space-6xl;
+  gap: 0;
 }

@@ -65,6 +65,14 @@ p {
   .container__card-name {
     color: $green-60;
   }
+
+  &.container__card--transparent {
+    h3 {
+      font-size: $font-size-5xl;
+      font-weight: $font-weight-medium;
+      color: $grey-30;
+    }
+  }
 }
 
 @include md {
