@@ -50,3 +50,49 @@
     column-gap: $space-sm;
   }
 }
+
+.container__card-article {
+  gap: $space-2xl;
+
+  .article__content {
+    @include flex(column);
+    gap: $space-2xl;
+  }
+
+  .article__header,
+  .article__text,
+  .article__list {
+    @include flex(column);
+    gap: $space-lg;
+  }
+
+  .article__header {
+    .article__header-wrapper {
+      @include flex;
+      gap: $space-3xs;
+      flex-wrap: wrap;
+
+      p {
+        padding: $space-4xs $base-space;
+        border: 1px solid $grey-15;
+        background-color: $grey-10;
+        border-radius: $space-2xl;
+      }
+    }
+  }
+
+  .article__list {
+    ul {
+      @include flex(column);
+      gap: $space-lg;
+      li {
+        @include flex;
+        gap: $space-3xs;
+      }
+    }
+  }
+
+  .btn {
+    width: fit-content;
+  }
+}

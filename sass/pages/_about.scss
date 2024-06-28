@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.container--mission {
+  .container__card-wrapper {
+    border-top-left-radius: $space-3xl;
+    border-top-right-radius: $space-3xl;
+    .container__text {
+      padding-top: $space-2xl;
+    }
+  }
+
+  .container__card {
+    height: fit-content;
+    padding: $space-lg $space-lg 0;
+    border: 1px solid $grey-15;
+    border-bottom: 2px solid $green-60;
+    background-image: url("/public/images/dark/abstracts/bg-radial.png");
+
+    img {
+      width: 100%;
+    }
+  }
+}

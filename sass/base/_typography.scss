@@ -38,6 +38,12 @@ h3 {
   font-size: $font-size-xl;
 }
 
+h4 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: 1.5;
+}
+
 p,
 .footer__bottom-bar {
   color: $grey-70;
