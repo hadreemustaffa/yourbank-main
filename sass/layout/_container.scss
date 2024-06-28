@@ -39,7 +39,7 @@
   .container__text {
     grid-area: 2 / 1 / -1 / 1;
     padding: $space-xl;
-    border-radius: 20px;
+    border-radius: $space-lg;
     background-color: $grey-10;
   }
   .container-pattern {
@@ -79,6 +79,7 @@
 }
 
 .container__content-icon {
+  margin: 0 auto;
   border: 1px solid transparent;
   background:
     linear-gradient(hsl(76, 100%, 60%, 0.1), hsl(76, 100%, 60%, 0) 47%) padding-box,
@@ -102,59 +103,10 @@
   }
 }
 
-.container__card {
-  @include flex(column);
-  gap: $space-xs;
-  border-radius: 10px;
-  height: 100%;
-  padding: $space-lg;
-  background-repeat: no-repeat;
-  background-size: 40%;
-  text-align: left;
-
-  &.container__card--darkest {
-    background-color: $grey-10;
-    border: 1px solid $grey-20;
-  }
-  &.container__card--dark {
-    background-color: $grey-11;
-    border: 1px solid $grey-20;
-  }
-  &.container__card--transparent {
-    background-color: transparent;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 2px;
-      height: calc(100% - $space-3xl);
-      background-color: $green-60;
-      top: 50%;
-      left: 0;
-      translate: 0 -50%;
-    }
-  }
-  &.container__card--gradient {
-    background: $grey-11;
-    background: linear-gradient(104.68deg, hsla(76, 100%, 60%, 0.05) -29.1%, hsla(76, 100%, 60%, 0) 25.24%),
-      linear-gradient(267.5deg, $grey-11 40.67%, hsla(0, 0%, 11%, 0) 99.81%);
-    border-top-left-radius: $space-3xl;
-    border-top-right-radius: $space-3xl;
-    padding: $space-xl;
-    gap: $space-lg;
-  }
-
-  .container__card-title {
-    @include flex;
-    align-items: center;
-    gap: $space-sm;
-  }
-}
-
 .container__tabs {
   @include flex;
   padding: $space-2xs;
-  border-radius: 5rem;
+  border-radius: $space-6xl;
   align-self: center;
   background-color: $grey-11;
   border: 1px solid $grey-15;

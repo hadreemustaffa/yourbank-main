@@ -38,7 +38,8 @@ h3 {
   font-size: $font-size-xl;
 }
 
-p {
+p,
+.footer__bottom-bar {
   color: $grey-70;
   font-weight: $font-weight-light;
 }
