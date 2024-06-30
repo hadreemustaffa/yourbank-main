@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.container--form {
+  background-color: $grey-11;
+  border-radius: $space-lg;
+  border: 1px solid $grey-15;
+  padding: $space-2xl;
+
+  form {
+    .form__input-container {
+      @include flex(column);
+      gap: $space-lg;
+    }
+  }
+}
