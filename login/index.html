@@ -64,34 +64,38 @@
         <div class="form__input-container">
           <div class="form__input">
             <label for="inputEmail" class="sr-only">Email:</label>
-            <input type="email" name="email" id="inputEmail">
+            <input type="email" name="email" id="inputEmail" placeholder="Enter your email">
             <p class="container__error-message"></p>
           </div>
           <div class="form__input">
             <label for="inputPassword" class="sr-only">Password:</label>
-            <input type="text" name="password" id="inputPassword">
+            <input type="text" name="password" id="inputPassword" placeholder="Enter your password">
             <p class="container__error-message"></p>
           </div>
         </div>
 
-        <a href="#">Forgot Password?</a>
+        <a href="#" id="forgotPassword">Forgot Password?</a>
 
         <div class="form__button-container">
-          <button type="button" class="btn btn-primary">Login</button>
-          <a href="#" class="btn">Sign Up</a>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <a href="/yourbank/signup/" id="signUp" class="btn btn-tertiary">Sign Up</a>
 
           <div class="form__social-container">
-            <p>Or Continue with</p>
+            <div class="form__social-text">
+              <div class="line"></div>
+              <p>Or continue with</p>
+              <div class="line"></div>
+            </div>
             <div class="form__social">
-              <div class="form__icon-container container__content-icon">
-                <img class="icon icon--lg" src="/public/images/dark/icons/banknotes-icon.png" alt="">
-              </div>
-              <div class="form__icon-container container__content-icon">
-                <img class="icon icon--lg" src="/public/images/dark/icons/banknotes-icon.png" alt="">
-              </div>
-              <div class="form__icon-container container__content-icon">
-                <img class="icon icon--lg" src="/public/images/dark/icons/banknotes-icon.png" alt="">
-              </div>
+              <a href="#goggle" class="form__icon-container container__content-icon">
+                <img class="icon icon--lg" src="/public/images/dark/icons/google-green-icon.png" alt="">
+              </a>
+              <a href="#facebook" class="form__icon-container container__content-icon">
+                <img class="icon icon--lg" src="/public/images/dark/icons/facebook-green-icon.png" alt="">
+              </a>
+              <a href="#apple" class="form__icon-container container__content-icon">
+                <img class="icon icon--lg" src="/public/images/dark/icons/apple-green-icon.png" alt="">
+              </a>
             </div>
           </div>
         </div>

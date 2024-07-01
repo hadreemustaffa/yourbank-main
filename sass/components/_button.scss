@@ -45,6 +45,11 @@
   &:hover {
     color: $green-60;
   }
+
+  &#signUp {
+    background-color: $grey-15;
+    border: 1px solid $grey-20;
+  }
 }
 
 .btn-with-icon {

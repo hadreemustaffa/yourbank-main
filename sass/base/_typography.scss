@@ -18,6 +18,10 @@ a {
   &:hover {
     color: $green-60;
   }
+
+  &#forgotPassword {
+    text-decoration: underline;
+  }
 }
 
 h1 {

@@ -7,9 +7,53 @@
   padding: $space-2xl;
 
   form {
+    width: 100%;
+    align-items: center;
+
     .form__input-container {
       @include flex(column);
       gap: $space-lg;
+      width: 100%;
+
+      .form__input {
+        @include flex(column);
+        text-align: left;
+
+        input {
+          background-color: $grey-10;
+          border: 1px solid $grey-15;
+          padding: $base-space;
+          border-radius: $space-xl;
+          color: $white;
+        }
+      }
+    }
+
+    .form__button-container {
+      @include flex(column);
+      width: 100%;
+      gap: $space-xl;
+    }
+    .form__social-container {
+      @include flex(column);
+      gap: $space-xl;
+      align-items: center;
+
+      .form__social-text {
+        @include flex;
+        gap: $base-space;
+        align-items: center;
+        width: 100%;
+
+        .line {
+          flex: 1;
+        }
+      }
+      .form__social {
+        @include flex;
+        gap: $space-xl;
+        justify-content: center;
+      }
     }
   }
 }
