@@ -9,11 +9,18 @@ body {
 
 header {
   grid-area: 1 / 2 / 1 / 2;
+  width: 100%;
 }
 main {
   grid-area: 2 / 2 / 2 / 2;
   padding-bottom: 2rem;
   gap: $space-6xl;
+}
+
+header,
+main {
+  margin: 0 auto;
+  max-width: 550px;
 }
 
 footer {
@@ -28,11 +35,21 @@ ul {
   body {
     grid-template-columns: $space-2xl auto $space-2xl;
   }
+
+  header,
+  main {
+    max-width: 85%;
+  }
 }
 
 @include lg {
   body {
     grid-template-columns: $space-4xl auto $space-4xl;
+  }
+
+  header,
+  main {
+    max-width: 100%;
   }
 }
 @include xl {

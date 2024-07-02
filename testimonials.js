@@ -5,26 +5,57 @@ const btnPrevious = testimonials.querySelector('#btnPrevious');
 
 let cardIndex = 1;
 let lastIndex = testimonialCards.length - 1;
-btnNext.addEventListener('click', () => {
-  if (cardIndex === lastIndex) {
-    cardIndex = 0;
-    testimonialCards[cardIndex].classList.remove('hidden');
-    testimonialCards[lastIndex].classList.add('hidden');
+
+const goToNext = () => {
+  btnNext.addEventListener('click', () => {
+    if (cardIndex === lastIndex) {
+      cardIndex = 0;
+      testimonialCards[cardIndex].classList.remove('hidden');
+      testimonialCards[lastIndex].classList.add('hidden');
+    } else {
+      testimonialCards[cardIndex].classList.add('hidden');
+      cardIndex++;
+      testimonialCards[cardIndex].classList.remove('hidden');
+    }
+  });
+};
+
+const goToPrevious = () => {
+  btnPrevious.addEventListener('click', () => {
+    if (cardIndex === 0) {
+      testimonialCards[cardIndex].classList.add('hidden');
+      cardIndex = lastIndex;
+      testimonialCards[cardIndex].classList.remove('hidden');
+    } else {
+      testimonialCards[cardIndex].classList.add('hidden');
+      cardIndex--;
+      testimonialCards[cardIndex].classList.remove('hidden');
+    }
+  });
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.innerWidth < 992) {
+    testimonialCards[0].classList.add('hidden');
+    testimonialCards[2].classList.add('hidden');
+    goToNext();
+    goToPrevious();
   } else {
-    testimonialCards[cardIndex].classList.add('hidden');
-    cardIndex++;
-    testimonialCards[cardIndex].classList.remove('hidden');
+    testimonialCards.forEach((card) => {
+      card.classList.remove('hidden');
+    });
   }
 });
 
-btnPrevious.addEventListener('click', () => {
-  if (cardIndex === 0) {
-    cardIndex = lastIndex;
-    testimonialCards[lastIndex].classList.remove('hidden');
-    testimonialCards[0].classList.add('hidden');
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 992) {
+    testimonialCards.forEach((card) => {
+      card.classList.remove('hidden');
+    });
   } else {
-    testimonialCards[cardIndex].classList.add('hidden');
-    cardIndex--;
-    testimonialCards[cardIndex].classList.remove('hidden');
+    testimonialCards[0].classList.add('hidden');
+    testimonialCards[2].classList.add('hidden');
+    goToNext();
+    goToPrevious();
   }
 });

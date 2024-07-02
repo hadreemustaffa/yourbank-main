@@ -68,75 +68,78 @@
   }
 }
 
-.container--testimonials {
-  .container__card {
-    align-items: center;
-    text-align: center;
+@include md {
+  .container--cases {
+    .container__stats {
+      flex-direction: row;
 
-    .container__card-icon {
-      width: 100%;
-      position: relative;
+      .line {
+        height: 100%;
 
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        width: calc(50% - 22px - 16px);
-        height: 1px;
-        background-color: $grey-15;
-      }
-      &::before {
-        top: 50%;
-        left: 0;
-        translate: 0 -50%;
-      }
-      &::after {
-        top: 50%;
-        right: 0;
-        translate: 0 -50%;
-      }
-
-      .icon {
-        margin: 0 auto;
-      }
-    }
-  }
-  .container__card-btn {
-    @include flex;
-    gap: $space-lg;
-    justify-content: center;
-
-    .btn {
-      border-radius: 50%;
-      padding: $space-2xs;
-      &:last-of-type {
-        .icon {
-          transform: rotate(180deg);
+        &.line--dotted {
+          width: 2px;
+          background-image: linear-gradient(to bottom, hsl(0, 0%, 10%) 50%, hsl(0, 0%, 15%) 0%);
+          background-size: 2px 20px;
+          background-repeat: repeat-y;
         }
       }
     }
   }
-}
-.container--cta {
-  .container__card {
-    align-items: center;
-    text-align: center;
+
+  .container--features {
+    .container__tabs {
+      align-self: center;
+    }
   }
 }
 
 @include lg {
-  .container__content-wrapper {
+  .hero {
     flex-direction: row;
-    max-width: none;
-  }
-  .container__content-item {
-    flex-basis: 50%;
 
-    &:last-child {
+    .hero__introduction,
+    .hero__illustration {
+      flex-basis: 50%;
+    }
+
+    .hero__introduction {
+      align-items: start;
       text-align: left;
+
+      .hero__subcontainer {
+        align-items: start;
+      }
     }
   }
-  .container__stats {
-    flex-direction: row;
+
+  .container--products {
+    .container__content {
+      flex-direction: row;
+    }
+  }
+
+  .container--cases {
+    .container__content-wrapper {
+      &:last-of-type {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .container--features {
+    .container__tabs {
+      flex-direction: column;
+      align-self: normal;
+      height: fit-content;
+    }
+    .container__content {
+      display: grid;
+      grid-template-columns: auto 1fr;
+
+      .container__content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   }
 }

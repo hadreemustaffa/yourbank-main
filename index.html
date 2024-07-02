@@ -79,8 +79,8 @@
     </div>
 
     <div class="container container--products">
-      <div class="container__content">
-        <div class="container__text">
+      <div class="container__text container__text-with-tabs">
+        <div class="container__text-wrapper">
           <h2>Our <span>Products</span></h2>
           <p>Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your
             unique financial needs and aspirations</p>
@@ -93,6 +93,7 @@
             Businesses</button>
         </div>
       </div>
+
 
       <div class="container__content">
         <article class="container__content-item">
@@ -387,13 +388,15 @@
     </div>
 
     <div class="container container--testimonials">
-      <div class="container__text">
-        <h2>Our <span>Testimonials</span></h2>
-        <p>
-          Discover how YourBank has transformed lives with innovative digital solutions and personalized customer
-          service.
-          See why our clients trust us for a secure and prosperous financial journey
-        </p>
+      <div class="container__text container__text-with-tabs">
+        <div class="container__text-wrapper">
+          <h2>Our <span>Testimonials</span></h2>
+          <p>
+            Discover how YourBank has transformed lives with innovative digital solutions and personalized customer
+            service.
+            See why our clients trust us for a secure and prosperous financial journey
+          </p>
+        </div>
 
         <div class="container__tabs" role="tablist">
           <button type="button" class="btn btn-primary" role="tab" aria-selected="true" tabindex="0">For
@@ -404,7 +407,7 @@
       </div>
 
       <div class="container__content">
-        <div class="container__card container__card--darkest hidden">
+        <div class="container__card container__card--darkest">
           <div class="container__card-icon">
             <img class="icon icon--2xl" src="/public/images/dark/icons/quote-icon.png" alt="">
           </div>
@@ -423,7 +426,7 @@
           <p class="container__card-name">John D</p>
         </div>
 
-        <div class="container__card container__card--darkest hidden">
+        <div class="container__card container__card--darkest">
           <div class="container__card-icon">
             <img class="icon icon--2xl" src="/public/images/dark/icons/quote-icon.png" alt="">
           </div>
@@ -431,14 +434,13 @@
             make transactions on the go. The app is user-friendly and secure, giving me peace of mind.</p>
           <p class="container__card-name">Emily G</p>
         </div>
-        <div class="container__card-btn">
-          <button type="button" id="btnPrevious" class="btn btn-secondary" aria-label="go to previous">
-            <img class="icon icon--xl" src="/public/images/dark/icons/arrow-small-icon.png" alt="">
-          </button>
-          <button type="button" id="btnNext" class="btn btn-secondary" aria-label="go to next">
-            <img class="icon icon--xl" src="/public/images/dark/icons/arrow-small-icon.png" alt="">
-          </button>
-        </div>
+
+        <button type="button" id="btnPrevious" class="btn btn-secondary" aria-label="go to previous">
+          <img class="icon icon--xl" src="/public/images/dark/icons/arrow-small-icon.png" alt="">
+        </button>
+        <button type="button" id="btnNext" class="btn btn-secondary" aria-label="go to next">
+          <img class="icon icon--xl" src="/public/images/dark/icons/arrow-small-icon.png" alt="">
+        </button>
       </div>
     </div>
 
