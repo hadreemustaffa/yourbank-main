@@ -44,7 +44,7 @@
 
   .container__card-title {
     display: grid;
-    grid-template-columns: 64px auto;
+    grid-template-columns: auto auto;
     grid-template-rows: 1fr;
     align-items: center;
     column-gap: $space-sm;
@@ -57,6 +57,12 @@
   .article__content {
     @include flex(column);
     gap: $space-2xl;
+  }
+
+  .article__image {
+    img {
+      width: 100%;
+    }
   }
 
   .article__header,

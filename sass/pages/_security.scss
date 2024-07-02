@@ -7,4 +7,10 @@
       border: 1px solid $grey-15;
     }
   }
+
+  .container__card {
+    .container__card-title {
+      grid-template-columns: 64px auto;
+    }
+  }
 }

@@ -23,4 +23,10 @@
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
+
+  .container__card {
+    .container__card-title {
+      grid-template-columns: 64px auto;
+    }
+  }
 }
