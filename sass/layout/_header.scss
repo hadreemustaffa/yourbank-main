@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 
-header:not(.article__header) {
+header.grid-container {
   margin-top: 1rem;
   align-items: center;
   padding: 0.875rem 0.875rem 0.875rem 1.5rem;
@@ -44,8 +44,8 @@ header:not(.article__header) {
 
   .drawer__link {
     display: block;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
+    padding: $space-sm $space-lg;
+    border-radius: $space-2xl;
 
     &:hover,
     &.active {
@@ -57,4 +57,50 @@ header:not(.article__header) {
 .drawer__cta {
   @extend .drawer__list;
   align-items: center;
+}
+
+@include lg {
+  header.grid-container {
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    column-gap: 0;
+    padding: $space-xs $space-xl;
+    position: static;
+
+    .logo {
+      grid-area: auto;
+    }
+
+    nav {
+      width: 100%;
+      grid-area: auto;
+    }
+  }
+
+  .drawer {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    max-width: none;
+    height: fit-content;
+    padding: 0;
+    position: static;
+  }
+
+  .drawer__list {
+    flex-direction: row;
+    gap: $space-xl;
+  }
+
+  .drawer__cta {
+    .btn {
+      width: auto;
+    }
+  }
+
+  button#toggleBtn {
+    display: none;
+  }
 }

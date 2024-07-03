@@ -3,8 +3,8 @@
 .btn {
   background-color: transparent;
   border: transparent;
-  padding: 0.875rem 1.5rem;
-  border-radius: 1.5rem;
+  padding: $space-xs $space-xl;
+  border-radius: $space-2xl;
   color: $white;
 
   &:hover {
