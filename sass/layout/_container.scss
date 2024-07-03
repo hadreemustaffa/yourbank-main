@@ -178,10 +178,16 @@
 }
 
 .container--cta {
-  .container__card {
-    width: 100%;
+  background-color: $grey-11;
+  border-radius: $space-sm;
+  border: 1px solid $grey-15;
+
+  .container__content {
     align-items: center;
-    text-align: center;
+
+    &.container-pattern {
+      padding: $space-2xl;
+    }
   }
 }
 
@@ -279,6 +285,22 @@
       }
       &:last-of-type {
         grid-area: 1 / -1 / 1 / -1;
+      }
+    }
+  }
+
+  .container--cta {
+    .container__content {
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-between;
+
+      &.container-pattern {
+        padding: $space-5xl;
+      }
+
+      .container__text-wrapper {
+        flex-basis: 75%;
       }
     }
   }
