@@ -3,59 +3,51 @@ const testimonialCards = testimonials.querySelectorAll('.container__card');
 const btnNext = testimonials.querySelector('#btnNext');
 const btnPrevious = testimonials.querySelector('#btnPrevious');
 
-let cardIndex = 1;
+const mql = window.matchMedia('(max-width: 991px)');
+
+let cardIndex = 0;
 let lastIndex = testimonialCards.length - 1;
 
-const goToNext = () => {
+const updateVisibleCards = () => {
+  if (mql.matches) {
+    // Small screens: only show the selected card
+    testimonialCards.forEach((card, index) => {
+      card.classList.toggle('hidden', index !== cardIndex);
+    });
+  } else {
+    // Larger screens: show 3 cards at a time
+    testimonialCards.forEach((card) => card.classList.add('hidden'));
+    for (let i = 0; i < 3; i++) {
+      testimonialCards[
+        (cardIndex + i) % testimonialCards.length
+      ].classList.remove('hidden');
+    }
+  }
+};
+
+const buttonControl = () => {
   btnNext.addEventListener('click', () => {
-    if (cardIndex === lastIndex) {
-      cardIndex = 0;
-      testimonialCards[cardIndex].classList.remove('hidden');
-      testimonialCards[lastIndex].classList.add('hidden');
-    } else {
-      testimonialCards[cardIndex].classList.add('hidden');
-      cardIndex++;
-      testimonialCards[cardIndex].classList.remove('hidden');
-    }
+    cardIndex = (cardIndex + 1) % testimonialCards.length;
+    updateVisibleCards();
   });
-};
 
-const goToPrevious = () => {
   btnPrevious.addEventListener('click', () => {
-    if (cardIndex === 0) {
-      testimonialCards[cardIndex].classList.add('hidden');
-      cardIndex = lastIndex;
-      testimonialCards[cardIndex].classList.remove('hidden');
-    } else {
-      testimonialCards[cardIndex].classList.add('hidden');
-      cardIndex--;
-      testimonialCards[cardIndex].classList.remove('hidden');
-    }
+    cardIndex =
+      (cardIndex - 1 + testimonialCards.length) % testimonialCards.length;
+    updateVisibleCards();
   });
 };
 
-window.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth < 992) {
-    testimonialCards[0].classList.add('hidden');
-    testimonialCards[2].classList.add('hidden');
-    goToNext();
-    goToPrevious();
-  } else {
-    testimonialCards.forEach((card) => {
-      card.classList.remove('hidden');
-    });
+if (mql.matches) {
+  updateVisibleCards();
+  buttonControl();
+}
+
+mql.addEventListener('change', (e) => {
+  updateVisibleCards();
+  if (e.matches) {
+    buttonControl();
   }
 });
 
-window.addEventListener('resize', () => {
-  if (window.innerWidth >= 992) {
-    testimonialCards.forEach((card) => {
-      card.classList.remove('hidden');
-    });
-  } else {
-    testimonialCards[0].classList.add('hidden');
-    testimonialCards[2].classList.add('hidden');
-    goToNext();
-    goToPrevious();
-  }
-});
+updateVisibleCards();
