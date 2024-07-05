@@ -55,10 +55,14 @@
 
   <main class="grid-container" id="security">
     <div class="container container--introduction ">
-      <div class="grid-container grid-container--sm container-pattern bg-curve--right">
-        <div class="container__illustration">
+      <div class="container__introduction-content container-pattern bg-curve--right">
+        <picture class="container__illustration">
+          <source media="(min-width: 1440px)"
+            srcset="/public/images/dark/illustrations/security-illustration-desktop.png" type="image/png">
+          <source media="(min-width: 768px)" srcset="/public/images/dark/illustrations/security-illustration-laptop.png"
+            type="image/png">
           <img src="/public/images/dark/illustrations/security-illustration-mobile.png" alt="">
-        </div>
+        </picture>
         <div class="container__text">
           <h1>Your Security is Our <span>Top Priority</span></h1>
           <p>
