@@ -111,6 +111,11 @@
   .container--products {
     .container__content {
       flex-direction: row;
+
+      .line {
+        width: 1px;
+        height: 100%;
+      }
     }
   }
 
