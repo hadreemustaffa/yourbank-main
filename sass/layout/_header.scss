@@ -91,7 +91,7 @@ header.grid-container {
 
   .drawer__list {
     flex-direction: row;
-    gap: $space-xl;
+    gap: $space-sm;
   }
 
   .drawer__cta {
@@ -102,5 +102,11 @@ header.grid-container {
 
   button#toggleBtn {
     display: none;
+  }
+}
+
+@include xl {
+  header.grid-container {
+    grid-template-columns: 0.6fr auto;
   }
 }

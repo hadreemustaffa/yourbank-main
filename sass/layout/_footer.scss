@@ -6,10 +6,6 @@ footer {
   @include flex(column);
   gap: $space-sm;
   align-items: center;
-
-  .logo {
-    width: 100px;
-  }
 }
 
 .footer__nav {

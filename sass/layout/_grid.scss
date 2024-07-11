@@ -10,9 +10,8 @@ $grid-columns-large: 12;
   text-align: center;
 }
 
-.grid-container--sm {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 40px auto;
-  padding-bottom: $space-6xl;
-  gap: 0;
+@include lg {
+  .grid-container {
+    grid-template-columns: repeat($grid-columns-large, 1fr);
+  }
 }

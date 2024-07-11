@@ -64,7 +64,12 @@ form {
 }
 
 @include lg {
+  .container.container--form {
+    grid-area: 1 / 2 / 1 / 12;
+  }
+
   .container--form {
+    padding: clamp(3.75rem, -5.9755rem + 15.6863vi, 6.25rem) clamp(6.25rem, -13.201rem + 31.3725vi, 11.25rem);
     align-items: center;
 
     .container__text {
@@ -72,8 +77,6 @@ form {
     }
 
     form {
-      max-width: 75%;
-
       .form__input-container {
         flex-direction: row;
 
@@ -83,8 +86,14 @@ form {
       }
 
       .form__button-container {
-        padding-inline: clamp(8.125rem, -8.4821rem + 26.7857vi, 15.625rem);
+        padding-inline: clamp(0.625rem, -15.4095rem + 25.8621vi, 15.625rem);
       }
     }
+  }
+}
+
+@include xl {
+  .container--form {
+    padding-inline: clamp(9.375rem, 14.7321rem + -4.4643vi, 11.25rem);
   }
 }

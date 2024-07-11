@@ -42,21 +42,3 @@ $space-3xl: $base-space * 2.5;
 $space-4xl: $base-space * 3.125;
 $space-5xl: $base-space * 3.75;
 $space-6xl: $base-space * 5;
-
-@include md {
-  $font-size-sm: $base-font-size * 0.875;
-  $font-size-lg: $base-font-size * 1.125;
-  $font-size-xl: $base-font-size * 1.25;
-  $font-size-2xl: $base-font-size * 1.75;
-}
-
-@include lg {
-  :root {
-    --fs-900: 3.625rem;
-    --fs-700: 3rem;
-    --fs-600: 2.5rem;
-    --fs-500: 1.625rem;
-    --fs-200: 1.125rem;
-    --fs-100: 1.125rem;
-  }
-}

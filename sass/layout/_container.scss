@@ -248,6 +248,10 @@
     width: 100%;
     text-align: left;
 
+    &:not(.container__text-with-tabs) {
+      max-width: 110ch;
+    }
+
     &.container__text-with-tabs {
       flex-direction: row;
       justify-content: space-between;

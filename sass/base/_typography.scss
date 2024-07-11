@@ -86,8 +86,9 @@ p,
   }
 }
 
-@include md {
-  body {
+@include lg {
+  body,
+  footer {
     font-size: $base-font-size;
   }
   h1,
@@ -97,15 +98,22 @@ p,
   .hero__value-proposition {
     font-size: $font-size-sm;
   }
+  article h3 {
+    font-size: $font-size-xl;
+  }
 }
 
-@include lg {
+@include xl {
   body,
-  nav {
+  nav,
+  button,
+  .hero__value-proposition {
     font-size: $font-size-lg;
   }
-
-  button {
-    font-size: $font-size-sm;
+  h1 {
+    font-size: $font-size-9xl;
+  }
+  h2 {
+    font-size: $font-size-8xl;
   }
 }
