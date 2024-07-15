@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A static banking company website based on a free figma template by Produce UI">
+  <link rel="site icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFLSURBVHgBfZPdccIwEIT3BAW4gzgdJIQZhqeQSjAVpIQ4lWA6SCqI8+TJD0xKoBH7csIW6GSJffHoRvq0eyfTN88KgB7hiYH3Be3fEOiHZy8Myv0agXb0xfcVwazDAwYo5rTfubVctpUjBUbijUFCHVD98sP6OmBwEzipGfw58mSROsKzfDLnZKqMCWBBh1JH4MKICx3t5DA7X9OBakTkR/CjafGxRVebJR2qViylAE5j0AnwtKS/I7lSI6OW9LkUbq410U5NgEWLdmMBQ62XddQv0oDeEZeyr3IABbER7AzCaFp9BNlX+tGMAzgHsR75AOfA75GxTzmMMAZpwCUaqobnKxkx30Z8e6A4wGmCLlePzb5EieaNkQTArxOYD6n7W3N/MQ3A8gopu0Toxyjjlxtpi4QSP6COkG724Lfhu5Wwcl3u6lgPUnv/AS1DwhoEneqpAAAAAElFTkSuQmCC" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&display=swap" rel="stylesheet">
+  
+  <title>YourBanK</title>
+  <script type="module" crossorigin src="/yourbank/assets/index-c40e20f3.js"></script>
+  <script type="module" crossorigin src="/yourbank/assets/faq-ff7dd088.js"></script>
+  <link rel="stylesheet" href="/yourbank/assets/index-e206a625.css">
+</head>
+
+<body>
+  <header class="grid-container">
+    <a href="/" class="logo" aria-label="go to homepage">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="data:image/png;base64,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 " type="image/png">
+        <source media="(min-width: 992px)" srcset="data:image/png;base64,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 " type="image/png">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAbCAYAAACOY/p9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASbSURBVHgB7VlddtM6EB5Beb5hBTgruCncH3girIB2BU1XAF1B0xWQrKDJClpWEPcNOPQkrKDqCsgj55TGzFeNbFmRXbshPOk7Z45saSyNZ6SZLw5RREREcyh7Mc9eJmGVH8tdtVhSDaqfJdpVnzRFtMaOvbihm1Nu+usqj+lr9mLwj7qchibgsQN+dkJhaJYuRbTGoyZKK6IJAuD3ow9jFPHb0SgwgB+cGJTtYqeNsgQnv6aIraEuMONbejLyO2/p5wDHbEU7a7XjMd285+YdRWyMysBklC1feYxK0tcxrp/QzZVPCD5nz5eqIHrhebOsw80VC9quUkp74xhLWAY8NqUtgddJxA4fC5bRttbmdQfcgGid8BpDpx9+xf2C+3fzGsMOXdRN6NeUKkLg4aPfwYuCeo/l9gOtG52IcVsLSgDakR7LhG3p0x8Cr7VHJiiaZR99eWD+VV+PMqJKShyqKXXBwVz/qcv3oTHZKZplz3PAsbT79Oeg2Z6uFb4/9GzZKuTk4gRhw76xGaTEyv5XlwM/OPexr1BwMAfmonqUHOCclok1DkazjFjmLDOWU3kR+1I96dsrrc9zSX9H7o/tszJf3Uk/l7bjzdlnOUOqFVv2atbpie5c2iS0kPTPZK0TN62v1Rg49LMwr6aU2LK1W1SmZkHBqUnZsJQv+3Jq7A49EaN7jtFLKhwFfbuz0DdguabCoXc6LAcy11LurSTSf2GVPcdZ8rJwxm3+BzSZdHcm10nFOtbenti869dTmePueR4rEa3g7xg4lgeyNpTY6D6iJkFxcBIwUDt9eLkj7nvKokQfeqf0cCBNuk5IyJAAK0i/Syo2CMaHZILwRlLeU8eWEKZiM/TGVGwgF9gACNqFSwIsgoGRk6Kqak4IRndFDQhBDpwaKgzXJA6TE5SQSWsjR3/IDZ7pV6WHewDHngsBscD1xBEt9tgTbNPkUOz1bQlhFLh+5umksvbfoXdZC4ybvkI1JwQ3fTVkay5sCkodhyXSXgT0LzydxgikEmDJ/YeOgACkLANxWCJ614FnryvWqf3oK/hG5tRhE8xsnbIoBSZUU+4LTqimPCA4PrS0vcBYIm3dy/9Fm8HdINq59vGMNoBkg7HMfeaO5YGpK/RVwakr9BsGB4UXzjlw6bSwKQgortUBXjs6CYUDWglha1b6zvOaChJw7DFCpLo+bQh+D9S0lEx6zil6HpjVenEqwQ9OE/a1KphMW2PhcNBpe8zn8kVgQiYY+6IHp6VkXuoKNJav5+RR3XuQULn4z8ghIlJXbKG3VBl6Q6o/tW2A99GY01L5Vh8xXSrdkn3VAS+XkkNPARRpNhL5HgzM7mDoHXq1AgEcsrwl4zz7VeE1FY77VrF2WmHPufvlAYWebdFkmFSfjBOPyGyApussnPlTKlLk3UbETwAy7wqyMc0/bH3JXsyofDR5gmxtRyhJd1nwhKkOlXer5l//XYpojboT0xFH55DPLHf8nk9OV5l8H7EFNP6jzK8pTal0xMPQKDBVhT4GZ3twUlk2zQI/6PjvgO8cgHHVBAjOp+z5QgWYUPb7WEtEREREDX4BBWOK5zDuCeUAAAAASUVORK5CYII=" alt="">
+      </picture>
+    </a>
+
+    <nav id="primary-nav">
+      <button type="button" id="toggleBtn" class="btn btn-primary" aria-label="navigation toggle button"
+        aria-controls="navDrawer" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <div id="navDrawer" class="drawer">
+        <ul class="drawer__list">
+          <li class="drawer__item">
+            <a href="/yourbank/" class="drawer__link">Home</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/careers/" class="drawer__link active">Careers</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/about/" class="drawer__link">About</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/security/" class="drawer__link">Security</a>
+          </li>
+        </ul>
+
+        <div class="drawer__cta">
+          <a href="/yourbank/signup/" class="btn btn-tertiary">Sign Up</a>
+          <a href="/yourbank/login/" class="btn btn-primary">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="grid-container" id="careers">
+    <div class="container container--introduction">
+      <div class="container__introduction-content container-pattern bg-curve--right">
+        <picture class="container__illustration">
+          <source media="(min-width: 1440px)"
+            srcset="/yourbank/assets/careers-illustration-desktop-82135cba.png " type="image/png">
+          <source media="(min-width: 992px)" srcset="/yourbank/assets/careers-illustration-laptop-d610b4fd.png "
+            type="image/png">
+          <img src="/yourbank/assets/careers-illustration-mobile-72f03ce7.png"
+            alt="Two person having a business discussion">
+        </picture>
+        <div class="container__text">
+          <h1>Welcome to <span>YourBank</span> Careers!</h1>
+          <p>
+            Join our team and embark on a rewarding journey in the banking industry. At YourBank, we are committed to
+            fostering a culture of excellence and providing opportunities for professional growth. With a focus on
+            innovation, customer service, and integrity, we strive to make a positive impact in the lives of our
+            customers
+            and communities. Join us today and be a part of our mission to shape the future of banking.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--values">
+      <div class="container__text">
+        <h2>Our <span>Values</span></h2>
+        <p>
+          At YourBank, our values form the foundation of our organization and guide our actions. We believe in upholding
+          the highest standards of integrity, delivering exceptional service, and embracing innovation. These values
+          define our culture and shape the way we work together to achieve our goals.
+        </p>
+      </div>
+
+      <div class="container__content">
+        <div class="container__card container__card--transparent">
+          <h3>Integrity</h3>
+          <p>
+            We conduct ourselves with utmost honesty, transparency, and ethical behavior. We believe in doing what is
+            right for our customers, colleagues, and stakeholders, even when faced with difficult choices.
+          </p>
+        </div>
+
+        <div class="container__card container__card--transparent">
+          <h3>Customer Centricity</h3>
+          <p>
+            Our customers are at the heart of everything we do. We are dedicated to understanding their needs, providing
+            personalized solutions, and delivering exceptional service that exceeds expectations.
+          </p>
+        </div>
+
+        <div class="container__card container__card--transparent">
+          <h3>Collaboration</h3>
+          <p>
+            We foster a collaborative and inclusive work environment, where teamwork and diversity are celebrated. By
+            leveraging the unique strengths and perspectives of our employees, we drive innovation and achieve greater
+            success together.
+          </p>
+        </div>
+
+        <div class="container__card container__card--transparent">
+          <h3>Innovation</h3>
+          <p>
+            We embrace change and constantly seek innovative solutions to meet the evolving needs of our customers. We
+            encourage our employees to think creatively, challenge conventions, and explore new ideas to drive the
+            future
+            of banking.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="container container--benefits">
+      <div class="container__text">
+        <h2>Our <span>Benefits</span></h2>
+        <p>
+          At YourBank, we value our employees and are dedicated to their well-being and success. We offer a
+          comprehensive range of benefits designed to support their personal and professional growth.
+        </p>
+      </div>
+
+      <div class="container__content">
+        <div class="container__content-wrapper">
+          <div class="container__card-wrapper">
+            <div class="container__card container__card--gradient">
+              <div class="container__card-title">
+                <div class="container__content-icon">
+                  <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFBSURBVHgB3VTRTcMwEH3nFr4ZIWyAVKhA4iMjtBvABG0mKCswCbBBPpCQoIh0AsoG+eSD+HiWCgqV4zQhRaJPOvtkn+/k53cG/jvEDXMdjCwwQacwyVCesr5z32GW+7DOjdENUoWNOGdSXn3UgaIDDOX5O6/BltG6gIUkvO64Lq6PlmDyrEeNKMKsNr3B9co2RqMCBeRWaE3ObFBAM5LQKGkZtW9QsGFcELkeoQW2LtPaGxjoRCFRyA/hzzs5xS+xLogfBQoUlwxZon36zKJIyiviC3vQ49jNPeiNhS4U5soXx/0ZpyP2x5iWn/N7Xo/xquhM5mkPHzndA4F5cUrwGbFwMc7xJQeCKjIXbuRvMyWvUwRgYGNUvJ9UHaKiXknPWxU9X1jRFFE5h779UB/c8d9JT0lXIAb3epLvwc6ws/gE5fhmLQrtRGsAAAAASUVORK5CYII=" alt="">
+                </div>
+                <h3>Competitive Compensation</h3>
+              </div>
+              <p>
+                We provide a competitive salary package that recognizes the skills and expertise of our employees.
+                YourBank
+                believes in rewarding exceptional performance and offering opportunities for financial growth.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="container__card-wrapper">
+            <div class="container__card container__card--gradient">
+              <div class="container__card-title">
+                <div class="container__content-icon">
+                  <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHOSURBVHgBtVVRTsJAEH3TrsZPjrDeoEUlkpAYboAnEE8gnkBu4BXgBHADf0g0oNIj7BHwz2DLOkv5oKXbLqAvIWy7M+/NTmdmCY6Y62sZI5ZmLRBHIUULFz8qJw1qMbwHDXTZVOa2lQf0L+ljeJDARAfBKfwRLyXKoRIk7SZFylngVQfShz/nZQ1u4HR57QbNovyGV2TN5C97kCO1XY1MSisFprreRXVaiiCX8HqVApy1JxwIAt2VCmyOKHE4JHNIq0AMEeBIfENIq8B/IHeCWOFInHGXWwU2zaKKXbUqXmdt8iNE7JhAD2mnknTUoM9w+81M1+caFGSjpX6eb6eTTSX9wJvnZw/Po/EKyWNK5D+zYycXhOIgzvN8Ox/ZHHEJ/xbr9s9EwoRCCv4VkC8SrNooQGEVtXim8AAL7bnORr5kctuws5apcTBH5tRYx7HZO8EqbFEU2Wwq++AUSc+2x9+kX3XxVAoYggT6npcD7hQl0jofsGPXlpZtCDjAB93w35cHr7tEWnpJWqLDPxHAet7rDvfHZt5rRdaGzILgiHd90eHGWqROusZ38djFz0lgyvcz0it0C0nYKKmevQQMJvoq8Dny9EmoJr0pF79fJ72fn+RfpewAAAAASUVORK5CYII=" alt="">
+                </div>
+                <h3>Health and Wellness</h3>
+              </div>
+              <p>
+                We prioritize the health and well-being of our employees by providing comprehensive medical, dental, and
+                vision insurance plans. We also offer wellness programs, gym memberships, and resources to support a
+                healthy
+                lifestyle.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="container__content-wrapper">
+          <div class="container__card-wrapper">
+            <div class="container__card container__card--gradient">
+              <div class="container__card-title">
+                <div class="container__content-icon">
+                  <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG8SURBVHgB1VVtTsJAEH1TPv5aT0BvYPEDJTGxngC9AUeAE6g38Ah4A25ATUwwEkJvYLlB/SlNO86CwFpoQUATXtK0szP73u50ZxbYd9CqgAHbZojcvXweJVx+hOihSp6PTQW+yQcAm4pQwgPN7aixAqJymbwgjSOPDIQwbuRlRYivZaWu7uvyqZMDdz5h1MV8xLo7GPCFEIZ2DJTEVAIOA20JNPU4GQto4nflaRvAMIbhV6jnpQq88UkHk61vg5akrTlNmzEd7fFxYwfkCvURjMbUmAkwqIYdQbjsBYFdQkgPtO+/xf8JMOLhquAY1JTjeYvV8BcEQuRVsQRZswh8RaA7ZIID1ULmczR02bYM6TuKSFwWfgWWxdHTCFHrkrxZsS20inPq19X7hc/sAmJLJtqyalXV1oxqUsUBg6V6VTqKbpVefeXrSQvR+ZKVLHNZ1OlZcucuK/0kVGsJMXIwPvtcUzuvUJ8yBJZu35dQX7NVXzLT0qgLZHbTOcZElmZjXSTrwMXWYC9VQJpUc5KOjcnllot/1MmS+8A2R8g54ijJKTlUJ0h+jJlyH6i6+ZDnXexhEZGbdbvtJ74A9Eaemj7RoZMAAAAASUVORK5CYII=" alt="">
+                </div>
+                <h3>Retirement Planning</h3>
+              </div>
+              <p>
+                YourBank is committed to helping employees plan for their future. We offer a retirement savings plan
+                with
+                a
+                generous employer match to help them build a secure financial foundation for the long term.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="container__card-wrapper">
+            <div class="container__card container__card--gradient">
+              <div class="container__card-title">
+                <div class="container__content-icon">
+                  <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGxSURBVHgB7VXdUcJAEP4uwfE1dpAODJBxZMYHqECtwFiBWIFYAXQgVCAdmDf+VNKB2EGe0WTdJYEJmQiHw/jEN5Pksne7t7f75QtwwBaoIuOAHNuE+cTDOvTQjRA91lQw27rBlBzrC+YUIIunewQKsTFDxetww1d4hKhcVsHa+lLeYc6Z8672HHH5QgUBNDAgt2+CXjixZ35t/LpwQpWHMVVpSG4TO2JIlab4jshtbwzOC1r4I8RXYkispW3Rg7SpHzyU+q2VxeAGuuqtVxRwTBWPoC45iJUx1+UWQTVq6tUvJUEML520kGNOzO98/JNz9d7J2iVLDt4qpOEi89jhh1+CBgyoNh/9lBn1mTgri4C7TT7LU2ltkMJTUNgVhtxiGD72DC77VJ6rlEZUveKPy8EeIAlLg/EfyNJUjmTl5oW2fZaA+7wEiKR8wxAmeQV+My7S9ZmaBFmaWgUJiM1jCZDxbXaCJaWjEg0qgk2IuOQIdFnkMU3rSWYCEUJo9WuxAXM61CCgnV6ABl0pKW9C02PEXaSG/YBCQtxfbSANnMNgmSUted4Cn6W+UfTzOaAQPyYrnPHr8Cq+AAAAAElFTkSuQmCC" alt="">
+                </div>
+                <h3>Work-Life Balance</h3>
+              </div>
+              <p>
+                We understand the importance of maintaining a healthy work-life balance. YourBank offers flexible work
+                arrangements, paid time off, parental leave, and other programs that support employees in managing their
+                personal and professional commitments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--job">
+      <div class="container__text">
+        <h2><span>Job Openings</span></h2>
+        <p>
+          Explore exciting job openings at YourBank, where we value talent, innovation, and a passion for customer
+          service. Join our team and be part of shaping a brighter future in the banking industry
+        </p>
+      </div>
+
+      <div class="container__content">
+        <article class="container__card container__card-article container__card--dark">
+          <div class="article__content">
+            <header class="article__header">
+              <h3>Relationship Manager</h3>
+              <div class="article__header-wrapper">
+                <p>Location: India</p>
+                <p>Department: Retail Banking</p>
+              </div>
+            </header>
+
+            <section class="article__text">
+              <h3>About This Job</h3>
+              <p>
+                As a Relationship Manager at YourBank, you will be responsible for developing and maintaining
+                relationships with our valued customers. You will proactively identify their financial needs and offer
+                tailored solutions to help them achieve their goals. We are seeking individuals with excellent
+                communication skills, a strong sales acumen, and a passion for delivering exceptional customer service.
+              </p>
+            </section>
+
+            <section class="article__list">
+              <h3>Requirements & Qualifications</h3>
+
+              <ul>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Bachelor's degree in Business, Finance, or a related field</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Minimum of 3 years of experience in sales or relationship management in the banking industry</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Proven track record of meeting and exceeding sales targets</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Excellent interpersonal and negotiation skills</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Strong knowledge of banking products and services</p>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </article>
+
+        <article class="container__card container__card-article container__card--dark">
+          <div class="article__content">
+            <div class="article__header">
+              <h3>Risk Analyst</h3>
+              <div class="article__header-wrapper">
+                <p>Location: India</p>
+                <p>Department: Risk Management</p>
+              </div>
+            </div>
+            <div class="article__text">
+              <h3>About This Job</h3>
+              <p>
+                As a Risk Analyst at YourBank, you will play a vital role in identifying and assessing potential risks
+                to our organization. You will analyze data, conduct risk assessments, and develop strategies to mitigate
+                risks. We are looking for detail-oriented individuals with strong analytical skills and a solid
+                understanding of risk management principles.
+              </p>
+            </div>
+            <div class="article__list">
+              <h3>Requirements & Qualifications</h3>
+
+              <ul>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Bachelor's degree in Finance, Economics, or a related field</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Minimum of 2 years of experience in risk management or a similar role</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Proficiency in risk analysis tools and techniques</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Strong analytical and problem-solving skills</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Knowledge of regulatory requirements and industry best practices</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </article>
+
+        <article class="container__card container__card-article container__card--dark">
+          <div class="article__content">
+            <div class="article__header">
+              <h3>IT Security Specialist</h3>
+              <div class="article__header-wrapper">
+                <p>Location: India</p>
+                <p>Department: Information Technology</p>
+              </div>
+            </div>
+            <div class="article__text">
+              <h3>About This Job</h3>
+              <p>
+                As an IT Security Specialist at YourBank, you will be responsible for ensuring the security and
+                integrity of our information systems. You will develop and implement security protocols, conduct
+                vulnerability assessments, and respond to security incidents. We are seeking individuals with a strong
+                technical background, knowledge of cybersecurity best practices, and a commitment to maintaining the
+                confidentiality of customer data.
+              </p>
+            </div>
+            <div class="article__list">
+              <h3>Requirements & Qualifications</h3>
+
+              <ul>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Bachelor's degree in Computer Science, Information Security, or a related field</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Minimum of 5 years of experience in IT security or a similar role</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>In-depth knowledge of network security protocols and technologies</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Familiarity with regulatory frameworks such as PCI DSS and GDPR</p>
+                </li>
+                <li>
+                  <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB3ZXdUcJAEMePkHdjBaQDYwXGZ4aPdEAHQgViB5aAFeAM8EysQDow6SA+8xF/O3NhjoQEBHRG/zM3m9ze7f53b/dOqb+O2qEF4/HYsSxryLjZ2VirRcvl8ikIguhkB2K8Xq+/Y8zhN2IkhtqXudVqdYuTpMyGrSqA8S7GXYzcYyQ0dZPJxEfMWdNDPqtjI4C1i/Bs224gu5rpK8PJLU20PhQ9JGKJCCKLUgewmmuDJ4OIR5zNIEublSmm02n/XOOCNE17FEQ/+7cMRUddCEThFRxcEji4+lEHJn7PwWaziQ8tJvQBZxUcsS4qOKDupVmSqo0Yv2Pzo6pGIlfI1pmpkSajM4d8iiFXfQ8JWXiB6KjZbG6brXBVtNvtnsjZbOat12sX1h5OG0jXNAaBBH0s6UCG2aUHSd+0l+/kFLGAyRsjVHtaPw8dtS9EcNaRyFutVq00AuDRiTIetFPJfWQeHHCYc8w08r2XQOVtamx2EW5u7pithT4I1flYlDogLVLnkTod8gDt9Mm+90BeMZ8UNDjoa11B8hYU3gNdSZ8Q+2BNrKspUf8KX+KVuNhaxHlFAAAAAElFTkSuQmCC" alt="">
+                  <p>Professional certifications such as CISSP or CISM are preferred</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </article>
+      </div>
+    </div>
+
+    <div class="container container--faqs">
+      <div class="container__text">
+        <h2><span>Frequently</span> Asked Questions</h2>
+        <p>Still you have any questions? Contact our Team via support@yourbank.com</p>
+      </div>
+
+      <div class="container__content">
+        <div id="faq-wrapper" class="container__content-wrapper collapse">
+          <div class="container__card container__card--darkest text-left">
+            <h3>How do I open an account with YourBank?</h3>
+            <div class="line"></div>
+            <p>Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account"
+              button. Follow the prompts, provide the required information, and complete the application process. If you
+              have any questions or need assistance, our customer support team is available to help.</p>
+          </div>
+          <div class="container__card container__card--darkest text-left">
+            <h3>What documents do I need to provide to apply for a loan?</h3>
+            <div class="line"></div>
+            <p>
+              The documents required for a loan application may vary depending on the type of loan you are applying for.
+              Generally, you will need to provide identification documents (such as a passport or driver's license),
+              proof
+              of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our
+              loan
+              officers will guide you through the specific requirements during the application process.
+            </p>
+          </div>
+          <div class="container__card container__card--darkest text-left">
+            <h3>How can I access my accounts online?</h3>
+            <div class="line"></div>
+            <p>
+              Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button.
+              Enter your username and password to access your accounts. If you haven't registered for online banking,
+              click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer
+              support team is available to guide you.
+            </p>
+          </div>
+          <div class="container__card container__card--darkest text-left">
+            <h3>Are my transactions and personal information secure?</h3>
+            <div class="line"></div>
+            <p>
+              At YourBank, we prioritize the security of your transactions and personal information. We employ
+              industry-leading encryption and multi-factor authentication to ensure that your data is protected.
+              Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank
+              with
+              confidence knowing that we have robust security systems in place.
+            </p>
+          </div>
+          <div class="container__card container__card--darkest text-left">
+            <h3>What should I do if I forget my password?</h3>
+            <div class="line"></div>
+            <p>
+              If you forget your password, simply click on the "Forgot Password" link on the login page. You will be
+              prompted to enter your registered email address or phone number. Follow the instructions sent to your
+              contact method to reset your password securely. If you encounter any issues, our customer support team is
+              available 24/7 to assist you.
+            </p>
+          </div>
+
+          <div class="container__card container__card--darkest text-left">
+            <h3>How can I dispute a transaction?</h3>
+            <div class="line"></div>
+            <p>
+              To dispute a transaction, log in to your online banking account and navigate to the "Disputes" section.
+              Select the transaction you wish to dispute and provide the required details. You can also contact our
+              customer support team directly for assistance. We will investigate the matter and keep you updated on the
+              status of your dispute.
+            </p>
+          </div>
+        </div>
+
+        <button id="faqButton" type="button" class="btn btn-secondary btn-with-icon mx-auto" aria-controls="faq-wrapper"
+          aria-expanded="false">
+          Load All FAQ’s
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABoSURBVHgB7Y3BDYAgDEX/CI7gCI7gCI7ABo7KSLVGDsZI2kIvkL6kJ/jvAUEwHkR08i0wcm/ELT9u9JAtkSLPZbtKn5Ml8pEnaNBGmuTaSJdcirjIaxFXeSXiK/+J+MtfkYNvRxDMxQW3neVu8nPk7AAAAABJRU5ErkJggg==" alt="">
+        </button>
+      </div>
+    </div>
+
+    <div class="container container--cta">
+      <div class="container__content container-pattern bg-curve--left">
+        <div class="container__text-wrapper">
+          <h2>Start your financial journey with <span>YourBank today!</span></h2>
+          <p>
+            Enjoy seamless, secure, and convenient financial solutions tailored just for you. Unlock a world of
+            possibilities with our innovative products and exceptional customer service.
+          </p>
+        </div>
+        <button type="button" class="btn btn-primary">Open Account</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <nav id="secondary-nav" class="footer__nav">
+      <a href="/" class="logo" aria-label="go to homepage">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="data:image/png;base64,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 " type="image/png">
+          <source media="(min-width: 992px)" srcset="data:image/png;base64,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 " type="image/png">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAbCAYAAACOY/p9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASbSURBVHgB7VlddtM6EB5Beb5hBTgruCncH3girIB2BU1XAF1B0xWQrKDJClpWEPcNOPQkrKDqCsgj55TGzFeNbFmRXbshPOk7Z45saSyNZ6SZLw5RREREcyh7Mc9eJmGVH8tdtVhSDaqfJdpVnzRFtMaOvbihm1Nu+usqj+lr9mLwj7qchibgsQN+dkJhaJYuRbTGoyZKK6IJAuD3ow9jFPHb0SgwgB+cGJTtYqeNsgQnv6aIraEuMONbejLyO2/p5wDHbEU7a7XjMd285+YdRWyMysBklC1feYxK0tcxrp/QzZVPCD5nz5eqIHrhebOsw80VC9quUkp74xhLWAY8NqUtgddJxA4fC5bRttbmdQfcgGid8BpDpx9+xf2C+3fzGsMOXdRN6NeUKkLg4aPfwYuCeo/l9gOtG52IcVsLSgDakR7LhG3p0x8Cr7VHJiiaZR99eWD+VV+PMqJKShyqKXXBwVz/qcv3oTHZKZplz3PAsbT79Oeg2Z6uFb4/9GzZKuTk4gRhw76xGaTEyv5XlwM/OPexr1BwMAfmonqUHOCclok1DkazjFjmLDOWU3kR+1I96dsrrc9zSX9H7o/tszJf3Uk/l7bjzdlnOUOqFVv2atbpie5c2iS0kPTPZK0TN62v1Rg49LMwr6aU2LK1W1SmZkHBqUnZsJQv+3Jq7A49EaN7jtFLKhwFfbuz0DdguabCoXc6LAcy11LurSTSf2GVPcdZ8rJwxm3+BzSZdHcm10nFOtbenti869dTmePueR4rEa3g7xg4lgeyNpTY6D6iJkFxcBIwUDt9eLkj7nvKokQfeqf0cCBNuk5IyJAAK0i/Syo2CMaHZILwRlLeU8eWEKZiM/TGVGwgF9gACNqFSwIsgoGRk6Kqak4IRndFDQhBDpwaKgzXJA6TE5SQSWsjR3/IDZ7pV6WHewDHngsBscD1xBEt9tgTbNPkUOz1bQlhFLh+5umksvbfoXdZC4ybvkI1JwQ3fTVkay5sCkodhyXSXgT0LzydxgikEmDJ/YeOgACkLANxWCJ614FnryvWqf3oK/hG5tRhE8xsnbIoBSZUU+4LTqimPCA4PrS0vcBYIm3dy/9Fm8HdINq59vGMNoBkg7HMfeaO5YGpK/RVwakr9BsGB4UXzjlw6bSwKQgortUBXjs6CYUDWglha1b6zvOaChJw7DFCpLo+bQh+D9S0lEx6zil6HpjVenEqwQ9OE/a1KphMW2PhcNBpe8zn8kVgQiYY+6IHp6VkXuoKNJav5+RR3XuQULn4z8ghIlJXbKG3VBl6Q6o/tW2A99GY01L5Vh8xXSrdkn3VAS+XkkNPARRpNhL5HgzM7mDoHXq1AgEcsrwl4zz7VeE1FY77VrF2WmHPufvlAYWebdFkmFSfjBOPyGyApussnPlTKlLk3UbETwAy7wqyMc0/bH3JXsyofDR5gmxtRyhJd1nwhKkOlXer5l//XYpojboT0xFH55DPLHf8nk9OV5l8H7EFNP6jzK8pTal0xMPQKDBVhT4GZ3twUlk2zQI/6PjvgO8cgHHVBAjOp+z5QgWYUPb7WEtEREREDX4BBWOK5zDuCeUAAAAASUVORK5CYII=" alt="">
+        </picture>
+      </a>
+
+      <ul>
+        <li><a href="/yourbank/">Home</a></li>
+        <li><a href="/yourbank/careers/">Careers</a></li>
+        <li><a href="/yourbank/about/">About</a></li>
+        <li><a href="/yourbank/security/">Security</a></li>
+      </ul>
+    </nav>
+
+    <div class="line"></div>
+
+    <div class="footer__contact-info">
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGISURBVHgB7ZTBVcJAEIb/CeDzSAnQAYgI3KADOwArECowdIAVCB3YAbn5lBDSAZTAWZIdZwxEeILkQZ4nvkOym2T+f3ays8CFI9D2ZMalfIBsCWcQIFg0yF/8MvjgyqPcBkgBAttV8vrR+Fu8KlmbGVIkBLUa5DqWThjhPVLGgmlGd6FGns2gPlJCta5gBrHBG5cKNXLtEGFRpg5Ox1EN1do8sKKL1ZGf/KLjO5q2QvCD5LFAYngpQh2N1ZlojT9hdWODNZ0MMvMJ3zw1yBuGMC0GRgnUn3MwxVuajjRWNHSzNHdWsJMLyJYM5kBWyjbtRGXbtxr2dadI1l3tHY3RWHmR3/7KOpBVIQMe/5TNKxpwT4ZLLYcB9eRZ+RqB/86VIcu3GrNP6JDBBi3b2OVKu07eICer0XLUyR1oY66kpNJI7b8EsjhOwQBDEbRX606XsfZNM0FsIoPYCCccJcdKdDb/Y2BgOUgZQuY1NtBTL82zKNrGEz8y2kLPJG0wnIH2Rpn8JS4k5QvuQZiBh1OL3QAAAABJRU5ErkJggg==" alt="">
+        hello@skillbirdge.com
+      </button>
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFjSURBVHgBtZNfTsJAEMa/aZfEx3qDHgFQURIT5QTGG+BJ0CN4AvAExhOATxhB2xvQG+iLL8B2nOVP3TSVtBv4JU13d5rpNzvzAQeA7E3EF+ESy9Csz2g6giPedjHhZm+BxYzBQ/O888kQjqyUjrke+vBn+WAN+rhB8TcqslKqoMKi4BLqCg54u4KMtIN9JxXclUrHE+yRVdIjoKAZHGukt3Agm1MZqYhB9e3etfOG7E5T4MUOzKF6cCRTGnE9WMD/soMa1Gk7OCtTuin10Q764L4xBiqS875R60VyHFrHiYYWxXFiNhv39aWRgXz3KqpGPvTIvn/K/2XMp9eisMj3AylMKkmfZR0WxVv0cVeYdJ242fVBfVRGN1oUx4WOatPnYA6vISUmqICGCsz7X5te0sQMf4eBJ5Rm7Uwq86lpjgfVJaQ3sAxiI8Z5OKfpfemkNmZCflCTCeDg71QlbXpLcEh+Acm/eS2/WZUUAAAAAElFTkSuQmCC" alt="">
+        +91 91813 23 2309
+      </button>
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGsSURBVHgB1VXbUcJAFD2bgOOnJYQOAjI4fCkdaAViBWgFYAVABWgHWoH+MSpKrMCUkH9JrncNQbK5SQA/HM/MJpv7OCf7ugv8d6iygDm5B5+wTjn0mD+dpfndYldTvd7+SuCZDnv8GnA7yAnxWWhQJKTyyRsTdnexAQhqdKRmV5LPkowv1OhvSq6hQJdP1BzKPgNTch0b9gd2QAjVaavZ47otMwIL9kBOp4Af47iRL0XYoL5py4yAF5ayqeRVEXXqytMiyc564HTXCAyqCGtJXPzDKXLXhYjoYj1J90NY0qKy8GorZwUUKuJ2bCnPM23mXCcIDY6UAGERSElTap6YtvzRppESqPLBkYJsREM978l33K9MpNh9LFKjzSwyn4E5ZRdPw+d2v+yfQzzd5LXUW33dUjFDIiZhVUnA4dZDAejnB1bInIM9RCN+BdgBEaKbUgG9BQk0xpbgab1uK8837UXFbg55LSR6n+e+JnmsvJQQ0VleSTDJObaT5y28D+LC910SnCJyaWo2EigWKSfXsFACTaCJeAuubi3u33Hxq5eRb40pNbpS2fhTfAFnYJ+lqJNC7AAAAABJRU5ErkJggg==" alt="">
+        Somewhere in the World
+      </button>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="footer__bottom-bar">
+      <div class="footer__socials">
+        <a href="#" aria-label="facebook"><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHLSURBVHgBpVQ7UgJBEO2Z5RduAQdYi4IigxuIJxBOINyA0Aw8gZKZISeA1EjIzCSVT7FkJlCEQAHr63VX13XcLeBVzadfz/T0THePIAUMw9Dj8fiNZVkliEWmmIc8FEKYmPZGo1FHtVf4iUwmU9Y0rY2pTsEw0Zp+w5pXyGaz91LKB0wTFA4+sJxKpWixWAz+GMzlcg1c5zbEyArtg357X0omk/pyuXxmQTieVWGsHWDIPBwOtclk0vc40MTQcOX9fl+ZTqc9aVsVohFkbLvdXnmNqcDvzsGMsHfkRFEFRLZvAh7PyhiK4C/hiHcpZ0Y1AvKaAgD93J1zBmDoOrzq8JJEZwQZhN6kn2sVKRgFiZPCFh0DQ+BNLIXCRMJeBO3E27/AmZKf5yibdAL+udkwwh0popzP521uvV6vEGROaLvGE4mEjmrSd7udqjTn/IYDhcJAIs+4RaPRskvGYrE6czD2Rmp05WazeaKvkjoX/O4dyddB2dTofDS5s0uPaxD51qLTced+Y9JlxuNxnRV0JNgRGGu6svQqWYEFfH2TwsFPVXEc+YbmX4V/bYgPs4U/bs71ihR5hfzOunQ6XcCwBv+IH6g2m82G/v2fUbfEoZ5sg28AAAAASUVORK5CYII="
+            alt=""></a>
+        <a href="#" aria-label="twitter"><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGhSURBVHgBxZQ9bsJAEIXHawtSUNgU1JYQgtJlupATJDkBcIKQG5AyVcgJOEIo0xk6SugMCMUHQLDpLECQNw5GlgU2P5F4Emb2x9++2Z010T9LpTNUKpXMTCZDUkovOqYEExzHcZNAxWLxebPZNBDq3EbcWS6XNYQylUqV1+u1FDyAwC4UCtYRsGYA890oShmgb/6hWVmtVn3B7tAwMWjjpfohIGD1mPV0jOvpdLoqPM+Toc53OG2ZUHg2Fi3zojFAdtsdDodNfw8Bsdl+xFFHCNFG/wD7pKuq+hkHHI1GPkuBGV3TNAsvt5JcxEgCaHCg8QMwmy4QsukHsXBdV3J6dJkGOyA/sD9cSy6dKRhqB7F/U6bTqTQMw18Fh2CdyHPH4/ELhR1uZQFWpdPVCDd2d3k2m/Wy2awB6C0dKaT6AXdve4Fb6BdS7yL8SQLzyQL2FO0Pp0xckyihO8AqFK82iv1+34CSz+cfAXmgvz1MOhCJOa98xQ5NUOfzuZPL5QaY6CGNG/ybUQj6e1i0uVgsapPJpEMxUvZ1hj4OkgufrqlfCt6o6PnU8ysAAAAASUVORK5CYII=" alt=""></a>
+        <a href="#" aria-label="linked in"><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgB5ZTdjYJQEIXnwhZgCWwChLdlO3A7sIMtQVuwArUEK7AEtQL1jQCJlsAz4cdz4k9uUBNywSdPQoYZLt8MnAvK87yZUmoiPaiu67nyfb+WHmU18gxdNtJBOjDL8/w3SZI/y7K+xVB3ICbbnyCeR1HEeBID3YEwJnQgnsOoEMERAz2YwkkJF0N9NfIpYIRuEcdyeezl9doPjhD1eVmWB6wZ2LY9Qu3/5YRxHCvGIAicqqqOdJwmsea67rAoCr7nTAfg/hXC6JY3t81LpWm6IYzN9DoaL/S8NZCCWTtOjrjWGxkB6fzNLMQhNsTg2brWQBjQBHQDttUHAt/+P+wOxOe1kJ5E1hmfYmrCSrBs8QAAAABJRU5ErkJggg=="
+            alt=""></a>
+      </div>
+
+      <p class="footer__copyright footer__copyright--first">YourBank All Rights Reserved</p>
+
+      <div class="footer__about">
+        <p class="footer__copyright footer__copyright--second">YourBank All Rights Reserved</p>
+        <div class="footer__info">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  
+  
+
+</body>
+
+</html>

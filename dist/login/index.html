@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A static banking company website based on a free figma template by Produce UI">
+  <link rel="site icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFLSURBVHgBfZPdccIwEIT3BAW4gzgdJIQZhqeQSjAVpIQ4lWA6SCqI8+TJD0xKoBH7csIW6GSJffHoRvq0eyfTN88KgB7hiYH3Be3fEOiHZy8Myv0agXb0xfcVwazDAwYo5rTfubVctpUjBUbijUFCHVD98sP6OmBwEzipGfw58mSROsKzfDLnZKqMCWBBh1JH4MKICx3t5DA7X9OBakTkR/CjafGxRVebJR2qViylAE5j0AnwtKS/I7lSI6OW9LkUbq410U5NgEWLdmMBQ62XddQv0oDeEZeyr3IABbER7AzCaFp9BNlX+tGMAzgHsR75AOfA75GxTzmMMAZpwCUaqobnKxkx30Z8e6A4wGmCLlePzb5EieaNkQTArxOYD6n7W3N/MQ3A8gopu0Toxyjjlxtpi4QSP6COkG724Lfhu5Wwcl3u6lgPUnv/AS1DwhoEneqpAAAAAElFTkSuQmCC" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&display=swap" rel="stylesheet">
+  
+  <title>YourBanK</title>
+  <script type="module" crossorigin src="/yourbank/assets/index-c40e20f3.js"></script>
+  <script type="module" crossorigin src="/yourbank/assets/testimonials-44757e18.js"></script>
+  <link rel="stylesheet" href="/yourbank/assets/index-e206a625.css">
+</head>
+
+<body>
+  <header class="grid-container">
+    <a href="/" class="logo" aria-label="go to homepage">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="data:image/png;base64,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 " type="image/png">
+        <source media="(min-width: 992px)" srcset="data:image/png;base64,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 " type="image/png">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAbCAYAAACOY/p9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASbSURBVHgB7VlddtM6EB5Beb5hBTgruCncH3girIB2BU1XAF1B0xWQrKDJClpWEPcNOPQkrKDqCsgj55TGzFeNbFmRXbshPOk7Z45saSyNZ6SZLw5RREREcyh7Mc9eJmGVH8tdtVhSDaqfJdpVnzRFtMaOvbihm1Nu+usqj+lr9mLwj7qchibgsQN+dkJhaJYuRbTGoyZKK6IJAuD3ow9jFPHb0SgwgB+cGJTtYqeNsgQnv6aIraEuMONbejLyO2/p5wDHbEU7a7XjMd285+YdRWyMysBklC1feYxK0tcxrp/QzZVPCD5nz5eqIHrhebOsw80VC9quUkp74xhLWAY8NqUtgddJxA4fC5bRttbmdQfcgGid8BpDpx9+xf2C+3fzGsMOXdRN6NeUKkLg4aPfwYuCeo/l9gOtG52IcVsLSgDakR7LhG3p0x8Cr7VHJiiaZR99eWD+VV+PMqJKShyqKXXBwVz/qcv3oTHZKZplz3PAsbT79Oeg2Z6uFb4/9GzZKuTk4gRhw76xGaTEyv5XlwM/OPexr1BwMAfmonqUHOCclok1DkazjFjmLDOWU3kR+1I96dsrrc9zSX9H7o/tszJf3Uk/l7bjzdlnOUOqFVv2atbpie5c2iS0kPTPZK0TN62v1Rg49LMwr6aU2LK1W1SmZkHBqUnZsJQv+3Jq7A49EaN7jtFLKhwFfbuz0DdguabCoXc6LAcy11LurSTSf2GVPcdZ8rJwxm3+BzSZdHcm10nFOtbenti869dTmePueR4rEa3g7xg4lgeyNpTY6D6iJkFxcBIwUDt9eLkj7nvKokQfeqf0cCBNuk5IyJAAK0i/Syo2CMaHZILwRlLeU8eWEKZiM/TGVGwgF9gACNqFSwIsgoGRk6Kqak4IRndFDQhBDpwaKgzXJA6TE5SQSWsjR3/IDZ7pV6WHewDHngsBscD1xBEt9tgTbNPkUOz1bQlhFLh+5umksvbfoXdZC4ybvkI1JwQ3fTVkay5sCkodhyXSXgT0LzydxgikEmDJ/YeOgACkLANxWCJ614FnryvWqf3oK/hG5tRhE8xsnbIoBSZUU+4LTqimPCA4PrS0vcBYIm3dy/9Fm8HdINq59vGMNoBkg7HMfeaO5YGpK/RVwakr9BsGB4UXzjlw6bSwKQgortUBXjs6CYUDWglha1b6zvOaChJw7DFCpLo+bQh+D9S0lEx6zil6HpjVenEqwQ9OE/a1KphMW2PhcNBpe8zn8kVgQiYY+6IHp6VkXuoKNJav5+RR3XuQULn4z8ghIlJXbKG3VBl6Q6o/tW2A99GY01L5Vh8xXSrdkn3VAS+XkkNPARRpNhL5HgzM7mDoHXq1AgEcsrwl4zz7VeE1FY77VrF2WmHPufvlAYWebdFkmFSfjBOPyGyApussnPlTKlLk3UbETwAy7wqyMc0/bH3JXsyofDR5gmxtRyhJd1nwhKkOlXer5l//XYpojboT0xFH55DPLHf8nk9OV5l8H7EFNP6jzK8pTal0xMPQKDBVhT4GZ3twUlk2zQI/6PjvgO8cgHHVBAjOp+z5QgWYUPb7WEtEREREDX4BBWOK5zDuCeUAAAAASUVORK5CYII=" alt="">
+      </picture>
+    </a>
+
+    <nav id="primary-nav">
+      <button type="button" id="toggleBtn" class="btn btn-primary" aria-label="navigation toggle button"
+        aria-controls="navDrawer" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <div id="navDrawer" class="drawer">
+        <ul class="drawer__list">
+          <li class="drawer__item">
+            <a href="/yourbank/" class="drawer__link">Home</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/careers/" class="drawer__link">Careers</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/about/" class="drawer__link">About</a>
+          </li>
+          <li class="drawer__item">
+            <a href="/yourbank/security/" class="drawer__link">Security</a>
+          </li>
+        </ul>
+
+        <div class="drawer__cta">
+          <a href="/yourbank/signup/" class="btn btn-tertiary">Sign Up</a>
+          <a href="/yourbank/login/" class="btn btn-primary">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="grid-container" id="login">
+    <div class="container container--form container-pattern bg-curve--right">
+      <div class="container__text">
+        <h1><span>Login</span></h1>
+        <p>Welcome back! Please log in to access your account.</p>
+      </div>
+
+      <form class="container__content">
+        <div class="form__input-container">
+          <div class="form__input">
+            <label for="inputEmail" class="sr-only">Email:</label>
+            <input type="email" name="email" id="inputEmail" placeholder="Enter your email" required>
+            <p class="container__error-message"></p>
+          </div>
+          <div class="form__input">
+            <label for="inputPassword" class="sr-only">Password:</label>
+            <input type="text" name="password" id="inputPassword" placeholder="Enter your password" required>
+            <p class="container__error-message"></p>
+          </div>
+        </div>
+
+        <a href="#" id="forgotPassword">Forgot Password?</a>
+
+        <div class="form__button-container">
+          <button type="submit" class="btn btn-primary">Login</button>
+          <a href="/yourbank/signup/" id="signUp" class="btn btn-tertiary">Sign Up</a>
+
+          <div class="form__social-container">
+            <div class="form__social-text">
+              <div class="line"></div>
+              <p>Or continue with</p>
+              <div class="line"></div>
+            </div>
+            <div class="form__social">
+              <a href="#goggle" class="form__icon-container container__content-icon">
+                <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAINSURBVHgBtVbdUdtAEP5WJzI8ugSlAuRgO/FMHkwFCRVABzEVxKkgQwVABXEqAM9khiHE+FJBlA78mME+bVaSLeyTzhJgvhffne6+/d81YQMmHDZmUEcM9AgcAhQsPk0BjmQ/ItCwTb+uXBzkIp7D+8SgvmwbqEYEmMMOaV0p4AeH4Suob7IM8EiIlYM23X1ZPyuSX6Ke1iXgyCA+6JKOCgKuOQwU1MRNzuL3xBWU+F/uUFhFnsBfLpRTc9YG3skujG6Snq4q5EENRMMjF3luwU9+cyzLsyI5Tjs07mMDrrnVA+ZRGfmKgP0/sIIqqTl8S+NDPBPebaqBnTEcxTAn2AL8GLEUkZ2tdOUyecLvAtTGv6kv5Hv2sQFduJ7MMEti1UMtqHMPJZmzK0HDdhB4eGF4jPivfTiHv4ctwZeGprNieYAIPZCf7+VP+EJSeFQ8p8Dmkbu/KSkUBb60bk93YF6vVm4Vbnj/3BYg/j/2ulkvt4ka91BnqImkbRS1TzLOjNIgM/jU/igPPt5w6ytqkC/6mI20lvIKk340KXbIFJFoMWjReK02qoeS1+zQrX5Eu07duJhYHKyMzzLkTdIaOG0ZOPEzBk4qXHforrncrRXaezHJwDSzgf4EaunAO1mK53AO/Xv4fZmxn1GPWuJEhTg5BSyRxEWM7MnjD5T5fZEE+fgcSWMcdjf8bfkPasnSk1V8iJwAAAAASUVORK5CYII=" alt="">
+              </a>
+              <a href="#facebook" class="form__icon-container container__content-icon">
+                <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIeSURBVHgBtZWxTxRBFMa/N3OYiMnlYpRKkr2a5g5jhMqz1kQabcVoYWOAf0D3SgvJlTZGLO0ksaCECgIErqHmCipCYENyFHC3w3vDsuxxu7cLd/ySzczOZL438+bNe4QebJtSoQU1Y0AVwDgAOcGUx1+dv39ttBcnqd5I0qC4wVVTcjT0b+5WkI0FNlSNM6SuD6ybpzMsvn0DcWFa1qyZ8dnrEx0n2DDj39gdLvqAYNxntFW9+g+QnXNTyyKyu3OG5rGx/Qd5wsio5vbKGT7M3ARt1UIDgc/FLYXewi18/+Rhf6/dMf5lPo+Xb+9Hhzy+k7LciTWroN00cRH9+u6wSzyBQhAkyMnu+Rjv01b8nW+Gbrlk5Im27XA+NhgrEuY5gppCBhrsnigxbuniFGpWKdAbZKB57Id92XmauECgF3IHJdwdjhgo4O5wiOPfJM1+njzIFDU/lh6iODYUOycnaKBPksQZr28DxbFcr+l6zsCskE3H3bz6OIyTIHr+/zrpSA+veU54PKoT1TllLJI8hjPoI6QQvQ8J05+rj9KWgNNFUZWpLsVjGYNnIcxFbOkDLqrUgDCS7GzKtgbEEvurigHhQ4XVLUzikr+52PRtRDQmaDOsKx0l8zltulIscCt3Gc8HzYlGdLSrJstJpFhwQP5Bdpbb8MvRnV8S+0oC/01zrXC5cEi2nSJtk6LNW3rIPs4Gu2PlHlq1IBJjOQfuKML+bx3YwgAAAABJRU5ErkJggg==" alt="">
+              </a>
+              <a href="#apple" class="form__icon-container container__content-icon">
+                <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGUSURBVHgB3ZXdUcJAEMf/m4i+0oHYQfhUnoAK0A6kAocKhA60g1CBsQJ5cMYZCAodpANTgJd1j8AMhoSPA1/4zUDubi/73+xmLwRDfC7fRsCDDIMaTTpZ+ywYMObSozh/kWEzAs827d1bYMSlewb1lnNG5OGYAhSnZU4E6tZpGuCYAhK9I/+hdn5D/tO2/ZRl0KkQc0OGBfnNCORVyR++c9W5AOcl/oaIOOJAxggk0tcKTbytAh/sFGzYbwvHSQL9DHJbmk0zzEHdFWkaLhesPZwjXs90rmkq2O3VBevvxO5tcL4DVkfSNMgUkHy1YY5bo7G7JrkcjLnSRFwwIxRokLZu1Mlp2PgJ/1WAcHa5UYAzItiVCFERqcIrjLj8DfM6hAqqmDw6kimawpy87iF5WbL7QHr0GYdRYLD3xU4+VeAcaiiXg2ohuJlHhTYocBcHIHXor87XXtM6fbqSKg8GyFHe31bkOZIq+cZygL2cw7smv5dcTxWIUxW15KZF+3Ogo5PjoKWQu9LX2KaD4FDb4qBOkV/e4YvMw6vMbQAAAABJRU5ErkJggg==" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container container--testimonials">
+      <div class="container__text container__text-with-tabs">
+        <div class="container__text-wrapper">
+          <h2>Our <span>Testimonials</span></h2>
+          <p>
+            Discover how YourBank has transformed lives with innovative digital solutions and personalized customer
+            service.
+            See why our clients trust us for a secure and prosperous financial journey
+          </p>
+        </div>
+
+        <div class="container__tabs" role="tablist">
+          <button type="button" class="btn btn-primary" role="tab" aria-selected="true" tabindex="0">For
+            Individuals</button>
+          <button type="button" class="btn btn-tertiary" role="tab" aria-selected="false" tabindex="-1">For
+            Businesses</button>
+        </div>
+      </div>
+
+      <div class="container__content">
+        <div class="container__card container__card--darkest">
+          <div class="container__card-icon">
+            <img class="icon icon--2xl" src="data:image/png;base64,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" alt="">
+          </div>
+          <p>YourBank has been my trusted financial partner for years. Their personalized service and innovative digital
+            banking solutions have made managing my finances a breeze.</p>
+          <p class="container__card-name">Sara T</p>
+        </div>
+
+        <div class="container__card container__card--darkest">
+          <div class="container__card-icon">
+            <img class="icon icon--2xl" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAZCSURBVHgB7VjbchRlEO6e3c2JJKwGSIFIlipKyvLC5SCFV4Q38AU0+ATopd4QnkB8g/AEPgK5sMoShMQbSsuCbNAkIIScNtnj/G33f5rdZGYyG+6s7VSyM7Mz3d//dff39wSgb33rW9/+V4bQoy1QudiC3KwchxDe+xwXK/AO9jOVywOQu82HW1n89QT4FyqXcpB7oBSUgAgwQAiQZj/DJ3fhCPaIrk4TqJ/CEIqI7CuASgAwexUf34d3BezAthpUarf5AvHDAVG+gMi/FWbnZi9sC7MFChYaeyRr1xbkEAYGkf3CHPu7G+cvE2BbBgv1XVWq14x3YURAAxIVGPTgMYR8DjKxbRe/sLOpiioUuGhxEDFcHBxGGBzBWLYzAX5El3/Y26FvdrZIuyYpB/4hg1iuEacTR8YCGB7F+Wv4+OYhYB9UN9VUrUpRfF44w9XIxaswPfYe+87Dt9fxyb3MgB/SldvtFt17udzWrLr06UMyz9s/JKEmp/I4nFfnLyWUx690ZW5nXc1sb4TWB6Lxq6zfKHP5QoCT53IVJuC8ez6fBlbY4I/Z1edcUW3QFESMGIjgKOGjwgCXRR4qfLwJsYu/fKvdpJk3a6FfMKIyHJClwTqTk4Eh/Vnp9JEKOGD5erMSFvd2lIG43zQxZBji04nTAX8G9y/hk834xeOd5T9a0GpadNhVXRqsfMPiQ7L44skAmaqvMwEWNpp1mlldansiHUggF0y711FHiwEcnwg4fb/NQsLiN16p0u62OrBoU0w2WaYF8cSZHDDouWv7SiuFYbyz8qwFDNowafoNfEubE3atNF2nzuZYjXA2zpOw26zRzN9/taFRt/Vjg1AXdrOAgSHEidM52ZgOKE4sYGG3vkeltaW2XjDY9FkmXI+gjYrFiYC4oytJgi/svnzRgp3N0D5EHrX2Y49djHMXC3JlLk6HExjGmaWnTceGqS/bZNx2Wit9c/D5BxcKqezyzTOrz9omW2Bcik/tq7NxmYqhEYT3J4NYdmMBSwDWx2luDpEEV7q+JByvZLinkdEAiyeT2c1BML3CYLfeKuOPyGsX2V6IlIa4dvPAO+eB2k0ErJVh1bLhNRd9zznkpuEAPyqLC5yHBONbb7/gxXMNW5hODztvcfCBpi4WWBkwcZbIxwS48efjJgPWFWY9U6dzMjuo+XJyigcACH+Mcy7Zqm5DeeV526uLbAjGEaLLkrv/2FiA4xMoSjMPWQA/5IGkuqVK/66EVhJdVbgmsRTZZI6OBxxEAiwsxjnn+euLVy8kW2A3Gv0YGj10BRFV3tkLOUjL1gHAXBDltSWWspolQZs/5gjKNpwBPXqO9ynA35OccyPeqDxtdTabHT7Ag0YbQ87OnBdphHnIDhjKb1ZDHcDtDsYXmRRq9Aa0XDt+IhDaFlP8lzdeh9RskJ00vJibacHfZip7hDPWAlyG7IDx07XlkFjOsLtuibzuaPcGtATAfXu9MxlJqzUqyRyCvhu8IOgP1KBdTQOO8W45BO3FHgBDaX0txFbdwe3qZlvTkVKMHkfWy6AS57jFvrbWQ2iZbEV6Y+ntZMm5lzmYp7zYwSkRcHVD+e3T7utkxyrsDkJAKtkxz23FWrUJPPATogdlXXXfKzWHfr9LtwOytv2W3OgEHaDRlrI9NjQplR5Anm01XFbAAPeTFHZlCzKAjQXcqCmfOCsN6AYdX4uWbgrTnfOC2F+kDNEcKU8ruwirx9A9FGYG3GzoUL6Tu760BcghtPwrSndOITHDOjvuivbrM+bnwGhz7h1wTRnPPn2+OMBXiqU6rYbFhGEjkdDxIigPK+oa3zs31Z4B2wCRv/1KoT90GHUIYMHgGtgtVkuirigVEdDNTG+AOYB95yE/9nUJvOtx3XTprKjQ1LDVW3cZO1EacjuVpEfAdugBv42aGOD1wjIkQegwldAlofysEG0gPjWWbcAjl0RhAGh3W+90aP/n4F7BHTgnbKgOUYnhMZSm02+q0Cle0fuGqxc6Np47EsPzX30/Pv36n9AnEDv714aQS7Itf3K9UCkkbKV5vl76OF/58rtxefHEBBnwJJz6UCY1mINDrGtVsv/XeSTkiakEGUyBmkv7f5rMwwEEtyCDcdo2ChDeP2xr7lvf+ta3dPsPHNKH+K2sIsgAAAAASUVORK5CYII=" alt="">
+          </div>
+          <p>I recently started my own business, and YourBank has been instrumental in helping me set up my business
+            accounts and secure the financing I needed. Their expert guidance and tailored solutions have been
+            invaluable.</p>
+          <p class="container__card-name">John D</p>
+        </div>
+
+        <div class="container__card container__card--darkest">
+          <div class="container__card-icon">
+            <img class="icon icon--2xl" src="data:image/png;base64,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" alt="">
+          </div>
+          <p>I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and
+            make transactions on the go. The app is user-friendly and secure, giving me peace of mind.</p>
+          <p class="container__card-name">Emily G</p>
+        </div>
+
+        <button type="button" id="btnPrevious" class="btn btn-secondary" aria-label="go to previous">
+          <img class="icon icon--xl" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgB7ZS9DcIwEEafE5AoGSEjgKgoGYEJmI1JUtJQZARGcEljG1vhRxFEzmFHCCmvs3z3Pck6H0z8DSe3qs5uc0DIbEhRCC8pa4sLxyMCiljBIxwfbrA7hChJ+FY1F3IJcoT3CnKFfxTkDH8TvMKp/FXjJRohc8x+rZpnX2eKFqBpR9FjlwjxnfoKnb6eJyrqcGUweZ9oDElkTNMlAz5amkTFClIl0V0UAtsd5LiP8Dh8u64nfs8N0HVscNm6CoEAAAAASUVORK5CYII=" alt="">
+        </button>
+        <button type="button" id="btnNext" class="btn btn-secondary" aria-label="go to next">
+          <img class="icon icon--xl" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgB7ZS9DcIwEEafE5AoGSEjgKgoGYEJmI1JUtJQZARGcEljG1vhRxFEzmFHCCmvs3z3Pck6H0z8DSe3qs5uc0DIbEhRCC8pa4sLxyMCiljBIxwfbrA7hChJ+FY1F3IJcoT3CnKFfxTkDH8TvMKp/FXjJRohc8x+rZpnX2eKFqBpR9FjlwjxnfoKnb6eJyrqcGUweZ9oDElkTNMlAz5amkTFClIl0V0UAtsd5LiP8Dh8u64nfs8N0HVscNm6CoEAAAAASUVORK5CYII=" alt="">
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <nav id="secondary-nav" class="footer__nav">
+      <a href="/" class="logo" aria-label="go to homepage">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="data:image/png;base64,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 " type="image/png">
+          <source media="(min-width: 992px)" srcset="data:image/png;base64,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 " type="image/png">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAbCAYAAACOY/p9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASbSURBVHgB7VlddtM6EB5Beb5hBTgruCncH3girIB2BU1XAF1B0xWQrKDJClpWEPcNOPQkrKDqCsgj55TGzFeNbFmRXbshPOk7Z45saSyNZ6SZLw5RREREcyh7Mc9eJmGVH8tdtVhSDaqfJdpVnzRFtMaOvbihm1Nu+usqj+lr9mLwj7qchibgsQN+dkJhaJYuRbTGoyZKK6IJAuD3ow9jFPHb0SgwgB+cGJTtYqeNsgQnv6aIraEuMONbejLyO2/p5wDHbEU7a7XjMd285+YdRWyMysBklC1feYxK0tcxrp/QzZVPCD5nz5eqIHrhebOsw80VC9quUkp74xhLWAY8NqUtgddJxA4fC5bRttbmdQfcgGid8BpDpx9+xf2C+3fzGsMOXdRN6NeUKkLg4aPfwYuCeo/l9gOtG52IcVsLSgDakR7LhG3p0x8Cr7VHJiiaZR99eWD+VV+PMqJKShyqKXXBwVz/qcv3oTHZKZplz3PAsbT79Oeg2Z6uFb4/9GzZKuTk4gRhw76xGaTEyv5XlwM/OPexr1BwMAfmonqUHOCclok1DkazjFjmLDOWU3kR+1I96dsrrc9zSX9H7o/tszJf3Uk/l7bjzdlnOUOqFVv2atbpie5c2iS0kPTPZK0TN62v1Rg49LMwr6aU2LK1W1SmZkHBqUnZsJQv+3Jq7A49EaN7jtFLKhwFfbuz0DdguabCoXc6LAcy11LurSTSf2GVPcdZ8rJwxm3+BzSZdHcm10nFOtbenti869dTmePueR4rEa3g7xg4lgeyNpTY6D6iJkFxcBIwUDt9eLkj7nvKokQfeqf0cCBNuk5IyJAAK0i/Syo2CMaHZILwRlLeU8eWEKZiM/TGVGwgF9gACNqFSwIsgoGRk6Kqak4IRndFDQhBDpwaKgzXJA6TE5SQSWsjR3/IDZ7pV6WHewDHngsBscD1xBEt9tgTbNPkUOz1bQlhFLh+5umksvbfoXdZC4ybvkI1JwQ3fTVkay5sCkodhyXSXgT0LzydxgikEmDJ/YeOgACkLANxWCJ614FnryvWqf3oK/hG5tRhE8xsnbIoBSZUU+4LTqimPCA4PrS0vcBYIm3dy/9Fm8HdINq59vGMNoBkg7HMfeaO5YGpK/RVwakr9BsGB4UXzjlw6bSwKQgortUBXjs6CYUDWglha1b6zvOaChJw7DFCpLo+bQh+D9S0lEx6zil6HpjVenEqwQ9OE/a1KphMW2PhcNBpe8zn8kVgQiYY+6IHp6VkXuoKNJav5+RR3XuQULn4z8ghIlJXbKG3VBl6Q6o/tW2A99GY01L5Vh8xXSrdkn3VAS+XkkNPARRpNhL5HgzM7mDoHXq1AgEcsrwl4zz7VeE1FY77VrF2WmHPufvlAYWebdFkmFSfjBOPyGyApussnPlTKlLk3UbETwAy7wqyMc0/bH3JXsyofDR5gmxtRyhJd1nwhKkOlXer5l//XYpojboT0xFH55DPLHf8nk9OV5l8H7EFNP6jzK8pTal0xMPQKDBVhT4GZ3twUlk2zQI/6PjvgO8cgHHVBAjOp+z5QgWYUPb7WEtEREREDX4BBWOK5zDuCeUAAAAASUVORK5CYII=" alt="">
+        </picture>
+      </a>
+
+      <ul>
+        <li><a href="/yourbank/">Home</a></li>
+        <li><a href="/yourbank/careers/">Careers</a></li>
+        <li><a href="/yourbank/about/">About</a></li>
+        <li><a href="/yourbank/security/">Security</a></li>
+      </ul>
+    </nav>
+
+    <div class="line"></div>
+
+    <div class="footer__contact-info">
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGISURBVHgB7ZTBVcJAEIb/CeDzSAnQAYgI3KADOwArECowdIAVCB3YAbn5lBDSAZTAWZIdZwxEeILkQZ4nvkOym2T+f3ays8CFI9D2ZMalfIBsCWcQIFg0yF/8MvjgyqPcBkgBAttV8vrR+Fu8KlmbGVIkBLUa5DqWThjhPVLGgmlGd6FGns2gPlJCta5gBrHBG5cKNXLtEGFRpg5Ox1EN1do8sKKL1ZGf/KLjO5q2QvCD5LFAYngpQh2N1ZlojT9hdWODNZ0MMvMJ3zw1yBuGMC0GRgnUn3MwxVuajjRWNHSzNHdWsJMLyJYM5kBWyjbtRGXbtxr2dadI1l3tHY3RWHmR3/7KOpBVIQMe/5TNKxpwT4ZLLYcB9eRZ+RqB/86VIcu3GrNP6JDBBi3b2OVKu07eICer0XLUyR1oY66kpNJI7b8EsjhOwQBDEbRX606XsfZNM0FsIoPYCCccJcdKdDb/Y2BgOUgZQuY1NtBTL82zKNrGEz8y2kLPJG0wnIH2Rpn8JS4k5QvuQZiBh1OL3QAAAABJRU5ErkJggg==" alt="">
+        hello@skillbirdge.com
+      </button>
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFjSURBVHgBtZNfTsJAEMa/aZfEx3qDHgFQURIT5QTGG+BJ0CN4AvAExhOATxhB2xvQG+iLL8B2nOVP3TSVtBv4JU13d5rpNzvzAQeA7E3EF+ESy9Csz2g6giPedjHhZm+BxYzBQ/O888kQjqyUjrke+vBn+WAN+rhB8TcqslKqoMKi4BLqCg54u4KMtIN9JxXclUrHE+yRVdIjoKAZHGukt3Agm1MZqYhB9e3etfOG7E5T4MUOzKF6cCRTGnE9WMD/soMa1Gk7OCtTuin10Q764L4xBiqS875R60VyHFrHiYYWxXFiNhv39aWRgXz3KqpGPvTIvn/K/2XMp9eisMj3AylMKkmfZR0WxVv0cVeYdJ242fVBfVRGN1oUx4WOatPnYA6vISUmqICGCsz7X5te0sQMf4eBJ5Rm7Uwq86lpjgfVJaQ3sAxiI8Z5OKfpfemkNmZCflCTCeDg71QlbXpLcEh+Acm/eS2/WZUUAAAAAElFTkSuQmCC" alt="">
+        +91 91813 23 2309
+      </button>
+      <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
+        <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGsSURBVHgB1VXbUcJAFD2bgOOnJYQOAjI4fCkdaAViBWgFYAVABWgHWoH+MSpKrMCUkH9JrncNQbK5SQA/HM/MJpv7OCf7ugv8d6iygDm5B5+wTjn0mD+dpfndYldTvd7+SuCZDnv8GnA7yAnxWWhQJKTyyRsTdnexAQhqdKRmV5LPkowv1OhvSq6hQJdP1BzKPgNTch0b9gd2QAjVaavZ47otMwIL9kBOp4Af47iRL0XYoL5py4yAF5ayqeRVEXXqytMiyc564HTXCAyqCGtJXPzDKXLXhYjoYj1J90NY0qKy8GorZwUUKuJ2bCnPM23mXCcIDY6UAGERSElTap6YtvzRppESqPLBkYJsREM978l33K9MpNh9LFKjzSwyn4E5ZRdPw+d2v+yfQzzd5LXUW33dUjFDIiZhVUnA4dZDAejnB1bInIM9RCN+BdgBEaKbUgG9BQk0xpbgab1uK8837UXFbg55LSR6n+e+JnmsvJQQ0VleSTDJObaT5y28D+LC910SnCJyaWo2EigWKSfXsFACTaCJeAuubi3u33Hxq5eRb40pNbpS2fhTfAFnYJ+lqJNC7AAAAABJRU5ErkJggg==" alt="">
+        Somewhere in the World
+      </button>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="footer__bottom-bar">
+      <div class="footer__socials">
+        <a href="#" aria-label="facebook"><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHLSURBVHgBpVQ7UgJBEO2Z5RduAQdYi4IigxuIJxBOINyA0Aw8gZKZISeA1EjIzCSVT7FkJlCEQAHr63VX13XcLeBVzadfz/T0THePIAUMw9Dj8fiNZVkliEWmmIc8FEKYmPZGo1FHtVf4iUwmU9Y0rY2pTsEw0Zp+w5pXyGaz91LKB0wTFA4+sJxKpWixWAz+GMzlcg1c5zbEyArtg357X0omk/pyuXxmQTieVWGsHWDIPBwOtclk0vc40MTQcOX9fl+ZTqc9aVsVohFkbLvdXnmNqcDvzsGMsHfkRFEFRLZvAh7PyhiK4C/hiHcpZ0Y1AvKaAgD93J1zBmDoOrzq8JJEZwQZhN6kn2sVKRgFiZPCFh0DQ+BNLIXCRMJeBO3E27/AmZKf5yibdAL+udkwwh0popzP521uvV6vEGROaLvGE4mEjmrSd7udqjTn/IYDhcJAIs+4RaPRskvGYrE6czD2Rmp05WazeaKvkjoX/O4dyddB2dTofDS5s0uPaxD51qLTced+Y9JlxuNxnRV0JNgRGGu6svQqWYEFfH2TwsFPVXEc+YbmX4V/bYgPs4U/bs71ihR5hfzOunQ6XcCwBv+IH6g2m82G/v2fUbfEoZ5sg28AAAAASUVORK5CYII="
+            alt=""></a>
+        <a href="#" aria-label="twitter"><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGhSURBVHgBxZQ9bsJAEIXHawtSUNgU1JYQgtJlupATJDkBcIKQG5AyVcgJOEIo0xk6SugMCMUHQLDpLECQNw5GlgU2P5F4Emb2x9++2Z010T9LpTNUKpXMTCZDUkovOqYEExzHcZNAxWLxebPZNBDq3EbcWS6XNYQylUqV1+u1FDyAwC4UCtYRsGYA890oShmgb/6hWVmtVn3B7tAwMWjjpfohIGD1mPV0jOvpdLoqPM+Toc53OG2ZUHg2Fi3zojFAdtsdDodNfw8Bsdl+xFFHCNFG/wD7pKuq+hkHHI1GPkuBGV3TNAsvt5JcxEgCaHCg8QMwmy4QsukHsXBdV3J6dJkGOyA/sD9cSy6dKRhqB7F/U6bTqTQMw18Fh2CdyHPH4/ELhR1uZQFWpdPVCDd2d3k2m/Wy2awB6C0dKaT6AXdve4Fb6BdS7yL8SQLzyQL2FO0Pp0xckyihO8AqFK82iv1+34CSz+cfAXmgvz1MOhCJOa98xQ5NUOfzuZPL5QaY6CGNG/ybUQj6e1i0uVgsapPJpEMxUvZ1hj4OkgufrqlfCt6o6PnU8ysAAAAASUVORK5CYII=" alt=""></a>
+        <a href="#" aria-label="linked in"><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgB5ZTdjYJQEIXnwhZgCWwChLdlO3A7sIMtQVuwArUEK7AEtQL1jQCJlsAz4cdz4k9uUBNywSdPQoYZLt8MnAvK87yZUmoiPaiu67nyfb+WHmU18gxdNtJBOjDL8/w3SZI/y7K+xVB3ICbbnyCeR1HEeBID3YEwJnQgnsOoEMERAz2YwkkJF0N9NfIpYIRuEcdyeezl9doPjhD1eVmWB6wZ2LY9Qu3/5YRxHCvGIAicqqqOdJwmsea67rAoCr7nTAfg/hXC6JY3t81LpWm6IYzN9DoaL/S8NZCCWTtOjrjWGxkB6fzNLMQhNsTg2brWQBjQBHQDttUHAt/+P+wOxOe1kJ5E1hmfYmrCSrBs8QAAAABJRU5ErkJggg=="
+            alt=""></a>
+      </div>
+
+      <p class="footer__copyright footer__copyright--first">YourBank All Rights Reserved</p>
+
+      <div class="footer__about">
+        <p class="footer__copyright footer__copyright--second">YourBank All Rights Reserved</p>
+        <div class="footer__info">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  
+  
+
+</body>
+
+</html>
