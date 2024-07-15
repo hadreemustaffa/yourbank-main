@@ -83,7 +83,7 @@
 }
 .bg-dots--arrow {
   &::after {
-    content: url("../../public/images/dark/abstracts/bg-arrow.png");
+    content: url("/public/images/dark/abstracts/bg-arrow.png");
     position: absolute;
     top: 0;
     right: -1rem;
