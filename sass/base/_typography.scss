@@ -86,6 +86,13 @@ p,
   }
 }
 
+form {
+  .input__error-message {
+    font-size: $font-size-sm;
+    color: $error;
+  }
+}
+
 @include lg {
   body,
   footer {

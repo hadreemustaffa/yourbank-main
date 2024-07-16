@@ -9,6 +9,7 @@
 
 form {
   width: 100%;
+  align-items: center;
 
   .form__input-container {
     @include flex(column);
@@ -18,6 +19,8 @@ form {
     .form__input {
       @include flex(column);
       text-align: left;
+      padding-bottom: $space-2xl;
+      position: relative;
 
       input {
         background-color: $grey-10;
@@ -25,6 +28,35 @@ form {
         padding: $base-space;
         border-radius: $space-xl;
         color: $white;
+
+        &.error {
+          border-color: $error;
+        }
+      }
+
+      .input__error-message {
+        position: absolute;
+        bottom: 0;
+        left: $base-space;
+      }
+    }
+
+    .form__input-wrapper {
+      @include flex;
+      align-items: center;
+      position: relative;
+
+      input {
+        width: 100%;
+      }
+
+      .btn__input-password {
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: $base-space;
+        z-index: 10;
       }
     }
   }
