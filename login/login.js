@@ -1,28 +1,15 @@
+import { EMAIL_REGEX, ERROR_MESSAGE, DEMO_USER } from '../constants';
+
 const form = document.querySelector('form');
 const email = form.querySelector("input[name='email']");
-const formError = form.querySelector('.form__message');
 const password = form.querySelector("input[name='password']");
-
-const DEMO_USER = {
-  email: 'demo@email.com',
-  password: 'demoaccount',
-};
-
-const ERROR_MESSAGE = {
-  emptyInput: 'Please check your email or password',
-  incorrectEmailFormat: 'Please enter the correct email format',
-  userDoesNotExist: `The email or password you entered doesn't match our records. Please try again.`,
-  passwordTooShort: 'Your password should be at least 8 characters long',
-};
-
-const emailRegex =
-  /^([A-Z0-9_+-]+\.?)*[A-Z0-9_+-]@([A-Z0-9][A-Z0-9-]*\.)+[A-Z]{2,}$/i;
+const formError = form.querySelector('.form__message');
 
 const checkIfValidUser = () => {
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
 
-  const isValidEmail = emailRegex.test(emailValue);
+  const isValidEmail = EMAIL_REGEX.test(emailValue);
   const isPasswordTooShort =
     passwordValue.length < password.getAttribute('minlength');
 
