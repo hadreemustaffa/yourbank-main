@@ -19,8 +19,6 @@ form {
     .form__input {
       @include flex(column);
       text-align: left;
-      padding-bottom: $space-2xl;
-      position: relative;
 
       input {
         background-color: $grey-10;
@@ -32,12 +30,6 @@ form {
         &.error {
           border-color: $error;
         }
-      }
-
-      .input__error-message {
-        position: absolute;
-        bottom: 0;
-        left: $base-space;
       }
     }
 
@@ -58,6 +50,23 @@ form {
         right: $base-space;
         z-index: 10;
       }
+    }
+  }
+
+  .form__message {
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    background-color: $grey-10;
+    padding-inline: $base-space;
+    text-align: left;
+    transition:
+      max-height 0.1s ease,
+      opacity 0.1s ease 0.1s;
+
+    &:not(:empty) {
+      max-height: 1.5em;
+      opacity: 1;
     }
   }
 

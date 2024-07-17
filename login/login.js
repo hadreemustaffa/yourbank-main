@@ -1,89 +1,89 @@
 const form = document.querySelector('form');
-const inputContainer = form.querySelectorAll('.form__input');
+const email = form.querySelector("input[name='email']");
+const formError = form.querySelector('.form__message');
+const password = form.querySelector("input[name='password']");
 
 const DEMO_USER = {
   email: 'demo@email.com',
-  password: 'demo',
+  password: 'demoaccount',
 };
 
-const removeError = (emailEl, emailErr, passwordEl, passwordErr) => {
-  emailEl.classList.remove('error');
-  emailErr.textContent = '';
-  passwordEl.classList.remove('error');
-  passwordErr.textContent = '';
+const ERROR_MESSAGE = {
+  emptyInput: 'Please check your email or password',
+  incorrectEmailFormat: 'Please enter the correct email format',
+  userDoesNotExist: `The email or password you entered doesn't match our records. Please try again.`,
+  passwordTooShort: 'Your password should be at least 8 characters long',
 };
+
+const emailRegex =
+  /^([A-Z0-9_+-]+\.?)*[A-Z0-9_+-]@([A-Z0-9][A-Z0-9-]*\.)+[A-Z]{2,}$/i;
 
 const checkIfValidUser = () => {
-  const email = form.querySelector("input[name='email']");
-  const emailError = form.querySelector('#emailError');
-  const password = form.querySelector("input[name='password']");
-  const passwordError = form.querySelector('#passwordError');
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();
 
-  if (email.value.trim() === '' || password.value.trim() === '') {
+  const isValidEmail = emailRegex.test(emailValue);
+  const isPasswordTooShort =
+    passwordValue.length < password.getAttribute('minlength');
+
+  const removeAllError = () => {
+    email.classList.remove('error');
+    password.classList.remove('error');
+    formError.classList.remove('error');
+    formError.textContent = '';
+  };
+
+  // check if input is empty
+  if (emailValue === '' || passwordValue === '') {
     email.classList.add('error');
-    emailError.textContent = 'This field is required';
     password.classList.add('error');
-    passwordError.textContent = 'This field is required';
+    formError.classList.add('error');
+    formError.textContent = ERROR_MESSAGE.emptyInput;
   } else {
-    removeError(email, emailError, password, passwordError);
+    removeAllError();
   }
 
-  if (email.value.trim() !== '' && password.value.trim() === '') {
-    emailError.textContent = '';
-    passwordError.textContent = 'Please enter your password';
-  }
-  if (password.value.trim() !== '' && email.value.trim() === '') {
-    passwordError.textContent = '';
-    emailError.textContent = 'Please enter your email';
-  }
-
-  if (email.value.trim() !== '' && password.value.trim() !== '') {
-    if (
-      email.value.trim() === DEMO_USER.email &&
-      password.value.trim() === DEMO_USER.password
-    ) {
-      removeError(email, emailError, password, passwordError);
-      email.value = '';
-      password.value = '';
-      setTimeout(() => {
-        alert('Logged in successfully!');
-      }, 250);
-    } else {
+  if (emailValue !== '') {
+    if (!isValidEmail) {
       email.classList.add('error');
-      emailError.textContent = 'Sorry. User does not exist';
+      formError.classList.add('error');
+      formError.textContent = ERROR_MESSAGE.incorrectEmailFormat;
       password.classList.add('error');
+    }
+
+    if (isValidEmail && passwordValue === '') {
+      email.classList.add('error');
+      password.classList.add('error');
+      formError.classList.add('error');
+      formError.textContent = ERROR_MESSAGE.emptyInput;
+    }
+
+    // if both inputs are not empty, check whether whether user exist and log in
+    if (isValidEmail && passwordValue !== '') {
+      // simulate successful log in on correct credentials
+      if (
+        emailValue === DEMO_USER.email &&
+        passwordValue === DEMO_USER.password
+      ) {
+        removeAllError();
+        email.value = '';
+        password.value = '';
+        setTimeout(() => {
+          alert('Logged in successfully!');
+        }, 250);
+      } else if (isPasswordTooShort) {
+        password.classList.add('error');
+        formError.classList.add('error');
+        formError.textContent = ERROR_MESSAGE.passwordTooShort;
+      } else {
+        email.classList.add('error');
+        password.classList.add('error');
+        formError.classList.add('error');
+        formError.textContent = ERROR_MESSAGE.userDoesNotExist;
+      }
     }
   }
 };
-
-// const validateInput = (email, inputEl, errorMessage) => {
-//   const regex =
-//     /^([A-Z0-9_+-]+\.?)*[A-Z0-9_+-]@([A-Z0-9][A-Z0-9-]*\.)+[A-Z]{2,}$/i;
-
-//   const isValid = regex.test(email);
-
-//   if (inputEl.value != '') {
-//     if (isValid) {
-//       setSuccessState(inputEl);
-//       errorMessage.textContent = '';
-
-//       if (email != DEMO_USER.email) {
-//         setErrorState(inputEl);
-//         errorMessage.textContent = 'Sorry! User does not exist';
-//       } else {
-//         setSuccessState(inputEl);
-//         errorMessage.textContent = '';
-//       }
-//     } else {
-//       setErrorState(inputEl);
-//       errorMessage.textContent = 'Please enter correct email format';
-//     }
-//   } else {
-//     errorMessage.textContent = 'This field is required';
-//   }
-
-//   return isValid;
-// };
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();

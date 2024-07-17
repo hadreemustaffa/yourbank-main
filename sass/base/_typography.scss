@@ -87,9 +87,12 @@ p,
 }
 
 form {
-  .input__error-message {
+  .form__message {
     font-size: $font-size-sm;
-    color: $error;
+
+    &.error {
+      color: $error;
+    }
   }
 }
 
