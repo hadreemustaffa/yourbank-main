@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&display=swap" rel="stylesheet">
   
   <title>YourBanK</title>
-  <script type="module" crossorigin src="/yourbank/assets/login-f1eaba25.js"></script>
+  <script type="module" crossorigin src="/yourbank/assets/signup-f4b0fb5e.js"></script>
   <link rel="modulepreload" crossorigin href="/yourbank/assets/index-d51cd20a.js">
   <link rel="modulepreload" crossorigin href="/yourbank/assets/constants-7cad23e7.js">
   <link rel="modulepreload" crossorigin href="/yourbank/assets/testimonials-44757e18.js">
@@ -65,26 +65,43 @@
   <main class="grid-container" id="login">
     <div class="container container--form container-pattern bg-curve--right">
       <div class="container__text">
-        <h1><span>Login</span></h1>
-        <p>Welcome back! Please log in to access your account.</p>
+        <h1><span>Sign Up</span></h1>
+        <p>Join our community today! Create an account to unlock exclusive features and personalized experiences.</p>
       </div>
 
       <form class="container__content" autocomplete="off" novalidate="novalidate">
         <div class="form__input-container">
           <div class="form__input">
+            <label for="firstName" class="sr-only">First Name:</label>
+            <input type="text" name="first-name" id="firstName" placeholder="Enter First Name" autocomplete="name"
+              data-name data-first-name required>
+            <p class="form__input-error"></p>
+          </div>
+          <div class="form__input">
+            <label for="lastName" class="sr-only">Last Name:</label>
+            <input type="text" name="last-name" id="lastName" placeholder="Enter Last Name" autocomplete="family-name"
+              data-name data-last-name required>
+            <p class="form__input-error"></p>
+          </div>
+        </div>
+
+        <div class="form__input-container">
+          <div class="form__input">
             <label for="inputEmail" class="sr-only">Email:</label>
             <input type="email" name="email" id="inputEmail" placeholder="Enter your email" autocomplete="email"
-              required>
+              data-email required>
+            <p class="form__input-error"></p>
           </div>
           <div class="form__input">
             <label for="inputPassword" class="sr-only">Password:</label>
             <div class="form__input-wrapper">
               <input type="password" name="password" id="inputPassword" minlength="8" placeholder="Enter your password"
-                autocomplete="current-password" required>
+                autocomplete="current-password" data-password required>
               <button aria-label="show password" type="button" class="btn btn__input-password">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIvSURBVHgB7VWxctpAEN07mIlxRZlSaT0mY/MFpEtnKg9IDV1KwxcAXyDzB0oRxAxFVKYLZTo7gwp3oUxnuaIwaL2LOIHuhJF778zNodvbt7f33i0A73bERNGNrVbLookHrNfraDqd3heJE0dAG0KIvhDyAhGrmUAhIsR4BiAD3//x/U0JbNtmQJfcDShmC0r2ZTKZLHRHKQf8BhECArcyJxEQ0fRAiR+kFFzNyZ67ShV1a7XzpzAM/2TicsBvdWACHS6XSy8Igkit0/V16Or6sOVlZ9jzff/WSMAkUsA/bTOVjrmlqxgp5R0dKsPPavV8qUQgdyeVv3MwBgqcquvbtvPIw3Ecl9fYt1rhUA8ql8uu+i2Tk9gds1SIqNSNOtptx6VTDlhJPOIYu5RwwL7T0w/elp89Ew1WYJpACLwCw/B+Vx12DC/CDc+e5xFHYmHGQzdNkGekiioUNJJodMgnkw04MoPAajabmyRxDKMc2PRxkWwvwDzgzzQBkTWjJDNtT7VSqXQS/3hA04jvOpEtDImfzRUwf7qKWH2Kv1SmyeuFOy0Jt4PL12S6VZ+Vgcf4k4pJX/J8Pv9/dnb+ROV+3dt7QqU2a7XPURjO/6pFvrp6vf6NwCf0+VE7fY/Af6kvoxddX7e7pZJw9fVtcyNlCW4Llt78FPj+K85N8Frph4z5o8p74/HYaOHH2jX3mysitqETyWTTgyNAHLJIDmEU/sNhEcRxrJIsDhH/bm+2F0noCLpRNM3LAAAAAElFTkSuQmCC" alt="">
               </button>
             </div>
+            <p class="form__input-error"></p>
           </div>
         </div>
 
@@ -93,8 +110,8 @@
         <a href="#" id="forgotPassword">Forgot Password?</a>
 
         <div class="form__button-container">
-          <button type="submit" class="btn btn-primary">Login</button>
-          <a href="/yourbank/signup/" class="btn btn-tertiary form__link">Sign Up</a>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+          <a href="/yourbank/login/" class="btn btn-tertiary form__link">Login</a>
 
           <div class="form__social-container">
             <div class="form__social-text">

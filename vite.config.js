@@ -12,6 +12,7 @@ export default defineConfig({
         careers: resolve(__dirname, 'careers/index.html'),
         security: resolve(__dirname, 'security/index.html'),
         login: resolve(__dirname, 'login/index.html'),
+        signup: resolve(__dirname, 'signup/index.html'),
       },
     },
   },
