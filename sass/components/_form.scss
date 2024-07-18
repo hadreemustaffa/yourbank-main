@@ -19,6 +19,7 @@ form {
     .form__input {
       @include flex(column);
       text-align: left;
+      gap: $space-sm;
 
       input {
         background-color: $grey-10;
@@ -53,11 +54,12 @@ form {
     }
   }
 
-  .form__message {
+  .form__message,
+  .form__input-container .form__input-error {
     width: 100%;
     max-height: 0;
     opacity: 0;
-    background-color: $grey-10;
+    // background-color: $grey-10;
     padding-inline: $base-space;
     text-align: left;
     transition:
@@ -107,11 +109,11 @@ form {
 @include lg {
   .container.container--form {
     grid-area: 1 / 2 / 1 / 12;
+    align-items: center;
   }
 
   .container--form {
     padding: clamp(3.75rem, -5.9755rem + 15.6863vi, 6.25rem) clamp(6.25rem, -13.201rem + 31.3725vi, 11.25rem);
-    align-items: center;
 
     .container__text {
       text-align: center;
