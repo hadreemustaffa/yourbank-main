@@ -11,9 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&display=swap" rel="stylesheet">
   
   <title>YourBanK</title>
-  <script type="module" crossorigin src="/yourbank/assets/index-c40e20f3.js"></script>
-  <script type="module" crossorigin src="/yourbank/assets/testimonials-44757e18.js"></script>
-  <link rel="stylesheet" href="/yourbank/assets/index-e206a625.css">
+  <script type="module" crossorigin src="/yourbank/assets/login-6e53e7d9.js"></script>
+  <link rel="modulepreload" crossorigin href="/yourbank/assets/index-d51cd20a.js">
+  <link rel="modulepreload" crossorigin href="/yourbank/assets/testimonials-44757e18.js">
+  <link rel="stylesheet" href="/yourbank/assets/index-c6afe790.css">
 </head>
 
 <body>
@@ -67,25 +68,32 @@
         <p>Welcome back! Please log in to access your account.</p>
       </div>
 
-      <form class="container__content">
+      <form class="container__content" autocomplete="off" novalidate="novalidate">
         <div class="form__input-container">
           <div class="form__input">
             <label for="inputEmail" class="sr-only">Email:</label>
-            <input type="email" name="email" id="inputEmail" placeholder="Enter your email" required>
-            <p class="container__error-message"></p>
+            <input type="email" name="email" id="inputEmail" placeholder="Enter your email" autocomplete="email"
+              required>
           </div>
           <div class="form__input">
             <label for="inputPassword" class="sr-only">Password:</label>
-            <input type="text" name="password" id="inputPassword" placeholder="Enter your password" required>
-            <p class="container__error-message"></p>
+            <div class="form__input-wrapper">
+              <input type="password" name="password" id="inputPassword" minlength="8" placeholder="Enter your password"
+                autocomplete="current-password" required>
+              <button aria-label="show password" type="button" class="btn btn__input-password">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIvSURBVHgB7VWxctpAEN07mIlxRZlSaT0mY/MFpEtnKg9IDV1KwxcAXyDzB0oRxAxFVKYLZTo7gwp3oUxnuaIwaL2LOIHuhJF778zNodvbt7f33i0A73bERNGNrVbLookHrNfraDqd3heJE0dAG0KIvhDyAhGrmUAhIsR4BiAD3//x/U0JbNtmQJfcDShmC0r2ZTKZLHRHKQf8BhECArcyJxEQ0fRAiR+kFFzNyZ67ShV1a7XzpzAM/2TicsBvdWACHS6XSy8Igkit0/V16Or6sOVlZ9jzff/WSMAkUsA/bTOVjrmlqxgp5R0dKsPPavV8qUQgdyeVv3MwBgqcquvbtvPIw3Ecl9fYt1rhUA8ql8uu+i2Tk9gds1SIqNSNOtptx6VTDlhJPOIYu5RwwL7T0w/elp89Ew1WYJpACLwCw/B+Vx12DC/CDc+e5xFHYmHGQzdNkGekiioUNJJodMgnkw04MoPAajabmyRxDKMc2PRxkWwvwDzgzzQBkTWjJDNtT7VSqXQS/3hA04jvOpEtDImfzRUwf7qKWH2Kv1SmyeuFOy0Jt4PL12S6VZ+Vgcf4k4pJX/J8Pv9/dnb+ROV+3dt7QqU2a7XPURjO/6pFvrp6vf6NwCf0+VE7fY/Af6kvoxddX7e7pZJw9fVtcyNlCW4Llt78FPj+K85N8Frph4z5o8p74/HYaOHH2jX3mysitqETyWTTgyNAHLJIDmEU/sNhEcRxrJIsDhH/bm+2F0noCLpRNM3LAAAAAElFTkSuQmCC" alt="">
+              </button>
+            </div>
           </div>
         </div>
+
+        <p class="form__message"></p>
 
         <a href="#" id="forgotPassword">Forgot Password?</a>
 
         <div class="form__button-container">
           <button type="submit" class="btn btn-primary">Login</button>
-          <a href="/yourbank/signup/" id="signUp" class="btn btn-tertiary">Sign Up</a>
+          <a href="/yourbank/signup/" class="btn btn-tertiary form__link">Sign Up</a>
 
           <div class="form__social-container">
             <div class="form__social-text">
@@ -94,13 +102,14 @@
               <div class="line"></div>
             </div>
             <div class="form__social">
-              <a href="#goggle" class="form__icon-container container__content-icon">
+              <a aria-label="Sign in with Google" href="#goggle" class="form__icon-container container__content-icon">
                 <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAINSURBVHgBtVbdUdtAEP5WJzI8ugSlAuRgO/FMHkwFCRVABzEVxKkgQwVABXEqAM9khiHE+FJBlA78mME+bVaSLeyTzhJgvhffne6+/d81YQMmHDZmUEcM9AgcAhQsPk0BjmQ/ItCwTb+uXBzkIp7D+8SgvmwbqEYEmMMOaV0p4AeH4Suob7IM8EiIlYM23X1ZPyuSX6Ke1iXgyCA+6JKOCgKuOQwU1MRNzuL3xBWU+F/uUFhFnsBfLpRTc9YG3skujG6Snq4q5EENRMMjF3luwU9+cyzLsyI5Tjs07mMDrrnVA+ZRGfmKgP0/sIIqqTl8S+NDPBPebaqBnTEcxTAn2AL8GLEUkZ2tdOUyecLvAtTGv6kv5Hv2sQFduJ7MMEti1UMtqHMPJZmzK0HDdhB4eGF4jPivfTiHv4ctwZeGprNieYAIPZCf7+VP+EJSeFQ8p8Dmkbu/KSkUBb60bk93YF6vVm4Vbnj/3BYg/j/2ulkvt4ka91BnqImkbRS1TzLOjNIgM/jU/igPPt5w6ytqkC/6mI20lvIKk340KXbIFJFoMWjReK02qoeS1+zQrX5Eu07duJhYHKyMzzLkTdIaOG0ZOPEzBk4qXHforrncrRXaezHJwDSzgf4EaunAO1mK53AO/Xv4fZmxn1GPWuJEhTg5BSyRxEWM7MnjD5T5fZEE+fgcSWMcdjf8bfkPasnSk1V8iJwAAAAASUVORK5CYII=" alt="">
               </a>
-              <a href="#facebook" class="form__icon-container container__content-icon">
+              <a aria-label="Sign in with Facebook" href="#facebook"
+                class="form__icon-container container__content-icon">
                 <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIeSURBVHgBtZWxTxRBFMa/N3OYiMnlYpRKkr2a5g5jhMqz1kQabcVoYWOAf0D3SgvJlTZGLO0ksaCECgIErqHmCipCYENyFHC3w3vDsuxxu7cLd/ySzczOZL438+bNe4QebJtSoQU1Y0AVwDgAOcGUx1+dv39ttBcnqd5I0qC4wVVTcjT0b+5WkI0FNlSNM6SuD6ybpzMsvn0DcWFa1qyZ8dnrEx0n2DDj39gdLvqAYNxntFW9+g+QnXNTyyKyu3OG5rGx/Qd5wsio5vbKGT7M3ARt1UIDgc/FLYXewi18/+Rhf6/dMf5lPo+Xb+9Hhzy+k7LciTWroN00cRH9+u6wSzyBQhAkyMnu+Rjv01b8nW+Gbrlk5Im27XA+NhgrEuY5gppCBhrsnigxbuniFGpWKdAbZKB57Id92XmauECgF3IHJdwdjhgo4O5wiOPfJM1+njzIFDU/lh6iODYUOycnaKBPksQZr28DxbFcr+l6zsCskE3H3bz6OIyTIHr+/zrpSA+veU54PKoT1TllLJI8hjPoI6QQvQ8J05+rj9KWgNNFUZWpLsVjGYNnIcxFbOkDLqrUgDCS7GzKtgbEEvurigHhQ4XVLUzikr+52PRtRDQmaDOsKx0l8zltulIscCt3Gc8HzYlGdLSrJstJpFhwQP5Bdpbb8MvRnV8S+0oC/01zrXC5cEi2nSJtk6LNW3rIPs4Gu2PlHlq1IBJjOQfuKML+bx3YwgAAAABJRU5ErkJggg==" alt="">
               </a>
-              <a href="#apple" class="form__icon-container container__content-icon">
+              <a aria-label="Sign in with Apple" href="#apple" class="form__icon-container container__content-icon">
                 <img class="icon icon--lg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGUSURBVHgB3ZXdUcJAEMf/m4i+0oHYQfhUnoAK0A6kAocKhA60g1CBsQJ5cMYZCAodpANTgJd1j8AMhoSPA1/4zUDubi/73+xmLwRDfC7fRsCDDIMaTTpZ+ywYMObSozh/kWEzAs827d1bYMSlewb1lnNG5OGYAhSnZU4E6tZpGuCYAhK9I/+hdn5D/tO2/ZRl0KkQc0OGBfnNCORVyR++c9W5AOcl/oaIOOJAxggk0tcKTbytAh/sFGzYbwvHSQL9DHJbmk0zzEHdFWkaLhesPZwjXs90rmkq2O3VBevvxO5tcL4DVkfSNMgUkHy1YY5bo7G7JrkcjLnSRFwwIxRokLZu1Mlp2PgJ/1WAcHa5UYAzItiVCFERqcIrjLj8DfM6hAqqmDw6kimawpy87iF5WbL7QHr0GYdRYLD3xU4+VeAcaiiXg2ohuJlHhTYocBcHIHXor87XXtM6fbqSKg8GyFHe31bkOZIq+cZygL2cw7smv5dcTxWIUxW15KZF+3Ogo5PjoKWQu9LX2KaD4FDb4qBOkV/e4YvMw6vMbQAAAABJRU5ErkJggg==" alt="">
               </a>
             </div>
@@ -226,6 +235,7 @@
 
   </footer>
 
+  
   
   
 
