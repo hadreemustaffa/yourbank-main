@@ -1,10 +1,11 @@
 @use "../abstracts/" as *;
+
 body {
-  background-color: $grey-10;
   display: grid;
   grid-template-columns: $base-space auto $base-space;
   grid-template-rows: auto auto auto;
   row-gap: 3rem;
+  background-color: var(--bg);
 }
 
 header:not(article header) {
