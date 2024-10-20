@@ -46,7 +46,7 @@
       grid-area: 2 / 1 / -1 / 1;
       padding: $space-xl;
       border-radius: $space-lg;
-      background-color: $grey-10;
+      // background-color: $grey-10;
     }
   }
 
@@ -121,8 +121,8 @@
   padding: $space-2xs;
   border-radius: $space-6xl;
   align-self: center;
-  background-color: $grey-11;
-  border: 1px solid $grey-15;
+  // background-color: $grey-11;
+  // border: 1px solid $grey-15;
 }
 
 .container__stats {
@@ -152,7 +152,7 @@
         position: absolute;
         width: calc(50% - 22px - 16px);
         height: 1px;
-        background-color: $grey-15;
+        // background-color: $grey-15;
       }
       &::before {
         top: 50%;
@@ -186,9 +186,9 @@
 }
 
 .container--cta {
-  background-color: $grey-11;
+  // background-color: $grey-11;
   border-radius: $space-sm;
-  border: 1px solid $grey-15;
+  // border: 1px solid $grey-15;
 
   .container__content {
     align-items: center;

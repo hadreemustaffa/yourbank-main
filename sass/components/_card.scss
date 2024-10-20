@@ -3,7 +3,6 @@
 .container__card {
   @include flex(column);
   gap: $space-xs;
-  border-radius: $space-sm;
   height: 100%;
   padding: $space-lg;
   background-repeat: no-repeat;
@@ -11,12 +10,10 @@
   text-align: left;
 
   &.container__card--darkest {
-    background-color: $grey-10;
-    border: 1px solid $grey-20;
+    border: 1px solid var(--gray-5);
   }
   &.container__card--dark {
-    background-color: $grey-11;
-    border: 1px solid $grey-20;
+    border: 1px solid var(--gray-5);
   }
   &.container__card--transparent {
     background-color: transparent;
@@ -27,19 +24,16 @@
       position: absolute;
       width: 2px;
       height: 100%;
-      background-color: $green-60;
+      background-color: var(--brand-2);
       top: 50%;
       left: 0;
       translate: 0 -50%;
     }
   }
   &.container__card--gradient {
-    padding: $space-xl;
-    gap: $space-lg;
-    border-radius: inherit;
-    background: $grey-11;
-    background: linear-gradient(104.68deg, hsla(76, 100%, 60%, 0.05) -29.1%, hsla(76, 100%, 60%, 0) 25.24%),
-      linear-gradient(267.5deg, $grey-11 40.67%, hsla(0, 0%, 11%, 0) 99.81%);
+    padding: $space-2xl $space-xl;
+    gap: $base-space;
+    border: 1px solid var(--gray-2);
   }
 
   .container__card-title {
@@ -80,8 +74,7 @@
 
       p {
         padding: $space-4xs $base-space;
-        border: 1px solid $grey-15;
-        background-color: $grey-10;
+        border: 1px solid var(--border-1);
         border-radius: $space-2xl;
       }
     }
@@ -101,4 +94,10 @@
   .btn {
     width: fit-content;
   }
+}
+
+.container-pattern {
+  background-repeat: no-repeat;
+  border: 1px solid var(--gray-2);
+  padding: 1.25rem;
 }

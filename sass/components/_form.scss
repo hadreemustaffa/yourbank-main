@@ -1,9 +1,7 @@
 @use "../abstracts/" as *;
 
 .container--form {
-  background-color: $grey-11;
-  border-radius: $space-lg;
-  border: 1px solid $grey-15;
+  border: 1px solid var(--gray-5);
   padding: $space-2xl;
 }
 
@@ -22,11 +20,9 @@ form {
       gap: $space-sm;
 
       input {
-        background-color: $grey-10;
-        border: 1px solid $grey-15;
+        background-color: var(--gray-1);
+        border: 1px solid var(--gray-5);
         padding: $base-space;
-        border-radius: $space-xl;
-        color: $white;
 
         &.error {
           border-color: $error;
@@ -59,8 +55,6 @@ form {
     width: 100%;
     max-height: 0;
     opacity: 0;
-    // background-color: $grey-10;
-    padding-inline: $base-space;
     text-align: left;
     transition:
       max-height 0.1s ease,
@@ -99,7 +93,7 @@ form {
 
       .form__icon-container {
         &:hover::before {
-          border: 2px solid $grey-15;
+          border: 2px solid var(--gray-3);
         }
       }
     }

@@ -4,7 +4,7 @@ body {
   font-family: $font-family-primary;
   font-size: $font-size-sm;
   font-weight: $font-weight-regular;
-  color: $white-90;
+  color: var(--gray-12);
 }
 
 nav {
@@ -13,10 +13,13 @@ nav {
 
 a {
   text-decoration: none;
-  color: currentColor;
 
-  &:hover {
-    color: $green-60;
+  &:not(.btn) {
+    color: var(--link-1);
+
+    &:hover {
+      color: var(--gray-12);
+    }
   }
 
   &#forgotPassword {
@@ -30,7 +33,7 @@ h1 {
   line-height: 1.5;
 
   span {
-    color: $green-60;
+    color: var(--text-1);
   }
 }
 
@@ -50,7 +53,6 @@ article h3 {
 
 p,
 .footer__bottom-bar {
-  color: $grey-70;
   font-weight: $font-weight-light;
 }
 
@@ -63,25 +65,19 @@ p,
   span {
     font-weight: $font-weight-bold;
     font-size: $font-size-7xl;
-    color: $green-60;
     display: block;
   }
 }
 
-.cases__type-text {
-  color: $white;
-}
-
 .container__card {
   .container__card-name {
-    color: $green-60;
+    font-weight: $font-weight-bold;
   }
 
   &.container__card--transparent {
     h3 {
       font-size: $font-size-5xl;
       font-weight: $font-weight-medium;
-      color: $grey-30;
     }
   }
 }
