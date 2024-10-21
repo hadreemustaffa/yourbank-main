@@ -44,7 +44,7 @@
     gap: $space-lg;
     overflow-x: scroll;
     padding: $space-lg;
-    border-radius: $space-sm;
+    border-radius: $space-4xs;
     scrollbar-width: none;
     border: transparent;
     align-self: normal;
@@ -55,15 +55,6 @@
   }
 }
 
-.container--faqs {
-  .container__content {
-    gap: $space-4xs;
-  }
-  .container__content-wrapper {
-    transition: all 0.3s ease;
-  }
-}
-
 @include md {
   .container--cases {
     .container__stats {
@@ -71,20 +62,7 @@
 
       .line {
         height: 100%;
-
-        &.line--dotted {
-          width: 2px;
-          background-image: linear-gradient(to bottom, hsl(0, 0%, 10%) 50%, hsl(0, 0%, 15%) 0%);
-          background-size: 2px 20px;
-          background-repeat: repeat-y;
-        }
       }
-    }
-  }
-
-  .container--features {
-    .container__tabs {
-      align-self: center;
     }
   }
 }
