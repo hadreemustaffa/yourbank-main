@@ -44,13 +44,8 @@ header.grid-container {
 
   .drawer__link {
     display: block;
-    padding: $space-sm $space-lg;
+    // padding: $space-sm $space-lg;
     border-radius: $space-2xl;
-
-    &:hover,
-    &.active {
-      // background-color: $grey-15;
-    }
   }
 }
 

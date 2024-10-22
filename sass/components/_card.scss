@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: 40%;
   text-align: left;
+  border-radius: $space-4xs;
 
   &.container__card--darkest {
     border: 1px solid var(--gray-5);
@@ -33,7 +34,7 @@
   &.container__card--gradient {
     padding: $space-2xl $space-xl;
     gap: $base-space;
-    border: 1px solid var(--gray-2);
+    border: 1px solid var(--gray-5);
   }
 
   .container__card-title {
@@ -75,7 +76,7 @@
       p {
         padding: $space-4xs $base-space;
         border: 1px solid var(--border-1);
-        border-radius: $space-2xl;
+        border-radius: $space-3xs;
       }
     }
   }
@@ -87,6 +88,7 @@
       li {
         @include flex;
         gap: $space-3xs;
+        align-items: center;
       }
     }
   }
@@ -94,10 +96,4 @@
   .btn {
     width: fit-content;
   }
-}
-
-.container-pattern {
-  background-repeat: no-repeat;
-  border: 1px solid var(--gray-2);
-  padding: 1.25rem;
 }

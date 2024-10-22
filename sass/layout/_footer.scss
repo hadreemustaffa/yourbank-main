@@ -1,10 +1,10 @@
 @use "../abstracts/" as *;
 
 footer {
-  // background-color: $grey-11;
-  padding: $space-4xl $base-space $space-2xl;
   @include flex(column);
-  gap: $space-sm;
+  background-color: var(--bg-card-2);
+  padding: $space-2xl $base-space;
+  gap: $space-lg;
   align-items: center;
 }
 
@@ -14,14 +14,14 @@ footer {
   align-items: center;
 
   ul {
-    @include flex;
+    @include flex(column);
+    align-items: center;
     gap: $space-xs;
   }
 }
 
 .footer__contact-info {
-  @include flex;
-  flex-wrap: wrap;
+  @include flex(column);
   align-items: center;
   justify-content: center;
   gap: $space-lg;
@@ -41,11 +41,17 @@ footer {
     z-index: 1;
 
     a {
+      display: flex;
       width: fit-content;
       height: fit-content;
       padding: $space-2xs;
-      // background-color: $green-60;
-      border-radius: 50%;
+      border-radius: $space-3xs;
+      border: 1px solid var(--gray-5);
+      background-color: var(--bg-card-2);
+
+      &:hover {
+        background-color: var(--btn-2);
+      }
     }
   }
 
@@ -53,31 +59,16 @@ footer {
     grid-area: 2 / 1 / -1 / -1;
     width: 100%;
     align-items: center;
-    // background-color: hsl(0, 0%, 10%);
-    border: 1px solid hsl(0, 0%, 20%);
+    border: 1px solid var(--gray-5);
     display: flex;
     flex-direction: column;
     gap: $space-xs;
-    border-radius: $space-sm;
+    border-radius: $space-3xs;
     padding: $space-5xl $space-lg $space-lg;
 
     .footer__info {
       @include flex;
       gap: $base-space;
-
-      .footer__link {
-        &:first-child {
-          position: relative;
-          &::after {
-            content: "";
-            position: absolute;
-            width: 1px;
-            height: 100%;
-            right: -$space-4xs;
-            // background-color: $grey-70;
-          }
-        }
-      }
     }
   }
 
@@ -88,11 +79,18 @@ footer {
   }
 }
 
+@include sm {
+  .footer__nav {
+    ul {
+      @include flex;
+    }
+  }
+}
+
 @include lg {
   .footer__bottom-bar {
-    background-color: hsl(0, 0%, 10%);
-    border: 1px solid hsl(0, 0%, 20%);
-    border-radius: $space-3xl;
+    border: 1px solid var(--gray-5);
+    border-radius: $space-3xs;
     padding: $base-space $space-2xl;
     grid-template-columns: 0.3fr 0.4fr 0.3fr;
     grid-template-rows: 1fr;

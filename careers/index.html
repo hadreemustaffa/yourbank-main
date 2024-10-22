@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A static banking company website based on a free figma template by Produce UI">
-  <link rel="site icon" href="/public/images/dark/icons/favicon.png" type="image/png">
+  <link rel="site icon" href="/public/images/icons/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 <body>
   <header class="grid-container">
     <a href="/" class="logo" aria-label="go to homepage">
-      <img src="/public/images/dark/icons/logo.svg" width="48" height="48" alt="">
+      <img src="/public/images/icons/logo.svg" width="48" height="48" alt="">
     </a>
 
     <nav id="primary-nav">
@@ -46,7 +46,7 @@
         </ul>
 
         <div class="drawer__cta">
-          <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto"
+          <button class="btn theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto"
             aria-live="polite">
             <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
               <mask class="moon" id="moon-mask">
@@ -66,7 +66,7 @@
               </g>
             </svg>
           </button>
-          <a href="/yourbank/signup/" class="btn btn-tertiary">Sign Up</a>
+          <a href="/yourbank/signup/" class="btn btn-secondary">Sign Up</a>
           <a href="/yourbank/login/" class="btn btn-primary">Login</a>
         </div>
       </div>
@@ -77,11 +77,11 @@
     <div class="container container--introduction">
       <div class="container__introduction-content container-pattern bg-curve--right">
         <picture class="container__illustration">
-          <source media="(min-width: 1440px)"
-            srcset="/public/images/dark/illustrations/careers-illustration-desktop.png" type="image/png">
-          <source media="(min-width: 992px)" srcset="/public/images/dark/illustrations/careers-illustration-laptop.png"
+          <source media="(min-width: 1440px)" srcset="/public/images/illustrations/careers-illustration-desktop.png"
             type="image/png">
-          <img src="/public/images/dark/illustrations/careers-illustration-mobile.png"
+          <source media="(min-width: 992px)" srcset="/public/images/illustrations/careers-illustration-laptop.png"
+            type="image/png">
+          <img src="/public/images/illustrations/careers-illustration-mobile.png"
             alt="Two person having a business discussion">
         </picture>
         <div class="container__text">
@@ -162,7 +162,13 @@
             <div class="container__card container__card--gradient">
               <div class="container__card-title">
                 <div class="container__content-icon">
-                  <img class="icon icon--lg" src="/public/images/dark/icons/presentation-chart-bar-icon.png" alt="">
+                  <!-- presentation-chart-bar-icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"
+                    xmlns:v="https://vecta.io/nano">
+                    <path fill-rule="evenodd"
+                      d="M2.813 2.813a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h.938v13.125a3.75 3.75 0 0 0 3.75 3.75h1.512l-1.464 4.391a.94.94 0 0 0 .593 1.186.94.94 0 0 0 1.186-.593l.411-1.234h10.524l.411 1.234a.94.94 0 0 0 1.186.593.94.94 0 0 0 .593-1.186l-1.464-4.391H22.5a3.75 3.75 0 0 0 3.75-3.75V4.688h.938a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937H2.813zm7.551 20.625l.625-1.875h8.024l.625 1.875h-9.274zm9.324-15a.94.94 0 0 0-.937-.937.94.94 0 0 0-.937.938v7.5a.94.94 0 0 0 .938.938.94.94 0 0 0 .938-.937v-7.5zm-3.75 2.813a.94.94 0 0 0-.937-.937.94.94 0 0 0-.937.938v4.688a.94.94 0 0 0 .938.938.94.94 0 0 0 .938-.937V11.25zm-3.75 2.813a.94.94 0 0 0-.937-.937.94.94 0 0 0-.937.938v1.875a.94.94 0 0 0 .938.938.94.94 0 0 0 .938-.937v-1.875z"
+                      fill="currentColor" />
+                  </svg>
                 </div>
                 <h3>Competitive Compensation</h3>
               </div>
@@ -178,7 +184,15 @@
             <div class="container__card container__card--gradient">
               <div class="container__card-title">
                 <div class="container__content-icon">
-                  <img class="icon icon--lg" src="/public/images/dark/icons/light-bulb-icon.png" alt="">
+                  <!-- light-bulb-icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                    xmlns:v="https://vecta.io/nano">
+                    <path
+                      d="M17 1.063A11.69 11.69 0 0 0 5.313 12.75c0 4.322 2.346 8.095 5.83 10.116.971.563 1.579 1.428 1.607 2.298.015.48.35.89.818 1 .498.118 1.005.21 1.52.276.459.059.851-.308.851-.77v-6.603a9.51 9.51 0 0 1-1.327-.243c-.568-.146-.91-.726-.764-1.294s.726-.91 1.294-.764c.593.153 1.216.234 1.86.234s1.267-.081 1.86-.234c.568-.146 1.148.196 1.294.764s-.196 1.148-.764 1.294a9.51 9.51 0 0 1-1.327.243v6.603c0 .462.392.83.851.771.515-.066 1.022-.159 1.52-.276.467-.11.802-.521.818-1 .027-.87.636-1.735 1.607-2.298 3.483-2.021 5.83-5.794 5.83-10.116A11.69 11.69 0 0 0 17 1.063z" />
+                    <path
+                      d="M12.769 28.191c.109-.576.665-.955 1.242-.846a16.08 16.08 0 0 0 2.989.28c1.022 0 2.022-.096 2.989-.28.576-.109 1.133.269 1.242.846s-.269 1.133-.846 1.242a18.15 18.15 0 0 1-6.771 0c-.576-.109-.955-.665-.846-1.242zm1.049 3.463a1.06 1.06 0 0 1 1.167-.946 19.43 19.43 0 0 0 2.015.105c.681 0 1.353-.035 2.015-.105.584-.061 1.106.363 1.167.946s-.363 1.106-.946 1.167a21.48 21.48 0 0 1-4.471 0 1.06 1.06 0 0 1-.946-1.167z"
+                      fill-rule="evenodd" />
+                  </svg>
                 </div>
                 <h3>Health and Wellness</h3>
               </div>
@@ -199,7 +213,12 @@
             <div class="container__card container__card--gradient">
               <div class="container__card-title">
                 <div class="container__content-icon">
-                  <img class="icon icon--lg" src="/public/images/dark/icons/briefcase-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
                 </div>
                 <h3>Retirement Planning</h3>
               </div>
@@ -216,7 +235,14 @@
             <div class="container__card container__card--gradient">
               <div class="container__card-title">
                 <div class="container__content-icon">
-                  <img class="icon icon--lg" src="/public/images/dark/icons/inbox-stack-icon.png" alt="">
+                  <!-- inbox-stack-icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                    xmlns:v="https://vecta.io/nano">
+                    <path fill-rule="evenodd"
+                      d="M2.125 13.929v2.54c0 1.467 1.189 2.656 2.656 2.656h24.438c1.467 0 2.656-1.189 2.656-2.656v-2.54a4.25 4.25 0 0 0-1.023-2.766l-4.654-5.429a4.25 4.25 0 0 0-3.227-1.484H11.029a4.25 4.25 0 0 0-3.227 1.484l-4.654 5.429a4.25 4.25 0 0 0-1.023 2.766zm8.904-7.554c-.62 0-1.21.271-1.613.742l-3.918 4.57h4.484a4.25 4.25 0 0 1 3.536 1.893l.232.349c.394.591 1.058.946 1.768.946h2.963c.71 0 1.374-.355 1.768-.946l.232-.349a4.25 4.25 0 0 1 3.536-1.892h4.484l-3.918-4.57c-.404-.471-.993-.742-1.613-.742H11.029z" />
+                    <path
+                      d="M3.984 21.25a1.86 1.86 0 0 0-1.859 1.859V25.5a4.25 4.25 0 0 0 4.25 4.25h21.25a4.25 4.25 0 0 0 4.25-4.25v-2.391a1.86 1.86 0 0 0-1.859-1.859h-5.997a4.25 4.25 0 0 0-3.536 1.892l-.232.349c-.394.591-1.058.946-1.768.946h-2.963c-.71 0-1.374-.355-1.768-.946l-.232-.349a4.25 4.25 0 0 0-3.536-1.892H3.984z" />
+                  </svg>
                 </div>
                 <h3>Work-Life Balance</h3>
               </div>
@@ -266,23 +292,53 @@
 
               <ul>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="var(--gray-12)" />
+                  </svg>
+
                   <p>Bachelor's degree in Business, Finance, or a related field</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="var(--gray-12)" />
+                  </svg>
+
                   <p>Minimum of 3 years of experience in sales or relationship management in the banking industry</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="var(--gray-12)" />
+                  </svg>
+
                   <p>Proven track record of meeting and exceeding sales targets</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="var(--gray-12)" />
+                  </svg>
+
                   <p>Excellent interpersonal and negotiation skills</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Strong knowledge of banking products and services</p>
                 </li>
               </ul>
@@ -314,23 +370,53 @@
 
               <ul>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Bachelor's degree in Finance, Economics, or a related field</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Minimum of 2 years of experience in risk management or a similar role</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Proficiency in risk analysis tools and techniques</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Strong analytical and problem-solving skills</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Knowledge of regulatory requirements and industry best practices</p>
                 </li>
               </ul>
@@ -363,23 +449,53 @@
 
               <ul>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Bachelor's degree in Computer Science, Information Security, or a related field</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Minimum of 5 years of experience in IT security or a similar role</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>In-depth knowledge of network security protocols and technologies</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Familiarity with regulatory frameworks such as PCI DSS and GDPR</p>
                 </li>
                 <li>
-                  <img class="icon" src="/public/images/dark/icons/briefcase-grey-icon.png" alt="">
+                  <!-- briefcase-icon -->
+                  <svg width="24" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5454 21.1814C14.5908 21.1814 14.0316 20.644 14.0316 19.6796V18.5637C10.0221 18.2881 6.02625 17.4615 1.88037 15.877V13.6038C6.98089 15.8633 12.0951 16.6624 17.6593 16.6624C23.2372 16.6624 28.3513 15.8633 33.4518 13.6038V15.877C29.3059 17.4615 25.31 18.2881 21.3006 18.5637V19.6796C21.3006 20.644 20.7414 21.1814 19.7867 21.1814H15.5454ZM6.09444 30.3432H29.2377C32.0608 30.3432 33.4518 28.9656 33.4518 26.1412V12.7359C33.4518 9.9115 32.0608 8.53378 29.2377 8.53378H6.09444C3.28506 8.53378 1.88037 9.9115 1.88037 12.7359V26.1412C1.88037 28.9656 3.28506 30.3432 6.09444 30.3432ZM10.7449 9.7324H12.8588V7.29382C12.8588 6.24673 13.4725 5.65431 14.5362 5.65431H20.7959C21.8597 5.65431 22.4598 6.24673 22.4598 7.29382V9.70485H24.5736V7.44537C24.5736 4.85523 23.2234 3.64282 20.7551 3.64282H14.5635C12.2314 3.64282 10.7449 4.85523 10.7449 7.44537V9.7324Z"
+                      fill="currentColor" />
+                  </svg>
+
                   <p>Professional certifications such as CISSP or CISM are preferred</p>
                 </li>
               </ul>
@@ -464,7 +580,11 @@
         <button id="faqButton" type="button" class="btn btn-secondary btn-with-icon mx-auto" aria-controls="faq-wrapper"
           aria-expanded="false">
           Load All FAQ’s
-          <img src="/public/images/dark/icons/chevron-down-icon.png" alt="">
+          <!-- chevron-down-icon -->
+          <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.5 8.75L11 14.25L5.5 8.75" stroke="currentColor" stroke-width="2" />
+          </svg>
+
         </button>
       </div>
     </div>
@@ -486,11 +606,7 @@
   <footer>
     <nav id="secondary-nav" class="footer__nav">
       <a href="/" class="logo" aria-label="go to homepage">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/public/images/dark/logo/logo-desktop.png" type="image/png">
-          <source media="(min-width: 992px)" srcset="/public/images/dark/logo/logo-laptop.png" type="image/png">
-          <img src="/public/images/dark/logo/logo-mobile.png" alt="">
-        </picture>
+        <img src="/public/images/icons/logo.svg" width="48" height="48" alt="">
       </a>
 
       <ul>
@@ -505,16 +621,31 @@
 
     <div class="footer__contact-info">
       <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
-        <img class="icon" src="/public/images/dark/icons/envelope-icon.png" alt="">
-        hello@skillbirdge.com
+        <!-- envelope-icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="var(--gray-12)"
+          xmlns:v="https://vecta.io/nano">
+          <path
+            d="M1.5 9.169v8.581a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V9.169l-8.928 5.494a3 3 0 0 1-3.145 0L1.5 9.169zm21-1.761V7.25a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 7.408z" />
+        </svg>
+        yourbank@example.com.my
       </button>
       <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
-        <img class="icon" src="/public/images/dark/icons/phone-icon.png" alt="">
-        +91 91813 23 2309
+        <!-- phone-icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none" xmlns:v="https://vecta.io/nano">
+          <path fill-rule="evenodd"
+            d="M1.5 5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.106 4.423c.183.732-.091 1.502-.694 1.955l-1.294.97c-.134.101-.164.248-.126.351 1.136 3.1 3.598 5.562 6.697 6.697.103.038.251.009.351-.126l.97-1.294c.453-.604 1.223-.877 1.955-.694l4.423 1.106c.835.209 1.42.959 1.42 1.819V20a3 3 0 0 1-3 3h-2.25C8.552 23 1.5 15.949 1.5 7.25V5z"
+            fill="var(--gray-12)" />
+        </svg>
+        +60&nbsp;(415)&nbsp;555&#8209;0132
       </button>
       <button type="button" class="btn btn-tertiary flex align-center text-center gap-4xs">
-        <img class="icon" src="/public/images/dark/icons/map-pin-icon.png" alt="">
-        Somewhere in the World
+        <!-- map-pin-icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none" xmlns:v="https://vecta.io/nano">
+          <path fill-rule="evenodd"
+            d="M11.54 22.851l.071.041.028.016a.76.76 0 0 0 .722 0l.029-.016.071-.041.255-.153.889-.589a19.58 19.58 0 0 0 2.682-2.282c1.944-1.991 3.964-4.981 3.964-8.827a8.25 8.25 0 1 0-16.5 0c0 3.846 2.019 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282l.889.589.255.153zM12 14a3 3 0 1 0 0-6 3 3 0 1 0 0 6z"
+            fill="var(--gray-12)" />
+        </svg>
+        Kuala Lumpur, Malaysia
       </button>
     </div>
 
@@ -522,11 +653,30 @@
 
     <div class="footer__bottom-bar">
       <div class="footer__socials">
-        <a href="#" aria-label="facebook"><img class="icon" src="/public/images/dark/icons/facebook-icon.png"
-            alt=""></a>
-        <a href="#" aria-label="twitter"><img class="icon" src="/public/images/dark/icons/twitter-icon.png" alt=""></a>
-        <a href="#" aria-label="linked in"><img class="icon" src="/public/images/dark/icons/linkedin-icon.png"
-            alt=""></a>
+        <a href="#" aria-label="facebook">
+          <!-- facebook-icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_11_89143)">
+              <path
+                d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4687H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92187 17.3438 4.92187V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4687H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                fill="var(--gray-12)" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11_89143">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+        </a>
+        <a href="#" aria-label="twitter">
+          <!-- twitter-icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" xmlns:v="https://vecta.io/nano">
+            <path
+              d="M7.55 21.75c9.054 0 14.008-7.503 14.008-14.008 0-.211-.005-.427-.014-.638A10 10 0 0 0 24 4.555a9.71 9.71 0 0 1-2.826.773 4.95 4.95 0 0 0 2.165-2.723c-.966.573-2.023.977-3.126 1.195a4.93 4.93 0 0 0-5.916-.969A4.93 4.93 0 0 0 11.82 8.29c-1.957-.098-3.872-.607-5.62-1.492S2.91 4.669 1.673 3.149a4.93 4.93 0 0 0 1.523 6.57 4.93 4.93 0 0 1-2.231-.614v.061a4.92 4.92 0 0 0 3.951 4.828c-.724.198-1.484.227-2.221.084.315.978.927 1.833 1.751 2.447s1.819.954 2.847.975c-1.744 1.37-3.898 2.113-6.116 2.109C.783 19.61.39 19.586 0 19.538a13.97 13.97 0 0 0 7.55 2.212z"
+              fill="var(--gray-12)" />
+          </svg>
+        </a>
       </div>
 
       <p class="footer__copyright footer__copyright--first">YourBank All Rights Reserved</p>

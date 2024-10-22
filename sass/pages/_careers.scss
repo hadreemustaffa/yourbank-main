@@ -12,22 +12,8 @@
     border-top-left-radius: $space-3xl;
     border-top-right-radius: $space-3xl;
     border: solid 1px transparent;
-    // background-image: linear-gradient($grey-11, $grey-11),
-    //   linear-gradient(
-    //     to right top,
-    //     hsl(76, 100%, 60%, 0.1),
-    //     hsl(0, 0%, 15%, 0) 17%,
-    //     hsl(0, 0%, 15%, 0) 69%,
-    //     hsl(0, 0%, 15%)
-    //   );
     background-origin: border-box;
     background-clip: padding-box, border-box;
-  }
-
-  .container__card {
-    .container__card-title {
-      grid-template-columns: 64px auto;
-    }
   }
 }
 

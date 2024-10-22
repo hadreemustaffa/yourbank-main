@@ -1,5 +1,5 @@
 const faqButton = document.getElementById('faqButton');
-const faqButtonIcon = faqButton.querySelector('img');
+const faqButtonIcon = faqButton.querySelector('svg');
 const faqContentWrapper = document.querySelector(
   '.container--faqs .container__content-wrapper'
 );

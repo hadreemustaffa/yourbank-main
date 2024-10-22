@@ -1,13 +1,6 @@
 @use "../abstracts/" as *;
 
 .container--secure {
-  .container__content {
-    .container__card--gradient {
-      border-radius: $space-lg;
-      // border: 1px solid $grey-15;
-    }
-  }
-
   .container__card {
     .container__card-title {
       grid-template-columns: 64px auto;

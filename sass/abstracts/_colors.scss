@@ -1,5 +1,6 @@
 // error
-$error: hsl(349, 52%, 61%);
+$error--dark: #c91d1d;
+$error--light: #e24536;
 
 // dark theme - blue shades
 $bg--dark: #101820;
@@ -15,6 +16,9 @@ $brand-1--dark: #0466c8;
 $brand-2--dark: #0d59ac;
 $text-1--dark: #75b7ff;
 $text-2--dark: #c8e3ff;
+
+// dark theme - error
+$error: $error--dark;
 
 // dark theme - blue accent shades
 $bg-card-a1--dark: #0019f506;
@@ -77,6 +81,9 @@ $brand-1--light: #0466c8;
 $brand-2--light: #0057b8;
 $text-1--light: #0055b6;
 $text-2--light: #0f325d;
+
+// light theme - error
+$error: $error--light;
 
 // light theme - blue accent shades
 $bg-card-a1--light: #e2e7ff59;
