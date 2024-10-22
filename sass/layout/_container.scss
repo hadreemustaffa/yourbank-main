@@ -46,7 +46,7 @@
       grid-area: 2 / 1 / -1 / 1;
       padding: $space-xl;
       border-radius: $space-lg;
-      background-color: var(--bg-card-1);
+      background-color: var(--bg-card-2);
     }
   }
 
@@ -92,28 +92,11 @@
 }
 
 .container__content-icon {
+  display: flex;
   margin: 0 auto;
-  border: 1px solid transparent;
-  background:
-    linear-gradient(hsl(76, 100%, 60%, 0.1), hsl(76, 100%, 60%, 0) 47%) padding-box,
-    linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0) 72%) border-box;
-  border-radius: 50%;
+  border: 1px solid var(--gray-5);
+  border-radius: $space-3xs;
   padding: $space-2xs;
-  position: relative;
-
-  &::before {
-    content: "";
-    width: calc(100% + $base-space);
-    height: calc(100% + $base-space);
-    position: absolute;
-    inset: 0;
-    left: 50%;
-    margin: auto;
-    z-index: 0;
-    translate: -50% 0;
-    border-radius: 50%;
-    background: linear-gradient(hsl(76, 100%, 60%, 0.05), hsl(76, 100%, 60%, 0));
-  }
 }
 
 .container__tabs {
@@ -185,7 +168,7 @@
 }
 
 .container--cta {
-  background-color: var(--gray-a1);
+  background-color: var(--bg-card-2);
   border-radius: $space-sm;
 
   .container__content {
@@ -193,6 +176,14 @@
 
     &.container-pattern {
       padding: $space-2xl;
+    }
+  }
+}
+
+.container--benefits {
+  .container__card {
+    .container__card-title {
+      grid-template-columns: 64px auto;
     }
   }
 }

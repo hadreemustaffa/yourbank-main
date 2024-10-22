@@ -23,6 +23,7 @@ form {
         background-color: var(--gray-1);
         border: 1px solid var(--gray-5);
         padding: $base-space;
+        border-radius: $space-5xs;
 
         &.error {
           border-color: $error;
@@ -107,23 +108,19 @@ form {
   }
 
   .container--form {
-    padding: clamp(3.75rem, -5.9755rem + 15.6863vi, 6.25rem) clamp(6.25rem, -13.201rem + 31.3725vi, 11.25rem);
-
     .container__text {
       text-align: center;
     }
 
     form {
+      padding-inline: clamp(0.625rem, -15.4095rem + 25.8621vi, 15.625rem);
+
       .form__input-container {
         flex-direction: row;
 
         .form__input {
           flex-basis: 50%;
         }
-      }
-
-      .form__button-container {
-        padding-inline: clamp(0.625rem, -15.4095rem + 25.8621vi, 15.625rem);
       }
     }
   }

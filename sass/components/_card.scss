@@ -76,7 +76,7 @@
       p {
         padding: $space-4xs $base-space;
         border: 1px solid var(--border-1);
-        border-radius: $space-2xl;
+        border-radius: $space-3xs;
       }
     }
   }
@@ -88,6 +88,7 @@
       li {
         @include flex;
         gap: $space-3xs;
+        align-items: center;
       }
     }
   }

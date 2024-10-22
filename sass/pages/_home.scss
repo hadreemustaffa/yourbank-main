@@ -8,31 +8,8 @@
   }
 }
 
-.container--cases {
-  .cases__row {
-    display: grid;
-    grid-template-columns: subgrid;
-    gap: 0.625rem;
-  }
-
-  .cases__item {
-    @include flex(column);
-    align-items: center;
-    justify-content: start;
-    gap: 0.875rem;
-    padding: 1.25rem 0.875rem;
-    // background-color: $grey-10;
-    border-radius: 0.75rem;
-    // border: 1px solid $grey-15;
-  }
-}
-
 .container--features {
   align-items: normal;
-
-  .container__text {
-    align-self: center;
-  }
 
   .container__content-wrapper {
     &:last-child {

@@ -1,11 +1,11 @@
 @use "../abstracts/" as *;
 
 footer {
-  padding: $space-2xl $base-space;
   @include flex(column);
-  gap: $space-sm;
+  background-color: var(--bg-card-2);
+  padding: $space-2xl $base-space;
+  gap: $space-lg;
   align-items: center;
-  border-top: 1px solid var(--gray-5);
 }
 
 .footer__nav {
@@ -41,12 +41,13 @@ footer {
     z-index: 1;
 
     a {
+      display: flex;
       width: fit-content;
       height: fit-content;
       padding: $space-2xs;
       border-radius: $space-3xs;
       border: 1px solid var(--gray-5);
-      background-color: var(--bg);
+      background-color: var(--bg-card-2);
 
       &:hover {
         background-color: var(--btn-2);
