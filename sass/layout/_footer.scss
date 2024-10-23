@@ -6,17 +6,17 @@ footer {
   padding: $space-2xl $base-space;
   gap: $space-lg;
   align-items: center;
-}
 
-.footer__nav {
-  @include flex(column);
-  gap: $space-xl;
-  align-items: center;
-
-  ul {
+  nav {
     @include flex(column);
+    gap: $space-xl;
     align-items: center;
-    gap: $space-xs;
+
+    ul {
+      @include flex(column);
+      align-items: center;
+      gap: $space-xs;
+    }
   }
 }
 
@@ -80,9 +80,11 @@ footer {
 }
 
 @include sm {
-  .footer__nav {
-    ul {
-      @include flex;
+  footer {
+    nav {
+      ul {
+        @include flex;
+      }
     }
   }
 }
@@ -117,6 +119,16 @@ footer {
       }
       &.footer__copyright--second {
         display: none;
+      }
+    }
+  }
+}
+
+@include xl {
+  footer {
+    nav {
+      ul {
+        gap: $space-2xl;
       }
     }
   }

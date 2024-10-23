@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
-  base: '/yourbank/',
+  base: '/yourbank-main/',
   build: {
     rollupOptions: {
       input: {

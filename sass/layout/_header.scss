@@ -107,5 +107,11 @@ header.grid-container {
 @include xl {
   header.grid-container {
     grid-template-columns: 0.6fr auto;
+
+    nav {
+      ul {
+        gap: $space-2xl;
+      }
+    }
   }
 }
